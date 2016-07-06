@@ -23,7 +23,7 @@
 <meta property="og:site_name" content="Play & Go">
 <meta property="og:description" content="背景2012年买了一个4TB的WD Mybook Live Duo, 一个入门级的NAS. 从此开启了一发不可收拾的NAS折腾。起初是开启ssh模式，hack进去装各种软件，比如aria2. 可惜那时候Linux水平太次，折腾了几次把系统都搞乱了，还好没崩溃。
 后来不敢乱弄了，因为我开的是Raid0模式，怕数据弄丢。于是买了个树莓派挂上NFS管理。越用越发现这个方法不错，数据和系统分开，可以随便折">
-<meta property="og:updated_time" content="2016-07-06T02:23:40.810Z">
+<meta property="og:updated_time" content="2016-07-06T02:34:37.427Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="想组个NAS">
 <meta name="twitter:description" content="背景2012年买了一个4TB的WD Mybook Live Duo, 一个入门级的NAS. 从此开启了一发不可收拾的NAS折腾。起初是开启ssh模式，hack进去装各种软件，比如aria2. 可惜那时候Linux水平太次，折腾了几次把系统都搞乱了，还好没崩溃。
@@ -39,8 +39,6 @@
     <link rel="shortcut icon" href="/favicon.png">
 
 
-
-    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
 
 
 
@@ -67,7 +65,7 @@
 <script>
     var yiliaConfig = {
         fancybox: true,
-        animate: true,
+        animate: false,
         isHome: false,
         isPost: true,
         isArchive: false,
@@ -254,7 +252,7 @@
   
     <div class="article-meta">
       <a href="/2016/07/06/nas-build/" class="article-date">
-      <time datetime="2016-07-06T02:23:40.810Z" itemprop="datePublished">2016-07-06</time>
+      <time datetime="2016-07-06T02:34:37.427Z" itemprop="datePublished">2016-07-06</time>
 </a>
 
 
@@ -337,7 +335,7 @@
 <li>Linux based</li>
 <li>FreeNAS等以freeBSD为基础的系统</li>
 </ul>
-<p>Windows/Windows server基本不考虑。只是个file server，用盗版感觉不爽，用正版又不值。而且从来没用它做过server，操作也不熟。</p>
+<p>Windows/Windows server基本不考虑。从来没用过它做server。。。</p>
 <p>FreeNAS装在虚拟机上试了下，感觉freeBSD和linux区别还是有一些的。很多操作都和linux不一样。而且里面那个Jail虚拟机貌似还挺折腾。所以也只好作罢。</p>
 <p>剩下就是linux了，既免费，又比较熟悉。开始想着装个Ubuntu server算了，不过中间发现了<a href="http://www.openmediavault.org" target="_blank" rel="external">OpenMediaVault</a>这个NAS系统。好像是原FreeNAS的成员创建的。于是也在虚拟机上装起来试了一下，感觉还不错。同样有web GUI，还是基于debian。用起来熟悉得多，里面的虚拟机插件也很容易使用。</p>
 <p>所以，基本就定下来用OMV ＋ 虚拟机黑群晖了。照片文件夹用NFS挂载到群晖里用Photo Station管理。</p>
@@ -353,8 +351,8 @@
     <div class="copyright">
         <p><span>Title:</span><a href="/2016/07/06/nas-build/">想组个NAS</a></p>
         <p><span>Author:</span><a href="/" title="Back to Homepage">Vivid</a></p>
-        <p><span>Created:</span>2016-07-06, 05:23:40</p>
-        <p><span>Updated:</span>2016-07-06, 05:23:40</p>
+        <p><span>Created:</span>2016-07-06, 05:34:37</p>
+        <p><span>Updated:</span>2016-07-06, 05:34:37</p>
         <p>
             <span>Full URL:</span><a class="post-url" href="/2016/07/06/nas-build/" title="想组个NAS">http://newbilityvery.github.io/2016/07/06/nas-build/</a>
             <span class="copy-path" data-clipboard-text="From http://newbilityvery.github.io/2016/07/06/nas-build/　　By Vivid" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
