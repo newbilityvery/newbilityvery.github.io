@@ -15,19 +15,19 @@
 
 
 
-<meta name="description" content="背景2012年买了一个4TB的WD Mybook Live Duo, 一个入门级的NAS. 从此开启了一发不可收拾的NAS折腾。起初是开启ssh模式，hack进去装各种软件，比如aria2. 可惜那时候Linux水平太次，折腾了几次把系统都搞乱了，还好没崩溃。
-后来不敢乱弄了，因为我开的是Raid0模式，怕数据弄丢。于是买了个树莓派挂上NFS管理。越用越发现这个方法不错，数据和系统分开，可以随便折">
+<meta name="description" content="(接上篇)
+自己的想法其实最初的定位应该就是文件服务器外加能跑虚拟机以便虚拟群晖。这样的话其实弄台Atom的板子就够了，而且功耗还很小。不过后来考虑到可能以后会兼一部分HTPC的功能，所以还是转向了桌面平台。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="想组个NAS">
-<meta property="og:url" content="http://newbilityvery.github.io/2016/07/06/nas-build/index.html">
+<meta property="og:title" content="NAS硬件配置">
+<meta property="og:url" content="http://newbilityvery.github.io/2016/07/06/nas-cfg/index.html">
 <meta property="og:site_name" content="Play & Go">
-<meta property="og:description" content="背景2012年买了一个4TB的WD Mybook Live Duo, 一个入门级的NAS. 从此开启了一发不可收拾的NAS折腾。起初是开启ssh模式，hack进去装各种软件，比如aria2. 可惜那时候Linux水平太次，折腾了几次把系统都搞乱了，还好没崩溃。
-后来不敢乱弄了，因为我开的是Raid0模式，怕数据弄丢。于是买了个树莓派挂上NFS管理。越用越发现这个方法不错，数据和系统分开，可以随便折">
-<meta property="og:updated_time" content="2016-07-06T02:34:37.427Z">
+<meta property="og:description" content="(接上篇)
+自己的想法其实最初的定位应该就是文件服务器外加能跑虚拟机以便虚拟群晖。这样的话其实弄台Atom的板子就够了，而且功耗还很小。不过后来考虑到可能以后会兼一部分HTPC的功能，所以还是转向了桌面平台。">
+<meta property="og:updated_time" content="2016-07-06T22:11:59.532Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="想组个NAS">
-<meta name="twitter:description" content="背景2012年买了一个4TB的WD Mybook Live Duo, 一个入门级的NAS. 从此开启了一发不可收拾的NAS折腾。起初是开启ssh模式，hack进去装各种软件，比如aria2. 可惜那时候Linux水平太次，折腾了几次把系统都搞乱了，还好没崩溃。
-后来不敢乱弄了，因为我开的是Raid0模式，怕数据弄丢。于是买了个树莓派挂上NFS管理。越用越发现这个方法不错，数据和系统分开，可以随便折">
+<meta name="twitter:title" content="NAS硬件配置">
+<meta name="twitter:description" content="(接上篇)
+自己的想法其实最初的定位应该就是文件服务器外加能跑虚拟机以便虚拟群晖。这样的话其实弄台Atom的板子就够了，而且功耗还很小。不过后来考虑到可能以后会兼一部分HTPC的功能，所以还是转向了桌面平台。">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -57,7 +57,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>想组个NAS | Play &amp; Go</title>
+<title>NAS硬件配置 | Play &amp; Go</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -248,11 +248,11 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
-      <div class="body-wrap"><article id="post-nas-build" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-nas-cfg" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/07/06/nas-build/" class="article-date">
-      <time datetime="2016-07-06T02:34:37.427Z" itemprop="datePublished">2016-07-06</time>
+      <a href="/2016/07/06/nas-cfg/" class="article-date">
+      <time datetime="2016-07-06T20:21:14.000Z" itemprop="datePublished">2016-07-06</time>
 </a>
 
 
@@ -267,7 +267,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      想组个NAS
+      NAS硬件配置
     </h1>
   
 
@@ -278,7 +278,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NAS/">NAS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PC/">PC</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DIY/">DIY</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NAS/">NAS</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -288,59 +288,68 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="u80CC_u666F"><a href="#u80CC_u666F" class="headerlink" title="背景"></a>背景</h1><p>2012年买了一个4TB的WD Mybook Live Duo, 一个入门级的NAS. 从此开启了一发不可收拾的NAS折腾。起初是开启ssh模式，hack进去装各种软件，比如aria2. 可惜那时候Linux水平太次，折腾了几次把系统都搞乱了，还好没崩溃。</p>
-<p>后来不敢乱弄了，因为我开的是Raid0模式，怕数据弄丢。于是买了个树莓派挂上NFS管理。越用越发现这个方法不错，数据和系统分开，可以随便折腾。在上面装了aria2，最常用的就是配合<a href="https://github.com/acgotaku/BaiduExporter" target="_blank" rel="external">百度云插件</a>下载：先利用百度云的离线功能抓到云端，再利用插件导出到aria2。这样速度基本能达到2MB/s。可惜在百度的压力下最近这个插件停止更新了，希望有大神能接棒。</p>
-<p>最近这4T硬盘终于快被塞满了。于是一颗心不免开始躁动起来，酝酿着升级下。</p>
+        <p>(<a href="/2016/07/06/nas-build/index.html">接上篇</a>)</p>
+<h1 id="u81EA_u5DF1_u7684_u60F3_u6CD5"><a href="#u81EA_u5DF1_u7684_u60F3_u6CD5" class="headerlink" title="自己的想法"></a>自己的想法</h1><p>其实最初的定位应该就是文件服务器外加能跑虚拟机以便虚拟群晖。这样的话其实弄台Atom的板子就够了，而且功耗还很小。不过后来考虑到可能以后会兼一部分HTPC的功能，所以还是转向了桌面平台。</p>
 <a id="more"></a>
-<h1 id="u786C_u4EF6_u65B9_u6848"><a href="#u786C_u4EF6_u65B9_u6848" class="headerlink" title="硬件方案"></a>硬件方案</h1><p>前前后后研究了大半年，考虑过以下几种方案：</p>
-<ol>
-<li>HP Gen8 等半成品</li>
-<li>群晖，QNAP等成品</li>
-<li>自己攒</li>
-</ol>
-<h2 id="u534A_u6210_u54C1"><a href="#u534A_u6210_u54C1" class="headerlink" title="半成品"></a>半成品</h2><p>看到<a href="http://www8.hp.com/us/en/products/proliant-servers/product-detail.html?oid=5379860" target="_blank" rel="external">HP Gen8</a>的外观时真是眼前一亮。无论做工还是功能都让我心动过好一阵子。美国亚马逊卖$400+，德国亚马逊算下来才$300多。差点就心头一热下单了。不过仔细考虑考虑发现还是有缺点的。</p>
-<ul>
-<li>主板定制，升级基本不可能。坏了也不好买。</li>
-<li>便宜的型号CPU太低端。</li>
-<li>自带内存太小。而ECC内存价格偏高。</li>
-<li>还有些其他在论坛上看到的。比如STAT5没法启动等小问题。</li>
-</ul>
-<p>总之，虽然看起来价格不错。不过想要得到过得去，好折腾的配置还要投入不少钱；并且折腾也少不了。</p>
-<h2 id="u6210_u54C1"><a href="#u6210_u54C1" class="headerlink" title="成品"></a>成品</h2><p>市场上比较火的成品NAS比如群晖，QNAP。好处是软件功能丰富，买来即插即用。不过：</p>
-<ul>
-<li>价格偏高。这个能理解，厂商开发软件也是要成本的嘛。</li>
-<li>硬件多数是定制，升级不方便。</li>
-</ul>
-<h2 id="DIY"><a href="#DIY" class="headerlink" title="DIY"></a>DIY</h2><p>最后选了DIY方案。首先好处有：</p>
-<ul>
-<li>所有硬件完全可以根据自己的需求选择。</li>
-<li>价格比上面的两个方案都便宜。</li>
-<li>不仅硬件，连软件和系统都能自己选。</li>
-</ul>
-<p>当然也不是没有缺点的：</p>
-<ul>
-<li>没技术支持。这个没啥关系。买了那么多电子产品除了质量问题基本没问过技术支持，都是上网搜索自己解决的。</li>
-<li>没上面两种方案的产品美观。找个合适的机箱花了我不少时间，后面会提到。</li>
-</ul>
-<h1 id="u8F6F_u4EF6_u65B9_u6848"><a href="#u8F6F_u4EF6_u65B9_u6848" class="headerlink" title="软件方案"></a>软件方案</h1><p>硬件定下了剩下的就是软件了。也考虑过几种方案：</p>
-<ol>
-<li>直接黑群晖</li>
-<li>主系统＋虚拟黑群晖</li>
-</ol>
-<h2 id="u9ED1_u7FA4_u6656"><a href="#u9ED1_u7FA4_u6656" class="headerlink" title="黑群晖"></a>黑群晖</h2><p>其实唯一看上黑群晖的就是他的Photo Station功能。目前我没发现有什么免费的软件能替代它。毕竟下电影或其他的事情我可以做，但是照片管理却是全家人都要参与的。之前就是简单的SMB共享，管理和上传下载都不方便，即使是局域网里查看都感觉慢。</p>
-<p>不过黑群晖做主系统还是很快被自己否决了。主要还是不稳定，作为主系统太危险了。这样做还不如直接买台群晖省心。</p>
-<h2 id="u4E3B_u7CFB_u7EDF"><a href="#u4E3B_u7CFB_u7EDF" class="headerlink" title="主系统"></a>主系统</h2><p>网上一般也就是</p>
-<ul>
-<li>Windows based</li>
-<li>Linux based</li>
-<li>FreeNAS等以freeBSD为基础的系统</li>
-</ul>
-<p>Windows/Windows server基本不考虑。从来没用过它做server。。。</p>
-<p>FreeNAS装在虚拟机上试了下，感觉freeBSD和linux区别还是有一些的。很多操作都和linux不一样。而且里面那个Jail虚拟机貌似还挺折腾。所以也只好作罢。</p>
-<p>剩下就是linux了，既免费，又比较熟悉。开始想着装个Ubuntu server算了，不过中间发现了<a href="http://www.openmediavault.org" target="_blank" rel="external">OpenMediaVault</a>这个NAS系统。好像是原FreeNAS的成员创建的。于是也在虚拟机上装起来试了一下，感觉还不错。同样有web GUI，还是基于debian。用起来熟悉得多，里面的虚拟机插件也很容易使用。</p>
-<p>所以，基本就定下来用OMV ＋ 虚拟机黑群晖了。照片文件夹用NFS挂载到群晖里用Photo Station管理。</p>
-<p>（接下来准备写写硬件配置，还有软件安装等。看看什么时候有时间了。）</p>
-<!-- 参考链接 -->
+<h2 id="u673A_u7BB1"><a href="#u673A_u7BB1" class="headerlink" title="机箱"></a>机箱</h2><p>这个是想了最久的，我想要一台尽量小的然后又能塞下4块3.5寸硬盘和至少一个2.5寸盘的，外观还不要太难看。说实在的，美国这些东西种类太匮乏了，价格也不算便宜，跟天朝没法比啊。<br>找来找去， 在美国能找到的型号里，考虑过下面一些：</p>
+<h3 id="Lian_Li_Q25"><a href="#Lian_Li_Q25" class="headerlink" title="Lian Li Q25"></a>Lian Li Q25</h3><p><a href="http://www.lian-li.com/en/dt_portfolio/pc-q25/" target="_blank" rel="external">这个机箱</a>其实设计得很不错，能放至少6块3.5寸盘。不过这样以来导致机箱偏大，对我来说有点多余了。我感觉我放4x8T（逐次添加）应该够用很久了。而且价格也不算便宜，不带电源120刀。</p>
+<h3 id="U-NAS_NSC-400"><a href="#U-NAS_NSC-400" class="headerlink" title="U-NAS NSC-400"></a>U-NAS NSC-400</h3><p><a href="http://www.u-nas.com/xcart/product.php?productid=17610" target="_blank" rel="external">这个</a>倒是够小，差点就买了。不过淘宝一搜发现是国产的。倒不是嫌弃这个，主要是发现国内才卖700块，美国要150刀，忒不爽了。（不过从民族大义来说，倒是比联想有良心。）</p>
+<h3 id="IN_WIN_MS04"><a href="#IN_WIN_MS04" class="headerlink" title="IN WIN MS04"></a>IN WIN MS04</h3><p>最终选了<a href="http://www.in-win.com.tw/Server/zh/goods.php?act=view&amp;id=IW-MS04" target="_blank" rel="external">这个</a>。某天研究Gen8换主板可行性的时候无意中发现的。明显的仿Gen8设计，不过却是用mini-iTX板。这样就能用普通的主板了。有人说样子不好看，我感觉倒还行，而且这东西扔角落里也不会天天看。129刀含电源，感觉比上面两个都值。</p>
+<h2 id="u5E73_u53F0"><a href="#u5E73_u53F0" class="headerlink" title="平台"></a>平台</h2><p>我这人就喜欢新东西，所以选择skylake平台。</p>
+<h3 id="CPU"><a href="#CPU" class="headerlink" title="CPU"></a>CPU</h3><p>开始想上i3，结果发现居然要100多刀！考虑再三，选择了奔腾G4400。好像能硬解4K，做HTPC应该够了吧。（最后会不会这么用都不知道呢。）无非就是没有超线程，好像也没哪里一定需要这个功能。</p>
+<h3 id="u4E3B_u677F"><a href="#u4E3B_u677F" class="headerlink" title="主板"></a>主板</h3><p>其实没啥好说的，mini-iTX的板子就那么几个。开始考虑华擎的，但上面只有4个SATA口。算上PCIE转接板的钱还不如直接买个贵点的带6个SATA口的。还省下个pcie槽。</p>
+<h3 id="u5185_u5B58"><a href="#u5185_u5B58" class="headerlink" title="内存"></a>内存</h3><p>不懂。看着打折买了个感觉算便宜的。</p>
+<h3 id="SSD"><a href="#SSD" class="headerlink" title="SSD"></a>SSD</h3><p>本来想弄个MLC，不过发现现在市面上大多数都是TLC。MLC的价格升高了。所以也是看打折买了个三星的。</p>
+<h2 id="u5176_u4ED6"><a href="#u5176_u4ED6" class="headerlink" title="其他"></a>其他</h2><h3 id="u6570_u636E_u76D8"><a href="#u6570_u636E_u76D8" class="headerlink" title="数据盘"></a>数据盘</h3><p>还没买，等打折再看看吧。</p>
+<h1 id="u6700_u7EC8_u7684_u914D_u7F6E"><a href="#u6700_u7EC8_u7684_u914D_u7F6E" class="headerlink" title="最终的配置"></a>最终的配置</h1><p>最终买的配置如下。数据盘还没买，因为想买8T的。一次性投资太大，先组起来挂NFS熟悉熟悉。</p>
+<table>
+<thead>
+<tr>
+<th>种类</th>
+<th>型号</th>
+<th>价格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>主板</td>
+<td>Gigabyte GA-H170N-WIFI</td>
+<td>$</td>
+</tr>
+<tr>
+<td>CPU</td>
+<td>Intel Pentium G4400</td>
+<td>$</td>
+</tr>
+<tr>
+<td>内存</td>
+<td></td>
+<td>$</td>
+</tr>
+<tr>
+<td>硬盘</td>
+<td>Samsung Evo750 240G</td>
+<td>$</td>
+</tr>
+<tr>
+<td>机箱</td>
+<td>In Win MS04</td>
+<td>$</td>
+</tr>
+<tr>
+<td>合计</td>
+<td></td>
+<td>$</td>
+</tr>
+</tbody>
+</table>
+<p>这算是从头到尾完全自己配自己装的第一台PC了。平时对这些产品的价格还有品牌之间的一些特点都不是很了解，所以可能不是配得非常平衡。尤其是内存和硬盘，基本就是认价格和牌子的熟悉程度。现在想想SSD买得可能有点草率，不过即使现在也不知道应该买哪个。</p>
+<h1 id="u88C5_u673A_u8FC7_u7A0B"><a href="#u88C5_u673A_u8FC7_u7A0B" class="headerlink" title="装机过程"></a>装机过程</h1><p>上一次装机还是10年前。不过隔了这么久发现其实过程也很简单，买来照插槽插就好了。没几根线所以走线什么的也算了。中间碰到了几个小问题。</p>
+<h2 id="u673A_u7BB1_u98CE_u6247"><a href="#u673A_u7BB1_u98CE_u6247" class="headerlink" title="机箱风扇"></a>机箱风扇</h2><p>貌似MS04的机箱风扇不是和主板SYS FAN口兼容的，插上去不转。后来琢磨了半天，插背板的接口就能用了。查了说明书，针脚定义和CPU风扇的一样。</p>
+<h2 id="u4E3B_u677FSATA_u53E3"><a href="#u4E3B_u677FSATA_u53E3" class="headerlink" title="主板SATA口"></a>主板SATA口</h2><p>应该是自己SB，插拔太暴力，把一个SATA口的塑料整个扒下来了。后面勉强装了回去，居然还能用。</p>
+<h1 id="u6700_u7EC8_u6548_u679C"><a href="#u6700_u7EC8_u6548_u679C" class="headerlink" title="最终效果"></a>最终效果</h1><p>放几张图吧。总之就这么放角落里去了。</p>
+<h1 id="MISC"><a href="#MISC" class="headerlink" title="MISC"></a>MISC</h1><p>下次再写点装系统装软件的过程。</p>
+<!-- 链接放下面 -->
 
       
     </div>
@@ -349,13 +358,13 @@
   
     
     <div class="copyright">
-        <p><span>Title:</span><a href="/2016/07/06/nas-build/">想组个NAS</a></p>
+        <p><span>Title:</span><a href="/2016/07/06/nas-cfg/">NAS硬件配置</a></p>
         <p><span>Author:</span><a href="/" title="Back to Homepage">Vivid</a></p>
-        <p><span>Created:</span>2016-07-06, 05:34:37</p>
-        <p><span>Updated:</span>2016-07-06, 05:34:37</p>
+        <p><span>Created:</span>2016-07-06, 23:21:14</p>
+        <p><span>Updated:</span>2016-07-07, 01:11:59</p>
         <p>
-            <span>Full URL:</span><a class="post-url" href="/2016/07/06/nas-build/" title="想组个NAS">http://newbilityvery.github.io/2016/07/06/nas-build/</a>
-            <span class="copy-path" data-clipboard-text="From http://newbilityvery.github.io/2016/07/06/nas-build/　　By Vivid" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <span>Full URL:</span><a class="post-url" href="/2016/07/06/nas-cfg/" title="NAS硬件配置">http://newbilityvery.github.io/2016/07/06/nas-cfg/</a>
+            <span class="copy-path" data-clipboard-text="From http://newbilityvery.github.io/2016/07/06/nas-cfg/　　By Vivid" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -367,16 +376,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/07/06/nas-cfg/">
-                    NAS硬件配置
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2015/05/11/test-post/">
-                    第一篇
+                <a href="/2016/07/06/nas-build/">
+                    想组个NAS
                 </a>
             </div>
         
@@ -388,7 +391,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#u80CC_u666F"><span class="toc-number">1.</span> <span class="toc-text">背景</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u786C_u4EF6_u65B9_u6848"><span class="toc-number">2.</span> <span class="toc-text">硬件方案</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#u534A_u6210_u54C1"><span class="toc-number">2.1.</span> <span class="toc-text">半成品</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u6210_u54C1"><span class="toc-number">2.2.</span> <span class="toc-text">成品</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DIY"><span class="toc-number">2.3.</span> <span class="toc-text">DIY</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u8F6F_u4EF6_u65B9_u6848"><span class="toc-number">3.</span> <span class="toc-text">软件方案</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#u9ED1_u7FA4_u6656"><span class="toc-number">3.1.</span> <span class="toc-text">黑群晖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u4E3B_u7CFB_u7EDF"><span class="toc-number">3.2.</span> <span class="toc-text">主系统</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#u81EA_u5DF1_u7684_u60F3_u6CD5"><span class="toc-number">1.</span> <span class="toc-text">自己的想法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#u673A_u7BB1"><span class="toc-number">1.1.</span> <span class="toc-text">机箱</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Lian_Li_Q25"><span class="toc-number">1.1.1.</span> <span class="toc-text">Lian Li Q25</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#U-NAS_NSC-400"><span class="toc-number">1.1.2.</span> <span class="toc-text">U-NAS NSC-400</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IN_WIN_MS04"><span class="toc-number">1.1.3.</span> <span class="toc-text">IN WIN MS04</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u5E73_u53F0"><span class="toc-number">1.2.</span> <span class="toc-text">平台</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CPU"><span class="toc-number">1.2.1.</span> <span class="toc-text">CPU</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u4E3B_u677F"><span class="toc-number">1.2.2.</span> <span class="toc-text">主板</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u5185_u5B58"><span class="toc-number">1.2.3.</span> <span class="toc-text">内存</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SSD"><span class="toc-number">1.2.4.</span> <span class="toc-text">SSD</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u5176_u4ED6"><span class="toc-number">1.3.</span> <span class="toc-text">其他</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#u6570_u636E_u76D8"><span class="toc-number">1.3.1.</span> <span class="toc-text">数据盘</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u6700_u7EC8_u7684_u914D_u7F6E"><span class="toc-number">2.</span> <span class="toc-text">最终的配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u88C5_u673A_u8FC7_u7A0B"><span class="toc-number">3.</span> <span class="toc-text">装机过程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#u673A_u7BB1_u98CE_u6247"><span class="toc-number">3.1.</span> <span class="toc-text">机箱风扇</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u4E3B_u677FSATA_u53E3"><span class="toc-number">3.2.</span> <span class="toc-text">主板SATA口</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u6700_u7EC8_u6548_u679C"><span class="toc-number">4.</span> <span class="toc-text">最终效果</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MISC"><span class="toc-number">5.</span> <span class="toc-text">MISC</span></a></li></ol>
         
     </div>
     <style>
@@ -418,8 +421,8 @@
     <div id="disqus_thread"></div>
     <script>
         var disqus_config = function(){
-            this.page.url = 'http://newbilityvery.github.io/2016/07/06/nas-build/';
-            this.page.identifier = '2016/07/06/nas-build/';
+            this.page.url = 'http://newbilityvery.github.io/2016/07/06/nas-cfg/';
+            this.page.identifier = '2016/07/06/nas-cfg/';
         };
         var loadComment = function(){
             var d = document, s = d.createElement('script');
@@ -441,15 +444,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/07/06/nas-cfg/" title="Pre: NAS硬件配置">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
         
 
         <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2015/05/11/test-post/" title="Next: 第一篇">
+            <a href="/2016/07/06/nas-build/" title="Next: 想组个NAS">
                 <i class="fa fa-angle-right"></i>
             </a>
         
