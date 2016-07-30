@@ -179,7 +179,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DIY/">DIY</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DSM/">DSM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NAS/">NAS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OMV/">OMV</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenMediaVault/">OpenMediaVault</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PC/">PC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/local/">local</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/post/">post</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/synology/">synology</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/test/">test</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/群晖/">群晖</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DIY/">DIY</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DSM/">DSM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/">English</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NAS/">NAS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OMV/">OMV</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenMediaVault/">OpenMediaVault</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PC/">PC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vim/">Vim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/local/">local</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/post/">post</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/synology/">synology</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/test/">test</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/verilog/">verilog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/群晖/">群晖</a></li></ul>
                     </div>
                 </section>
                 
@@ -365,6 +365,12 @@
 
     <nav id="article-nav">
         
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/07/08/vim-env-for-rtl-coding/">
+                    My Vim Setting for verilog/systemverilog coding (Keep updating)
+                </a>
+            </div>
+        
         
             <div id="article-nav-older" class="article-nav-title">
                 <a href="/2016/07/06/nas-cfg/">
@@ -433,7 +439,9 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
+            <a href="/2016/07/08/vim-env-for-rtl-coding/" title="Pre: My Vim Setting for verilog/systemverilog coding (Keep updating)">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
 
         <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
@@ -445,7 +453,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/07/07/nas-sys-install/">NAS系统及软件安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/06/nas-cfg/">NAS硬件配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/06/nas-build/">想组个NAS</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/11/test-post/">第一篇</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/07/08/vim-env-for-rtl-coding/">My Vim Setting for verilog/systemverilog coding (Keep updating)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/07/nas-sys-install/">NAS系统及软件安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/06/nas-cfg/">NAS硬件配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/06/nas-build/">想组个NAS</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/11/test-post/">第一篇</a></li></ul>
 
 
 
@@ -469,18 +477,16 @@
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >Site Visitors: 
-                            <span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
                 
-                    <span>, </span>
+                    <span>| </span>
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit">Page Hits: 
-                            <span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
@@ -522,6 +528,23 @@
         }
     
 </script>
+
+    <script>
+        var originTitle = document.title;
+        var titleTime;
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
+                clearTimeout(titleTime);
+            }
+            else {
+                document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
+                titleTime = setTimeout(function() {
+                    document.title = originTitle;
+                }, 2000);
+            }
+        })
+    </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
