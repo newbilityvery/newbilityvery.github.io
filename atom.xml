@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://newbilityvery.github.io/"/>
-  <updated>2016-07-30T01:56:05.136Z</updated>
+  <updated>2016-07-30T02:01:31.773Z</updated>
   <id>http://newbilityvery.github.io/</id>
   
   <author>
@@ -20,20 +20,20 @@
     <link href="http://newbilityvery.github.io/2016/07/08/vim-env-for-rtl-coding/"/>
     <id>http://newbilityvery.github.io/2016/07/08/vim-env-for-rtl-coding/</id>
     <published>2016-07-08T16:07:38.000Z</published>
-    <updated>2016-07-30T01:56:05.136Z</updated>
+    <updated>2016-07-30T02:01:31.773Z</updated>
     
     <content type="html"><![CDATA[<!--
 original: true
 catagory:
 -->
 <h1 id="Backgroud"><a href="#Backgroud" class="headerlink" title="Backgroud"></a>Backgroud</h1><p>I started using Vim after I started working in the first company, because the platform was linux and we were not allowed to install any software. Actually it is not bad, I improved my Linux skill a lot on this limited platform.</p>
+<a id="more"></a>
 <p>I had tried to learn to use Vim before, but it was hard for me to remember the key and to switch between these modes. The platform forced me to use it and I started with using only basic operations like <code>i</code>, <code>Esc</code>, <code>:w</code> and so on. After figuring out the rule, it was easier and easier to learn new operations.</p>
 <!--
 Now I cannot leave vim to edit a file. Every time I start using an IDE for some reason, the first thing is looking for its vim plugin. 
 -->
 <p>Most of the time, I am coding in verilog. It doesn’t like other software languages which have plenty of excellent tools/IDE, free or not free, to use. Even the EDA tools that cost millions of dollors a year, the edit function of them is still bad. (Maybe they were not designed as an code editors.)</p>
 <p>However, after 4 years tweaking, I think I have a relatively handy environment to code in verilog, at least for myself.</p>
-<a id="more"></a>
 <h1 id="Tools"><a href="#Tools" class="headerlink" title="Tools"></a>Tools</h1><h2 id="Emacs_verilog_mode"><a href="#Emacs_verilog_mode" class="headerlink" title="Emacs verilog mode"></a>Emacs verilog mode</h2><p>Yes, it is Emacs. I don’t know how to use Emacs but its verilog-mode is amazing! It saves my life in top-level module connection and many tedious signal name typing. Check <a href="http://www.veripool.org/wiki/verilog-mode" target="_blank" rel="external">here</a> if you are not familar with it.</p>
 <p>Even we can use the <code>*</code> in systemverilog, I still prefer the traditional way. Because it is easier to debug on the source code when signals are given explicitly.</p>
 <p>Although it is an Emacs function, we can call it using <code>emacs --batch {filenames...} -f verilog-batch-indent</code>; and there is also a <a href="http://www.vim.org/scripts/script.php?script_id=1875" target="_blank" rel="external">plugin</a> to run it directly in Vim.</p>
@@ -96,12 +96,6 @@ original: true
 catagory:
 --&gt;
 &lt;h1 id=&quot;Backgroud&quot;&gt;&lt;a href=&quot;#Backgroud&quot; class=&quot;headerlink&quot; title=&quot;Backgroud&quot;&gt;&lt;/a&gt;Backgroud&lt;/h1&gt;&lt;p&gt;I started using Vim after I started working in the first company, because the platform was linux and we were not allowed to install any software. Actually it is not bad, I improved my Linux skill a lot on this limited platform.&lt;/p&gt;
-&lt;p&gt;I had tried to learn to use Vim before, but it was hard for me to remember the key and to switch between these modes. The platform forced me to use it and I started with using only basic operations like &lt;code&gt;i&lt;/code&gt;, &lt;code&gt;Esc&lt;/code&gt;, &lt;code&gt;:w&lt;/code&gt; and so on. After figuring out the rule, it was easier and easier to learn new operations.&lt;/p&gt;
-&lt;!--
-Now I cannot leave vim to edit a file. Every time I start using an IDE for some reason, the first thing is looking for its vim plugin. 
---&gt;
-&lt;p&gt;Most of the time, I am coding in verilog. It doesn’t like other software languages which have plenty of excellent tools/IDE, free or not free, to use. Even the EDA tools that cost millions of dollors a year, the edit function of them is still bad. (Maybe they were not designed as an code editors.)&lt;/p&gt;
-&lt;p&gt;However, after 4 years tweaking, I think I have a relatively handy environment to code in verilog, at least for myself.&lt;/p&gt;
     
     </summary>
     
