@@ -29,6 +29,7 @@
 <meta name="twitter:title" content="NAS硬件配置">
 <meta name="twitter:description" content="(接上篇)
 自己的想法其实最初的定位应该就是文件服务器外加能跑虚拟机以便虚拟群晖。这样的话其实弄台Atom的板子就够了，而且功耗还很小。不过后来考虑到可能以后会兼一部分HTPC的功能，所以还是转向了桌面平台。">
+<meta name="twitter:image" content="http://ww4.sinaimg.cn/mw690/9feba6cdgw1f67vpi0s6ej21kw0w0tqv.jpg">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -51,7 +52,7 @@
     <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
 
 
-<link rel="stylesheet" href="/css/style.css" type="text/css">
+<link rel="stylesheet" href="/css/style.css">
 
 
 
@@ -172,7 +173,7 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa GitHub" href="/#" title="GitHub"></a>
+                                <a class="fa GitHub" href="#" title="GitHub"></a>
                             
                                 <a class="fa RSS" href="/atom.xml" title="RSS"></a>
                             
@@ -248,7 +249,7 @@
             <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa GitHub" target="_blank" href="/#" title="GitHub"></a>
+                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
                             
                                 <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
                             
@@ -299,19 +300,19 @@
       
           
         <p>(<a href="/2016/07/06/nas-build/index.html">接上篇</a>)</p>
-<h1 id="u81EA_u5DF1_u7684_u60F3_u6CD5"><a href="#u81EA_u5DF1_u7684_u60F3_u6CD5" class="headerlink" title="自己的想法"></a>自己的想法</h1><p>其实最初的定位应该就是文件服务器外加能跑虚拟机以便虚拟群晖。这样的话其实弄台Atom的板子就够了，而且功耗还很小。不过后来考虑到可能以后会兼一部分HTPC的功能，所以还是转向了桌面平台。</p>
+<h1 id="自己的想法"><a href="#自己的想法" class="headerlink" title="自己的想法"></a>自己的想法</h1><p>其实最初的定位应该就是文件服务器外加能跑虚拟机以便虚拟群晖。这样的话其实弄台Atom的板子就够了，而且功耗还很小。不过后来考虑到可能以后会兼一部分HTPC的功能，所以还是转向了桌面平台。</p>
 <a id="more"></a>
-<h2 id="u673A_u7BB1"><a href="#u673A_u7BB1" class="headerlink" title="机箱"></a>机箱</h2><p>这个是想了最久的，我想要一台尽量小的然后又能塞下4块3.5寸硬盘和至少一个2.5寸盘的，外观还不要太难看。说实在的，美国这些东西种类太匮乏了，价格也不算便宜，跟天朝没法比啊。<br>找来找去， 在美国能找到的型号里，考虑过下面一些：</p>
-<h3 id="Lian_Li_Q25"><a href="#Lian_Li_Q25" class="headerlink" title="Lian Li Q25"></a>Lian Li Q25</h3><p><a href="http://www.lian-li.com/en/dt_portfolio/pc-q25/" target="_blank" rel="external">这个机箱</a>其实设计得很不错，能放至少6块3.5寸盘。不过这样以来导致机箱偏大，对我来说有点多余了。我感觉我放4x8T（逐次添加）应该够用很久了。而且价格也不算便宜，不带电源120刀。</p>
-<h3 id="U-NAS_NSC-400"><a href="#U-NAS_NSC-400" class="headerlink" title="U-NAS NSC-400"></a>U-NAS NSC-400</h3><p><a href="http://www.u-nas.com/xcart/product.php?productid=17610" target="_blank" rel="external">这个</a>倒是够小，差点就买了。不过淘宝一搜发现是国产的。倒不是嫌弃这个，主要是发现国内才卖700块，美国要150刀，忒不爽了。（不过从民族大义来说，倒是比联想有良心。）</p>
-<h3 id="IN_WIN_MS04"><a href="#IN_WIN_MS04" class="headerlink" title="IN WIN MS04"></a>IN WIN MS04</h3><p>最终选了<a href="http://www.in-win.com.tw/Server/zh/goods.php?act=view&amp;id=IW-MS04" target="_blank" rel="external">这个</a>。某天研究Gen8换主板可行性的时候无意中发现的。明显的仿Gen8设计，不过却是用mini-iTX板。这样就能用普通的主板了。有人说样子不好看，我感觉倒还行，而且这东西扔角落里也不会天天看。129刀含电源，感觉比上面两个都值。</p>
-<h2 id="u5E73_u53F0"><a href="#u5E73_u53F0" class="headerlink" title="平台"></a>平台</h2><p>我这人就喜欢新东西，所以选择skylake平台。</p>
+<h2 id="机箱"><a href="#机箱" class="headerlink" title="机箱"></a>机箱</h2><p>这个是想了最久的，我想要一台尽量小的然后又能塞下4块3.5寸硬盘和至少一个2.5寸盘的，外观还不要太难看。说实在的，美国这些东西种类太匮乏了，价格也不算便宜，跟天朝没法比啊。<br>找来找去， 在美国能找到的型号里，考虑过下面一些：</p>
+<h3 id="Lian-Li-Q25"><a href="#Lian-Li-Q25" class="headerlink" title="Lian Li Q25"></a>Lian Li Q25</h3><p><a href="http://www.lian-li.com/en/dt_portfolio/pc-q25/" target="_blank" rel="external">这个机箱</a>其实设计得很不错，能放至少6块3.5寸盘。不过这样以来导致机箱偏大，对我来说有点多余了。我感觉我放4x8T（逐次添加）应该够用很久了。而且价格也不算便宜，不带电源120刀。</p>
+<h3 id="U-NAS-NSC-400"><a href="#U-NAS-NSC-400" class="headerlink" title="U-NAS NSC-400"></a>U-NAS NSC-400</h3><p><a href="http://www.u-nas.com/xcart/product.php?productid=17610" target="_blank" rel="external">这个</a>倒是够小，差点就买了。不过淘宝一搜发现是国产的。倒不是嫌弃这个，主要是发现国内才卖700块，美国要150刀，忒不爽了。（不过从民族大义来说，倒是比联想有良心。）</p>
+<h3 id="IN-WIN-MS04"><a href="#IN-WIN-MS04" class="headerlink" title="IN WIN MS04"></a>IN WIN MS04</h3><p>最终选了<a href="http://www.in-win.com.tw/Server/zh/goods.php?act=view&amp;id=IW-MS04" target="_blank" rel="external">这个</a>。某天研究Gen8换主板可行性的时候无意中发现的。明显的仿Gen8设计，不过却是用mini-iTX板。这样就能用普通的主板了。有人说样子不好看，我感觉倒还行，而且这东西扔角落里也不会天天看。129刀含电源，感觉比上面两个都值。</p>
+<h2 id="平台"><a href="#平台" class="headerlink" title="平台"></a>平台</h2><p>我这人就喜欢新东西，所以选择skylake平台。</p>
 <h3 id="CPU"><a href="#CPU" class="headerlink" title="CPU"></a>CPU</h3><p>开始想上i3，结果发现居然要100多刀！考虑再三，选择了奔腾G4400。好像能硬解4K，做HTPC应该够了吧。（最后会不会这么用都不知道呢。）无非就是没有超线程，好像也没哪里一定需要这个功能。</p>
-<h3 id="u4E3B_u677F"><a href="#u4E3B_u677F" class="headerlink" title="主板"></a>主板</h3><p>其实没啥好说的，mini-iTX的板子就那么几个。开始考虑华擎的，但上面只有4个SATA口。算上PCIE转接板的钱还不如直接买个贵点的带6个SATA口的。还省下个pcie槽。</p>
-<h3 id="u5185_u5B58"><a href="#u5185_u5B58" class="headerlink" title="内存"></a>内存</h3><p>不懂。看着打折买了个感觉算便宜的。</p>
+<h3 id="主板"><a href="#主板" class="headerlink" title="主板"></a>主板</h3><p>其实没啥好说的，mini-iTX的板子就那么几个。开始考虑华擎的，但上面只有4个SATA口。算上PCIE转接板的钱还不如直接买个贵点的带6个SATA口的。还省下个pcie槽。</p>
+<h3 id="内存"><a href="#内存" class="headerlink" title="内存"></a>内存</h3><p>不懂。看着打折买了个感觉算便宜的。</p>
 <h3 id="SSD"><a href="#SSD" class="headerlink" title="SSD"></a>SSD</h3><p>本来想弄个MLC，不过发现现在市面上大多数都是TLC。MLC的价格升高了。所以也是看打折买了个三星的。</p>
-<h2 id="u5176_u4ED6"><a href="#u5176_u4ED6" class="headerlink" title="其他"></a>其他</h2><h3 id="u6570_u636E_u76D8"><a href="#u6570_u636E_u76D8" class="headerlink" title="数据盘"></a>数据盘</h3><p>还没买，等打折再看看吧。</p>
-<h1 id="u6700_u7EC8_u7684_u914D_u7F6E"><a href="#u6700_u7EC8_u7684_u914D_u7F6E" class="headerlink" title="最终的配置"></a>最终的配置</h1><p>最终买的配置如下。数据盘还没买，因为想买8T的。一次性投资太大，先组起来挂NFS熟悉熟悉。</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="数据盘"><a href="#数据盘" class="headerlink" title="数据盘"></a>数据盘</h3><p>还没买，等打折再看看吧。</p>
+<h1 id="最终的配置"><a href="#最终的配置" class="headerlink" title="最终的配置"></a>最终的配置</h1><p>最终买的配置如下。数据盘还没买，因为想买8T的。一次性投资太大，先组起来挂NFS熟悉熟悉。</p>
 <table>
 <thead>
 <tr>
@@ -354,10 +355,10 @@
 </tbody>
 </table>
 <p>其实算下来也不算很便宜。如果想省的话，主板和SSD都能省一些；内存可以配8G；还有可以考虑换上一代的平台。如果在天朝，机箱也有更便宜的。不过这也算是从头到尾完全自己配自己装的第一台PC了。平时对这些产品的价格还有品牌之间的一些特点都不是很了解，所以可能不是配得非常平衡。尤其是内存和硬盘，基本就是认价格和牌子的熟悉程度。现在想想SSD买得可能有点草率，不过即使现在也不知道应该买哪个。</p>
-<h1 id="u88C5_u673A_u8FC7_u7A0B"><a href="#u88C5_u673A_u8FC7_u7A0B" class="headerlink" title="装机过程"></a>装机过程</h1><p>上一次装机还是10年前。不过隔了这么久发现其实过程也很简单，买来照插槽插就好了。没几根线所以走线什么的也算了。中间碰到了几个小问题。</p>
-<h2 id="u673A_u7BB1_u98CE_u6247"><a href="#u673A_u7BB1_u98CE_u6247" class="headerlink" title="机箱风扇"></a>机箱风扇</h2><p>貌似MS04的机箱风扇不是和主板SYS FAN口兼容的，插上去不转。后来琢磨了半天，插背板的接口就能用了。查了说明书，针脚定义和CPU风扇的一样。</p>
-<h2 id="u4E3B_u677FSATA_u53E3"><a href="#u4E3B_u677FSATA_u53E3" class="headerlink" title="主板SATA口"></a>主板SATA口</h2><p>应该是自己SB，插拔太暴力，把一个SATA口的塑料整个扒下来了。后面勉强装了回去，居然还能用。</p>
-<h1 id="u6700_u7EC8_u6548_u679C"><a href="#u6700_u7EC8_u6548_u679C" class="headerlink" title="最终效果"></a>最终效果</h1><p><del>有时间放几张图吧。总之装好后就这么放角落里去了。</del></p>
+<h1 id="装机过程"><a href="#装机过程" class="headerlink" title="装机过程"></a>装机过程</h1><p>上一次装机还是10年前。不过隔了这么久发现其实过程也很简单，买来照插槽插就好了。没几根线所以走线什么的也算了。中间碰到了几个小问题。</p>
+<h2 id="机箱风扇"><a href="#机箱风扇" class="headerlink" title="机箱风扇"></a>机箱风扇</h2><p>貌似MS04的机箱风扇不是和主板SYS FAN口兼容的，插上去不转。后来琢磨了半天，插背板的接口就能用了。查了说明书，针脚定义和CPU风扇的一样。</p>
+<h2 id="主板SATA口"><a href="#主板SATA口" class="headerlink" title="主板SATA口"></a>主板SATA口</h2><p>应该是自己SB，插拔太暴力，把一个SATA口的塑料整个扒下来了。后面勉强装了回去，居然还能用。</p>
+<h1 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h1><p><del>有时间放几张图吧。总之装好后就这么放角落里去了。</del></p>
 <p><strong>Update 7/26/2016:</strong><br>数据盘也买了，随便照了几张。。。</p>
 <p>WD Red 8TB，$320左右买的。今天一看又有新折扣，309刀，晕。</p>
 <p><img src="http://ww4.sinaimg.cn/mw690/9feba6cdgw1f67vpi0s6ej21kw0w0tqv.jpg" alt="装好后的样子1"></p>
@@ -411,7 +412,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#u81EA_u5DF1_u7684_u60F3_u6CD5"><span class="toc-number">1.</span> <span class="toc-text">自己的想法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#u673A_u7BB1"><span class="toc-number">1.1.</span> <span class="toc-text">机箱</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Lian_Li_Q25"><span class="toc-number">1.1.1.</span> <span class="toc-text">Lian Li Q25</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#U-NAS_NSC-400"><span class="toc-number">1.1.2.</span> <span class="toc-text">U-NAS NSC-400</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IN_WIN_MS04"><span class="toc-number">1.1.3.</span> <span class="toc-text">IN WIN MS04</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u5E73_u53F0"><span class="toc-number">1.2.</span> <span class="toc-text">平台</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CPU"><span class="toc-number">1.2.1.</span> <span class="toc-text">CPU</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u4E3B_u677F"><span class="toc-number">1.2.2.</span> <span class="toc-text">主板</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u5185_u5B58"><span class="toc-number">1.2.3.</span> <span class="toc-text">内存</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SSD"><span class="toc-number">1.2.4.</span> <span class="toc-text">SSD</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u5176_u4ED6"><span class="toc-number">1.3.</span> <span class="toc-text">其他</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#u6570_u636E_u76D8"><span class="toc-number">1.3.1.</span> <span class="toc-text">数据盘</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u6700_u7EC8_u7684_u914D_u7F6E"><span class="toc-number">2.</span> <span class="toc-text">最终的配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u88C5_u673A_u8FC7_u7A0B"><span class="toc-number">3.</span> <span class="toc-text">装机过程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#u673A_u7BB1_u98CE_u6247"><span class="toc-number">3.1.</span> <span class="toc-text">机箱风扇</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u4E3B_u677FSATA_u53E3"><span class="toc-number">3.2.</span> <span class="toc-text">主板SATA口</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u6700_u7EC8_u6548_u679C"><span class="toc-number">4.</span> <span class="toc-text">最终效果</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MISC"><span class="toc-number">5.</span> <span class="toc-text">MISC</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#自己的想法"><span class="toc-number">1.</span> <span class="toc-text">自己的想法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#机箱"><span class="toc-number">1.1.</span> <span class="toc-text">机箱</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Lian-Li-Q25"><span class="toc-number">1.1.1.</span> <span class="toc-text">Lian Li Q25</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#U-NAS-NSC-400"><span class="toc-number">1.1.2.</span> <span class="toc-text">U-NAS NSC-400</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IN-WIN-MS04"><span class="toc-number">1.1.3.</span> <span class="toc-text">IN WIN MS04</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#平台"><span class="toc-number">1.2.</span> <span class="toc-text">平台</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CPU"><span class="toc-number">1.2.1.</span> <span class="toc-text">CPU</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#主板"><span class="toc-number">1.2.2.</span> <span class="toc-text">主板</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#内存"><span class="toc-number">1.2.3.</span> <span class="toc-text">内存</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SSD"><span class="toc-number">1.2.4.</span> <span class="toc-text">SSD</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他"><span class="toc-number">1.3.</span> <span class="toc-text">其他</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据盘"><span class="toc-number">1.3.1.</span> <span class="toc-text">数据盘</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#最终的配置"><span class="toc-number">2.</span> <span class="toc-text">最终的配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#装机过程"><span class="toc-number">3.</span> <span class="toc-text">装机过程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#机箱风扇"><span class="toc-number">3.1.</span> <span class="toc-text">机箱风扇</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主板SATA口"><span class="toc-number">3.2.</span> <span class="toc-text">主板SATA口</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#最终效果"><span class="toc-number">4.</span> <span class="toc-text">最终效果</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MISC"><span class="toc-number">5.</span> <span class="toc-text">MISC</span></a></li></ol>
         
     </div>
     <style>
@@ -553,23 +554,6 @@
         }
     
 </script>
-
-    <script>
-        var originTitle = document.title;
-        var titleTime;
-        document.addEventListener("visibilitychange", function() {
-            if (document.hidden) {
-                document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
-                clearTimeout(titleTime);
-            }
-            else {
-                document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
-                titleTime = setTimeout(function() {
-                    document.title = originTitle;
-                }, 2000);
-            }
-        })
-    </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>

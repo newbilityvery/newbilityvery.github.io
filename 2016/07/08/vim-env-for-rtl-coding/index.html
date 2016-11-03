@@ -15,28 +15,16 @@
 
 
 
-<meta name="description" content="&amp;lt;!--
-original: true
-catagory:
---&amp;gt;
-BackgroudI started using Vim after I started working in the first company, because the platform was linux and we were not allowed to install any software. Actually it">
+<meta name="description" content="BackgroudI started using Vim after I started working in the first company, because the platform was linux and we were not allowed to install any software. Actually it is not bad, I improved my Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="My Vim Setting for verilog/systemverilog coding (Keep updating)">
 <meta property="og:url" content="http://newbilityvery.github.io/2016/07/08/vim-env-for-rtl-coding/index.html">
 <meta property="og:site_name" content="Play & Go">
-<meta property="og:description" content="&amp;lt;!--
-original: true
-catagory:
---&amp;gt;
-BackgroudI started using Vim after I started working in the first company, because the platform was linux and we were not allowed to install any software. Actually it">
+<meta property="og:description" content="BackgroudI started using Vim after I started working in the first company, because the platform was linux and we were not allowed to install any software. Actually it is not bad, I improved my Linux">
 <meta property="og:updated_time" content="2016-08-01T21:48:51.180Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="My Vim Setting for verilog/systemverilog coding (Keep updating)">
-<meta name="twitter:description" content="&amp;lt;!--
-original: true
-catagory:
---&amp;gt;
-BackgroudI started using Vim after I started working in the first company, because the platform was linux and we were not allowed to install any software. Actually it">
+<meta name="twitter:description" content="BackgroudI started using Vim after I started working in the first company, because the platform was linux and we were not allowed to install any software. Actually it is not bad, I improved my Linux">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -59,7 +47,7 @@ BackgroudI started using Vim after I started working in the first company, becau
     <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
 
 
-<link rel="stylesheet" href="/css/style.css" type="text/css">
+<link rel="stylesheet" href="/css/style.css">
 
 
 
@@ -180,7 +168,7 @@ BackgroudI started using Vim after I started working in the first company, becau
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa GitHub" href="/#" title="GitHub"></a>
+                                <a class="fa GitHub" href="#" title="GitHub"></a>
                             
                                 <a class="fa RSS" href="/atom.xml" title="RSS"></a>
                             
@@ -256,7 +244,7 @@ BackgroudI started using Vim after I started working in the first company, becau
             <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa GitHub" target="_blank" href="/#" title="GitHub"></a>
+                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
                             
                                 <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
                             
@@ -318,7 +306,7 @@ Now I cannot leave vim to edit a file. Every time I start using an IDE for some 
 -->
 <p>Most of the time, I am coding in verilog. It doesn’t like other software languages which have plenty of excellent tools/IDE, free or not free, to use. Even the EDA tools that cost millions of dollors a year, the edit function of them is still bad. (Maybe they were not designed as an code editors.)</p>
 <p>However, after 4 years tweaking, I think I have a relatively handy environment to code in verilog, at least for myself.</p>
-<h1 id="Tools"><a href="#Tools" class="headerlink" title="Tools"></a>Tools</h1><h2 id="Emacs_verilog_mode"><a href="#Emacs_verilog_mode" class="headerlink" title="Emacs verilog mode"></a>Emacs verilog mode</h2><p>Yes, it is Emacs. I don’t know how to use Emacs but its verilog-mode is amazing! It saves my life in top-level module connection and many tedious signal name typing. Check <a href="http://www.veripool.org/wiki/verilog-mode" target="_blank" rel="external">here</a> if you are not familar with it.</p>
+<h1 id="Tools"><a href="#Tools" class="headerlink" title="Tools"></a>Tools</h1><h2 id="Emacs-verilog-mode"><a href="#Emacs-verilog-mode" class="headerlink" title="Emacs verilog mode"></a>Emacs verilog mode</h2><p>Yes, it is Emacs. I don’t know how to use Emacs but its verilog-mode is amazing! It saves my life in top-level module connection and many tedious signal name typing. Check <a href="http://www.veripool.org/wiki/verilog-mode" target="_blank" rel="external">here</a> if you are not familar with it.</p>
 <p>Even we can use the <code>*</code> in systemverilog, I still prefer the traditional way. Because it is easier to debug on the source code when signals are given explicitly.</p>
 <p>Although it is an Emacs function, we can call it using <code>emacs --batch {filenames...} -f verilog-batch-auto</code>; and there is also a <a href="http://www.vim.org/scripts/script.php?script_id=1875" target="_blank" rel="external">plugin</a> to run it directly in Vim.</p>
 <p>Some example:</p>
@@ -326,25 +314,25 @@ Now I cannot leave vim to edit a file. Every time I start using an IDE for some 
 <li><strong>Argument lists</strong></li>
 </ul>
 <p>Before:</p>
-<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">module</span> mod0(<span class="comment">/*autoarg*/</span>);</span><br><span class="line">  <span class="keyword">input</span> a;</span><br><span class="line">  <span class="keyword">input</span> b;</span><br><span class="line">  <span class="keyword">output</span> c;</span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">module</span> mod0(<span class="comment">/*autoarg*/</span>);</div><div class="line">  <span class="keyword">input</span> a;</div><div class="line">  <span class="keyword">input</span> b;</div><div class="line">  <span class="keyword">output</span> c;</div><div class="line"><span class="keyword">endmodule</span></div></pre></td></tr></table></figure>
 <p>After processed by verilog-mode:</p>
-<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">module</span> mod0(<span class="comment">/*autoarg*/</span></span><br><span class="line">   <span class="comment">// Outputs</span></span><br><span class="line">   c,</span><br><span class="line">   <span class="comment">// Inputs</span></span><br><span class="line">   a, b</span><br><span class="line">   );</span><br><span class="line">  <span class="keyword">input</span> a;</span><br><span class="line">  <span class="keyword">input</span> b;</span><br><span class="line">  <span class="keyword">output</span> c;</span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">module</span> mod0(<span class="comment">/*autoarg*/</span></div><div class="line">   <span class="comment">// Outputs</span></div><div class="line">   c,</div><div class="line">   <span class="comment">// Inputs</span></div><div class="line">   a, b</div><div class="line">   );</div><div class="line">  <span class="keyword">input</span> a;</div><div class="line">  <span class="keyword">input</span> b;</div><div class="line">  <span class="keyword">output</span> c;</div><div class="line"><span class="keyword">endmodule</span></div></pre></td></tr></table></figure>
 <ul>
 <li><strong>Instantiations</strong><br>Before:</li>
 </ul>
-<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// mod0.v</span></span><br><span class="line"><span class="keyword">module</span> mod0 (i_0, o_0);</span><br><span class="line">  <span class="keyword">input</span> i_0;</span><br><span class="line">  <span class="keyword">output</span> [<span class="number">31</span><span class="keyword">:</span><span class="number">0</span>] o_0;</span><br><span class="line"><span class="keyword">endmodule</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// top0.v</span></span><br><span class="line"><span class="keyword">module</span> top0 (<span class="comment">/*autoarg*/</span>);</span><br><span class="line">  <span class="comment">/*autoinput*/</span></span><br><span class="line">  <span class="comment">/*autooutput*/</span></span><br><span class="line"></span><br><span class="line">  mod0 u_mod0 (<span class="comment">/*autoinst*/</span>);</span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// mod0.v</span></div><div class="line"><span class="keyword">module</span> mod0 (i_0, o_0);</div><div class="line">  <span class="keyword">input</span> i_0;</div><div class="line">  <span class="keyword">output</span> [<span class="number">31</span>:<span class="number">0</span>] o_0;</div><div class="line"><span class="keyword">endmodule</span></div><div class="line"></div><div class="line"><span class="comment">// top0.v</span></div><div class="line"><span class="keyword">module</span> top0 (<span class="comment">/*autoarg*/</span>);</div><div class="line">  <span class="comment">/*autoinput*/</span></div><div class="line">  <span class="comment">/*autooutput*/</span></div><div class="line"></div><div class="line">  mod0 u_mod0 (<span class="comment">/*autoinst*/</span>);</div><div class="line"><span class="keyword">endmodule</span></div></pre></td></tr></table></figure>
 <p><code>top0.v</code> after processed by verilog-mode:</p>
-<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// top0.v</span></span><br><span class="line"><span class="keyword">module</span> top0 (<span class="comment">/*autoarg*/</span></span><br><span class="line">   <span class="comment">// Outputs</span></span><br><span class="line">   o_0,</span><br><span class="line">   <span class="comment">// Inputs</span></span><br><span class="line">   i_0</span><br><span class="line">   );</span><br><span class="line">  <span class="comment">/*autoinput*/</span></span><br><span class="line">  <span class="comment">// Beginning of automatic inputs (from unused autoinst inputs)</span></span><br><span class="line">  <span class="keyword">input</span>                 i_0;                    <span class="comment">// To u_mod0 of mod0.v</span></span><br><span class="line">  <span class="comment">// End of automatics</span></span><br><span class="line">  <span class="comment">/*autooutput*/</span></span><br><span class="line">  <span class="comment">// Beginning of automatic outputs (from unused autoinst outputs)</span></span><br><span class="line">  <span class="keyword">output</span> [<span class="number">31</span><span class="keyword">:</span><span class="number">0</span>]         o_0;                    <span class="comment">// From u_mod0 of mod0.v</span></span><br><span class="line">  <span class="comment">// End of automatics</span></span><br><span class="line"></span><br><span class="line">  mod0 u_mod0 (<span class="comment">/*autoinst*/</span></span><br><span class="line">               <span class="comment">// Outputs</span></span><br><span class="line">               <span class="typename">.o_0</span>                     (o_0[<span class="number">31</span><span class="keyword">:</span><span class="number">0</span>]),</span><br><span class="line">               <span class="comment">// Inputs</span></span><br><span class="line">               <span class="typename">.i_0</span>                     (i_0));</span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// top0.v</span></div><div class="line"><span class="keyword">module</span> top0 (<span class="comment">/*autoarg*/</span></div><div class="line">   <span class="comment">// Outputs</span></div><div class="line">   o_0,</div><div class="line">   <span class="comment">// Inputs</span></div><div class="line">   i_0</div><div class="line">   );</div><div class="line">  <span class="comment">/*autoinput*/</span></div><div class="line">  <span class="comment">// Beginning of automatic inputs (from unused autoinst inputs)</span></div><div class="line">  <span class="keyword">input</span>                 i_0;                    <span class="comment">// To u_mod0 of mod0.v</span></div><div class="line">  <span class="comment">// End of automatics</span></div><div class="line">  <span class="comment">/*autooutput*/</span></div><div class="line">  <span class="comment">// Beginning of automatic outputs (from unused autoinst outputs)</span></div><div class="line">  <span class="keyword">output</span> [<span class="number">31</span>:<span class="number">0</span>]         o_0;                    <span class="comment">// From u_mod0 of mod0.v</span></div><div class="line">  <span class="comment">// End of automatics</span></div><div class="line"></div><div class="line">  mod0 u_mod0 (<span class="comment">/*autoinst*/</span></div><div class="line">               <span class="comment">// Outputs</span></div><div class="line">               <span class="variable">.o_0</span>                     (o_0[<span class="number">31</span>:<span class="number">0</span>]),</div><div class="line">               <span class="comment">// Inputs</span></div><div class="line">               <span class="variable">.i_0</span>                     (i_0));</div><div class="line"><span class="keyword">endmodule</span></div></pre></td></tr></table></figure>
 <p>Check <a href="http://www.veripool.org/projects/verilog-mode/wiki/Verilog-mode_veritedium" target="_blank" rel="external">here</a> for more features:</p>
 <!-- links -->
 <h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><p>The vim in my company is an old one(7.3), I managed to compile the latest one in my home dir. Therefore I can use the new features such as relative line number and install more new plugins without compatibility issue. (I learnt compiling code here; previously I only know <code>apt-get</code>.)</p>
-<h2 id="Vim_Plugins"><a href="#Vim_Plugins" class="headerlink" title="Vim Plugins"></a>Vim Plugins</h2><p>These are the plugins which are useful in verilog coding.</p>
+<h2 id="Vim-Plugins"><a href="#Vim-Plugins" class="headerlink" title="Vim Plugins"></a>Vim Plugins</h2><p>These are the plugins which are useful in verilog coding.</p>
 <ul>
 <li><a href="https://github.com/VundleVim/Vundle.vim" target="_blank" rel="external"><strong>Vundle</strong></a></li>
 </ul>
 <p><a href="https://github.com/VundleVim/Vundle.vim" target="_blank" rel="external">Vundle</a> is a plugin manager for vim. Just put the github repo in your <code>.vimrc</code> to install and manage them.</p>
 <p>Example:</p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">" Use the name directly from http://vim-scripts.org/vim/scripts.html</span><br><span class="line"></span>Plugin <span class="string">'vividchalk.vim'</span></span><br><span class="line"></span><br><span class="line"><span class="string">" Plugin from Github repo</span><br><span class="line"></span>Plugin <span class="string">'tomasr/molokai'</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">" Use the name directly from http://vim-scripts.org/vim/scripts.html</span></div><div class="line">Plugin <span class="string">'vividchalk.vim'</span></div><div class="line"></div><div class="line"><span class="comment">" Plugin from Github repo</span></div><div class="line">Plugin <span class="string">'tomasr/molokai'</span></div></pre></td></tr></table></figure>
 <!-- links -->
 <hr>
 <ul>
@@ -365,7 +353,7 @@ Now I cannot leave vim to edit a file. Every time I start using an IDE for some 
 <!--
 * **incsearch**
 -->
-<h2 id="other_thoughts"><a href="#other_thoughts" class="headerlink" title="other thoughts"></a>other thoughts</h2><p>There are some things that I would like to give a try if I have time.</p>
+<h2 id="other-thoughts"><a href="#other-thoughts" class="headerlink" title="other thoughts"></a>other thoughts</h2><p>There are some things that I would like to give a try if I have time.</p>
 <ul>
 <li>cscope</li>
 <li>snippet</li>
@@ -418,7 +406,7 @@ Now I cannot leave vim to edit a file. Every time I start using an IDE for some 
     <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Backgroud"><span class="toc-number">1.</span> <span class="toc-text">Backgroud</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Tools"><span class="toc-number">2.</span> <span class="toc-text">Tools</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Emacs_verilog_mode"><span class="toc-number">2.1.</span> <span class="toc-text">Emacs verilog mode</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vim"><span class="toc-number">2.2.</span> <span class="toc-text">Vim</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vim_Plugins"><span class="toc-number">2.3.</span> <span class="toc-text">Vim Plugins</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#other_thoughts"><span class="toc-number">2.4.</span> <span class="toc-text">other thoughts</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Backgroud"><span class="toc-number">1.</span> <span class="toc-text">Backgroud</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Tools"><span class="toc-number">2.</span> <span class="toc-text">Tools</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Emacs-verilog-mode"><span class="toc-number">2.1.</span> <span class="toc-text">Emacs verilog mode</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vim"><span class="toc-number">2.2.</span> <span class="toc-text">Vim</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vim-Plugins"><span class="toc-number">2.3.</span> <span class="toc-text">Vim Plugins</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#other-thoughts"><span class="toc-number">2.4.</span> <span class="toc-text">other thoughts</span></a></li></ol></li></ol>
         
     </div>
     <style>
@@ -560,23 +548,6 @@ Now I cannot leave vim to edit a file. Every time I start using an IDE for some 
         }
     
 </script>
-
-    <script>
-        var originTitle = document.title;
-        var titleTime;
-        document.addEventListener("visibilitychange", function() {
-            if (document.hidden) {
-                document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
-                clearTimeout(titleTime);
-            }
-            else {
-                document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
-                titleTime = setTimeout(function() {
-                    document.title = originTitle;
-                }, 2000);
-            }
-        })
-    </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>

@@ -50,7 +50,7 @@
     <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
 
 
-<link rel="stylesheet" href="/css/style.css" type="text/css">
+<link rel="stylesheet" href="/css/style.css">
 
 
 
@@ -171,7 +171,7 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa GitHub" href="/#" title="GitHub"></a>
+                                <a class="fa GitHub" href="#" title="GitHub"></a>
                             
                                 <a class="fa RSS" href="/atom.xml" title="RSS"></a>
                             
@@ -247,7 +247,7 @@
             <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa GitHub" target="_blank" href="/#" title="GitHub"></a>
+                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
                             
                                 <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
                             
@@ -297,17 +297,17 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="u80CC_u666F"><a href="#u80CC_u666F" class="headerlink" title="背景"></a>背景</h1><p>2012年买了一个4TB的WD Mybook Live Duo, 一个入门级的NAS. 从此开启了一发不可收拾的NAS折腾。起初是开启ssh模式，hack进去装各种软件，比如aria2. 可惜那时候Linux水平太次，折腾了几次把系统都搞乱了，还好没崩溃。</p>
+        <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>2012年买了一个4TB的WD Mybook Live Duo, 一个入门级的NAS. 从此开启了一发不可收拾的NAS折腾。起初是开启ssh模式，hack进去装各种软件，比如aria2. 可惜那时候Linux水平太次，折腾了几次把系统都搞乱了，还好没崩溃。</p>
 <p>后来不敢乱弄了，因为我开的是Raid0模式，怕数据弄丢。于是买了个树莓派挂上NFS管理。越用越发现这个方法不错，数据和系统分开，可以随便折腾。在上面装了aria2，最常用的就是配合<a href="https://github.com/acgotaku/BaiduExporter" target="_blank" rel="external">百度云插件</a>下载：先利用百度云的离线功能抓到云端，再利用插件导出到aria2。这样速度基本能达到2MB/s。可惜在百度的压力下最近这个插件停止更新了，希望有大神能接棒。</p>
 <p>最近这4T硬盘终于快被塞满了。于是一颗心不免开始躁动起来，酝酿着升级下。</p>
 <a id="more"></a>
-<h1 id="u786C_u4EF6_u65B9_u6848"><a href="#u786C_u4EF6_u65B9_u6848" class="headerlink" title="硬件方案"></a>硬件方案</h1><p>前前后后研究了大半年，考虑过以下几种方案：</p>
+<h1 id="硬件方案"><a href="#硬件方案" class="headerlink" title="硬件方案"></a>硬件方案</h1><p>前前后后研究了大半年，考虑过以下几种方案：</p>
 <ol>
 <li>HP Gen8 等半成品</li>
 <li>群晖，QNAP等成品</li>
 <li>自己攒</li>
 </ol>
-<h2 id="u534A_u6210_u54C1"><a href="#u534A_u6210_u54C1" class="headerlink" title="半成品"></a>半成品</h2><p>看到<a href="http://www8.hp.com/us/en/products/proliant-servers/product-detail.html?oid=5379860" target="_blank" rel="external">HP Gen8</a>的外观时真是眼前一亮。无论做工还是功能都让我心动过好一阵子。美国亚马逊卖$400+，德国亚马逊算下来才$300多。差点就心头一热下单了。不过仔细考虑考虑发现还是有缺点的。</p>
+<h2 id="半成品"><a href="#半成品" class="headerlink" title="半成品"></a>半成品</h2><p>看到<a href="http://www8.hp.com/us/en/products/proliant-servers/product-detail.html?oid=5379860" target="_blank" rel="external">HP Gen8</a>的外观时真是眼前一亮。无论做工还是功能都让我心动过好一阵子。美国亚马逊卖$400+，德国亚马逊算下来才$300多。差点就心头一热下单了。不过仔细考虑考虑发现还是有缺点的。</p>
 <ul>
 <li>主板定制，升级基本不可能。坏了也不好买。</li>
 <li>便宜的型号CPU太低端。</li>
@@ -315,7 +315,7 @@
 <li>还有些其他在论坛上看到的。比如STAT5没法启动等小问题。</li>
 </ul>
 <p>总之，虽然看起来价格不错。不过想要得到过得去，好折腾的配置还要投入不少钱；并且折腾也少不了。</p>
-<h2 id="u6210_u54C1"><a href="#u6210_u54C1" class="headerlink" title="成品"></a>成品</h2><p>市场上比较火的成品NAS比如群晖，QNAP。好处是软件功能丰富，买来即插即用。不过：</p>
+<h2 id="成品"><a href="#成品" class="headerlink" title="成品"></a>成品</h2><p>市场上比较火的成品NAS比如群晖，QNAP。好处是软件功能丰富，买来即插即用。不过：</p>
 <ul>
 <li>价格偏高。这个能理解，厂商开发软件也是要成本的嘛。</li>
 <li>硬件多数是定制，升级不方便。</li>
@@ -331,14 +331,14 @@
 <li>没技术支持。这个没啥关系。买了那么多电子产品除了质量问题基本没问过技术支持，都是上网搜索自己解决的。</li>
 <li>没上面两种方案的产品美观。找个合适的机箱花了我不少时间，后面会提到。</li>
 </ul>
-<h1 id="u8F6F_u4EF6_u65B9_u6848"><a href="#u8F6F_u4EF6_u65B9_u6848" class="headerlink" title="软件方案"></a>软件方案</h1><p>硬件定下了剩下的就是软件了。也考虑过几种方案：</p>
+<h1 id="软件方案"><a href="#软件方案" class="headerlink" title="软件方案"></a>软件方案</h1><p>硬件定下了剩下的就是软件了。也考虑过几种方案：</p>
 <ol>
 <li>直接黑群晖</li>
 <li>主系统＋虚拟黑群晖</li>
 </ol>
-<h2 id="u9ED1_u7FA4_u6656"><a href="#u9ED1_u7FA4_u6656" class="headerlink" title="黑群晖"></a>黑群晖</h2><p>其实唯一看上黑群晖的就是他的Photo Station功能。目前我没发现有什么免费的软件能替代它。毕竟下电影或其他的事情我可以做，但是照片管理却是全家人都要参与的。之前就是简单的SMB共享，管理和上传下载都不方便，即使是局域网里查看都感觉慢。</p>
+<h2 id="黑群晖"><a href="#黑群晖" class="headerlink" title="黑群晖"></a>黑群晖</h2><p>其实唯一看上黑群晖的就是他的Photo Station功能。目前我没发现有什么免费的软件能替代它。毕竟下电影或其他的事情我可以做，但是照片管理却是全家人都要参与的。之前就是简单的SMB共享，管理和上传下载都不方便，即使是局域网里查看都感觉慢。</p>
 <p>不过黑群晖做主系统还是很快被自己否决了。主要还是不稳定，作为主系统太危险了。这样做还不如直接买台群晖省心。</p>
-<h2 id="u4E3B_u7CFB_u7EDF"><a href="#u4E3B_u7CFB_u7EDF" class="headerlink" title="主系统"></a>主系统</h2><p>网上一般也就是</p>
+<h2 id="主系统"><a href="#主系统" class="headerlink" title="主系统"></a>主系统</h2><p>网上一般也就是</p>
 <ul>
 <li>Windows based</li>
 <li>Linux based</li>
@@ -397,7 +397,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#u80CC_u666F"><span class="toc-number">1.</span> <span class="toc-text">背景</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u786C_u4EF6_u65B9_u6848"><span class="toc-number">2.</span> <span class="toc-text">硬件方案</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#u534A_u6210_u54C1"><span class="toc-number">2.1.</span> <span class="toc-text">半成品</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u6210_u54C1"><span class="toc-number">2.2.</span> <span class="toc-text">成品</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DIY"><span class="toc-number">2.3.</span> <span class="toc-text">DIY</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u8F6F_u4EF6_u65B9_u6848"><span class="toc-number">3.</span> <span class="toc-text">软件方案</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#u9ED1_u7FA4_u6656"><span class="toc-number">3.1.</span> <span class="toc-text">黑群晖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u4E3B_u7CFB_u7EDF"><span class="toc-number">3.2.</span> <span class="toc-text">主系统</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#背景"><span class="toc-number">1.</span> <span class="toc-text">背景</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#硬件方案"><span class="toc-number">2.</span> <span class="toc-text">硬件方案</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#半成品"><span class="toc-number">2.1.</span> <span class="toc-text">半成品</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#成品"><span class="toc-number">2.2.</span> <span class="toc-text">成品</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DIY"><span class="toc-number">2.3.</span> <span class="toc-text">DIY</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#软件方案"><span class="toc-number">3.</span> <span class="toc-text">软件方案</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#黑群晖"><span class="toc-number">3.1.</span> <span class="toc-text">黑群晖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主系统"><span class="toc-number">3.2.</span> <span class="toc-text">主系统</span></a></li></ol></li></ol>
         
     </div>
     <style>
@@ -539,23 +539,6 @@
         }
     
 </script>
-
-    <script>
-        var originTitle = document.title;
-        var titleTime;
-        document.addEventListener("visibilitychange", function() {
-            if (document.hidden) {
-                document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
-                clearTimeout(titleTime);
-            }
-            else {
-                document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
-                titleTime = setTimeout(function() {
-                    document.title = originTitle;
-                }, 2000);
-            }
-        })
-    </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>

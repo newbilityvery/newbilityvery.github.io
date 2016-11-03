@@ -47,7 +47,7 @@
     <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
 
 
-<link rel="stylesheet" href="/css/style.css" type="text/css">
+<link rel="stylesheet" href="/css/style.css">
 
 
 
@@ -168,7 +168,7 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa GitHub" href="/#" title="GitHub"></a>
+                                <a class="fa GitHub" href="#" title="GitHub"></a>
                             
                                 <a class="fa RSS" href="/atom.xml" title="RSS"></a>
                             
@@ -244,7 +244,7 @@
             <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa GitHub" target="_blank" href="/#" title="GitHub"></a>
+                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
                             
                                 <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
                             
@@ -294,9 +294,9 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="u51C6_u5907"><a href="#u51C6_u5907" class="headerlink" title="准备"></a>准备</h1><p>没啥准备的，就是一个U盘用来安装OMV。还有就是相关文件。</p>
+        <h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p>没啥准备的，就是一个U盘用来安装OMV。还有就是相关文件。</p>
 <a id="more"></a>
-<h2 id="u76F8_u5173_u4E0B_u8F7D"><a href="#u76F8_u5173_u4E0B_u8F7D" class="headerlink" title="相关下载"></a>相关下载</h2><ol>
+<h2 id="相关下载"><a href="#相关下载" class="headerlink" title="相关下载"></a>相关下载</h2><ol>
 <li><p>OMV <a href="http://www.openmediavault.org/" target="_blank" rel="external">http://www.openmediavault.org/</a><br>官网下载。</p>
 </li>
 <li><p>黑群晖 <a href="http://xpenology.me/downloads/" target="_blank" rel="external">http://xpenology.me/downloads/</a><br>我下载了<strong>DSM 5.2-5644 DS3615xs</strong>和相应的引导盘iso<strong>XPEnoboot 5.2-5644.5 DS3615xs</strong>。</p>
@@ -304,39 +304,39 @@
 <li><p>unetbootin <a href="https://unetbootin.github.io" target="_blank" rel="external">https://unetbootin.github.io</a><br>用来制作OMV引导安装U盘。</p>
 </li>
 </ol>
-<h1 id="u5B89_u88C5"><a href="#u5B89_u88C5" class="headerlink" title="安装"></a>安装</h1><p>总的来说很简单，按照提示操作即可。</p>
-<h2 id="u5B89_u88C5OMV"><a href="#u5B89_u88C5OMV" class="headerlink" title="安装OMV"></a>安装OMV</h2><p>U盘引导后按提示操作。参考了下面一些站点：</p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>总的来说很简单，按照提示操作即可。</p>
+<h2 id="安装OMV"><a href="#安装OMV" class="headerlink" title="安装OMV"></a>安装OMV</h2><p>U盘引导后按提示操作。参考了下面一些站点：</p>
 <ol>
 <li><a href="http://post.smzdm.com/p/277302/" target="_blank" rel="external">http://post.smzdm.com/p/277302/</a> </li>
 <li><a href="http://songming.me/" target="_blank" rel="external">http://songming.me/</a></li>
 </ol>
-<h3 id="u9047_u5230_u7684_u95EE_u9898"><a href="#u9047_u5230_u7684_u95EE_u9898" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><p>装好后设置虚拟机插件的时候遇到了个问题，没法创建共享文件夹！仔细研究发现原来OMV不能在系统分区创建共享文件夹。脑子一抽用mint linux的live U盘引导然后用gparted调整了分区。重点是没想清楚，给OMV的/分区留了100G。过了一两天才反应过来：什么都不能放还留那么大干啥？不过还好没插数据盘，到时候再重新装吧。我看留个10G都嫌多。</p>
-<h1 id="u8BBE_u7F6E"><a href="#u8BBE_u7F6E" class="headerlink" title="设置"></a>设置</h1><p>由于还没放数据盘，先只是装了插件。简单设置了下。</p>
-<h2 id="u65B0_u5EFA_u5171_u4EAB_u6587_u4EF6_u5939"><a href="#u65B0_u5EFA_u5171_u4EAB_u6587_u4EF6_u5939" class="headerlink" title="新建共享文件夹"></a>新建共享文件夹</h2><p>由于系统分区不能建立共享文件夹，记得多分一个区。参考<a href="http://songming.me/shared-folders.html" target="_blank" rel="external">这篇文章</a>：</p>
-<h2 id="u5B89_u88C5OMV_u63D2_u4EF6"><a href="#u5B89_u88C5OMV_u63D2_u4EF6" class="headerlink" title="安装OMV插件"></a>安装OMV插件</h2><p>先装第三方插件源OMV-Extras.org。然后激活Docker和virtualbox。最后在Plugin里面找到相应插件直接安装。<br>参考：</p>
+<h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><p>装好后设置虚拟机插件的时候遇到了个问题，没法创建共享文件夹！仔细研究发现原来OMV不能在系统分区创建共享文件夹。脑子一抽用mint linux的live U盘引导然后用gparted调整了分区。重点是没想清楚，给OMV的/分区留了100G。过了一两天才反应过来：什么都不能放还留那么大干啥？不过还好没插数据盘，到时候再重新装吧。我看留个10G都嫌多。</p>
+<h1 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h1><p>由于还没放数据盘，先只是装了插件。简单设置了下。</p>
+<h2 id="新建共享文件夹"><a href="#新建共享文件夹" class="headerlink" title="新建共享文件夹"></a>新建共享文件夹</h2><p>由于系统分区不能建立共享文件夹，记得多分一个区。参考<a href="http://songming.me/shared-folders.html" target="_blank" rel="external">这篇文章</a>：</p>
+<h2 id="安装OMV插件"><a href="#安装OMV插件" class="headerlink" title="安装OMV插件"></a>安装OMV插件</h2><p>先装第三方插件源OMV-Extras.org。然后激活Docker和virtualbox。最后在Plugin里面找到相应插件直接安装。<br>参考：</p>
 <ol>
 <li><a href="http://songming.me/virtualbox.html" target="_blank" rel="external">http://songming.me/virtualbox.html</a></li>
 </ol>
-<h2 id="u865A_u62DF_u673A_u5B89_u88C5_u7FA4_u6656"><a href="#u865A_u62DF_u673A_u5B89_u88C5_u7FA4_u6656" class="headerlink" title="虚拟机安装群晖"></a>虚拟机安装群晖</h2><p>过程同样也是参考网上的文章，比如：</p>
+<h2 id="虚拟机安装群晖"><a href="#虚拟机安装群晖" class="headerlink" title="虚拟机安装群晖"></a>虚拟机安装群晖</h2><p>过程同样也是参考网上的文章，比如：</p>
 <ol>
 <li><a href="http://www.nasyun.com/forum.php?mod=viewthread&amp;tid=25075" target="_blank" rel="external">http://www.nasyun.com/forum.php?mod=viewthread&amp;tid=25075</a></li>
 <li><a href="http://www.360doc.com/content/15/0204/18/365619_446270627.shtml" target="_blank" rel="external">http://www.360doc.com/content/15/0204/18/365619_446270627.shtml</a></li>
 </ol>
-<h1 id="u7FA4_u6656_u7684_u7B80_u5355_u8BBE_u7F6E"><a href="#u7FA4_u6656_u7684_u7B80_u5355_u8BBE_u7F6E" class="headerlink" title="群晖的简单设置"></a>群晖的简单设置</h1><p>由于目前只要Photo Station, 进去后就干了下面的事情。</p>
-<h2 id="u65B0_u5EFA_u50A8_u5B58_u7A7A_u95F4"><a href="#u65B0_u5EFA_u50A8_u5B58_u7A7A_u95F4" class="headerlink" title="新建储存空间"></a>新建储存空间</h2><p>先建立储存空间，DSM可以使用系统分区所在的盘。（据说会在每个盘上都放上系统。）</p>
-<h2 id="NFS__u6302_u8F7D"><a href="#NFS__u6302_u8F7D" class="headerlink" title="NFS 挂载"></a>NFS 挂载</h2><p>先挂载已有的WD my book live duo的NFS试试。</p>
+<h1 id="群晖的简单设置"><a href="#群晖的简单设置" class="headerlink" title="群晖的简单设置"></a>群晖的简单设置</h1><p>由于目前只要Photo Station, 进去后就干了下面的事情。</p>
+<h2 id="新建储存空间"><a href="#新建储存空间" class="headerlink" title="新建储存空间"></a>新建储存空间</h2><p>先建立储存空间，DSM可以使用系统分区所在的盘。（据说会在每个盘上都放上系统。）</p>
+<h2 id="NFS-挂载"><a href="#NFS-挂载" class="headerlink" title="NFS 挂载"></a>NFS 挂载</h2><p>先挂载已有的WD my book live duo的NFS试试。</p>
 <p>开始也是根据一些文章（<a href="http://blog.bbzhh.com/index.php/archives/110.html" target="_blank" rel="external">比如这个</a>）直接改了/etc/rc。后面又看了<a href="http://www.cjqbz.com/2959.html" target="_blank" rel="external">一篇文章</a>发现其实可以在webGUI添加用户脚本。感觉还是后者安全些。</p>
 <p>当然前面的文章提到了用户脚本方案可能导致Video Station功能不正常。不过目前还没这个需求，遇到问题再说吧。</p>
 <!-- Links -->
-<h2 id="u63D2_u4EF6_u5B89_u88C5"><a href="#u63D2_u4EF6_u5B89_u88C5" class="headerlink" title="插件安装"></a>插件安装</h2><p>直接在插件中心安装了Photo Station。把原来的photo文件夹挂在APP默认的photo文件夹下。过了一会儿就能在WebGUI看到开始索引照片了，CPU使用率瞬间蹦到100%。</p>
+<h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><p>直接在插件中心安装了Photo Station。把原来的photo文件夹挂在APP默认的photo文件夹下。过了一会儿就能在WebGUI看到开始索引照片了，CPU使用率瞬间蹦到100%。</p>
 <p>如果没有自动开始索引，也可以去Photo Station设置里手动强制重新索引。</p>
-<h1 id="u5173_u4E8E_u9ED1_u88D9_u6D17_u767D"><a href="#u5173_u4E8E_u9ED1_u88D9_u6D17_u767D" class="headerlink" title="关于黑裙洗白"></a>关于黑裙洗白</h1><p>开始是动过洗白的念头的，因为虚拟机修改MAC地址简直太容易了，后面想想还是放弃了。虽然黑裙存在的一个理由据说是用了开源的代码但本身却不开源，但是白裙毕竟也是需要厂商的服务器资源的支持。自己暂时也没有其他外网需求，只是想在家庭局域网里方便地看看照片罢了。不过其实自己这么做也就是让自己不要有太多负罪感而已。</p>
-<h1 id="u540E_u7EED_u8BA1_u5212"><a href="#u540E_u7EED_u8BA1_u5212" class="headerlink" title="后续计划"></a>后续计划</h1><p>之前这些就算是预先的试验了。准备在插数据盘之前再重新装一遍。</p>
+<h1 id="关于黑裙洗白"><a href="#关于黑裙洗白" class="headerlink" title="关于黑裙洗白"></a>关于黑裙洗白</h1><p>开始是动过洗白的念头的，因为虚拟机修改MAC地址简直太容易了，后面想想还是放弃了。虽然黑裙存在的一个理由据说是用了开源的代码但本身却不开源，但是白裙毕竟也是需要厂商的服务器资源的支持。自己暂时也没有其他外网需求，只是想在家庭局域网里方便地看看照片罢了。不过其实自己这么做也就是让自己不要有太多负罪感而已。</p>
+<h1 id="后续计划"><a href="#后续计划" class="headerlink" title="后续计划"></a>后续计划</h1><p>之前这些就算是预先的试验了。准备在插数据盘之前再重新装一遍。</p>
 <ol>
 <li>记得再分区时不用留那么多给系统。</li>
 <li>群晖挂载NFS用WebGUI的用户脚本功能。</li>
 </ol>
-<h2 id="Docker_u63D2_u4EF6"><a href="#Docker_u63D2_u4EF6" class="headerlink" title="Docker插件"></a>Docker插件</h2><p>OMV和DSM里面都有Docker插件。试过DSM的，易用性很好。OMV的貌似有点复杂。先研究下看看能否搞定，毕竟虚拟机里面感觉性能有损失。实在搞不定也只好用DSM里面的了，参考资料比较多。</p>
+<h2 id="Docker插件"><a href="#Docker插件" class="headerlink" title="Docker插件"></a>Docker插件</h2><p>OMV和DSM里面都有Docker插件。试过DSM的，易用性很好。OMV的貌似有点复杂。先研究下看看能否搞定，毕竟虚拟机里面感觉性能有损失。实在搞不定也只好用DSM里面的了，参考资料比较多。</p>
 <p>计划用来弄<strong>aria2</strong>和<strong>远程迅雷</strong>。</p>
 <h1 id="MISC"><a href="#MISC" class="headerlink" title="MISC"></a>MISC</h1><p>基本能想到的就是这些了。后面想到什么再另外发文补充吧。</p>
 
@@ -386,7 +386,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#u51C6_u5907"><span class="toc-number">1.</span> <span class="toc-text">准备</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#u76F8_u5173_u4E0B_u8F7D"><span class="toc-number">1.1.</span> <span class="toc-text">相关下载</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u5B89_u88C5"><span class="toc-number">2.</span> <span class="toc-text">安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#u5B89_u88C5OMV"><span class="toc-number">2.1.</span> <span class="toc-text">安装OMV</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#u9047_u5230_u7684_u95EE_u9898"><span class="toc-number">2.1.1.</span> <span class="toc-text">遇到的问题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u8BBE_u7F6E"><span class="toc-number">3.</span> <span class="toc-text">设置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#u65B0_u5EFA_u5171_u4EAB_u6587_u4EF6_u5939"><span class="toc-number">3.1.</span> <span class="toc-text">新建共享文件夹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u5B89_u88C5OMV_u63D2_u4EF6"><span class="toc-number">3.2.</span> <span class="toc-text">安装OMV插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u865A_u62DF_u673A_u5B89_u88C5_u7FA4_u6656"><span class="toc-number">3.3.</span> <span class="toc-text">虚拟机安装群晖</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u7FA4_u6656_u7684_u7B80_u5355_u8BBE_u7F6E"><span class="toc-number">4.</span> <span class="toc-text">群晖的简单设置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#u65B0_u5EFA_u50A8_u5B58_u7A7A_u95F4"><span class="toc-number">4.1.</span> <span class="toc-text">新建储存空间</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NFS__u6302_u8F7D"><span class="toc-number">4.2.</span> <span class="toc-text">NFS 挂载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u63D2_u4EF6_u5B89_u88C5"><span class="toc-number">4.3.</span> <span class="toc-text">插件安装</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u5173_u4E8E_u9ED1_u88D9_u6D17_u767D"><span class="toc-number">5.</span> <span class="toc-text">关于黑裙洗白</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#u540E_u7EED_u8BA1_u5212"><span class="toc-number">6.</span> <span class="toc-text">后续计划</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker_u63D2_u4EF6"><span class="toc-number">6.1.</span> <span class="toc-text">Docker插件</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MISC"><span class="toc-number">7.</span> <span class="toc-text">MISC</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#准备"><span class="toc-number">1.</span> <span class="toc-text">准备</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#相关下载"><span class="toc-number">1.1.</span> <span class="toc-text">相关下载</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装"><span class="toc-number">2.</span> <span class="toc-text">安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装OMV"><span class="toc-number">2.1.</span> <span class="toc-text">安装OMV</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#遇到的问题"><span class="toc-number">2.1.1.</span> <span class="toc-text">遇到的问题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#设置"><span class="toc-number">3.</span> <span class="toc-text">设置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#新建共享文件夹"><span class="toc-number">3.1.</span> <span class="toc-text">新建共享文件夹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装OMV插件"><span class="toc-number">3.2.</span> <span class="toc-text">安装OMV插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#虚拟机安装群晖"><span class="toc-number">3.3.</span> <span class="toc-text">虚拟机安装群晖</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#群晖的简单设置"><span class="toc-number">4.</span> <span class="toc-text">群晖的简单设置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#新建储存空间"><span class="toc-number">4.1.</span> <span class="toc-text">新建储存空间</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NFS-挂载"><span class="toc-number">4.2.</span> <span class="toc-text">NFS 挂载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#插件安装"><span class="toc-number">4.3.</span> <span class="toc-text">插件安装</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#关于黑裙洗白"><span class="toc-number">5.</span> <span class="toc-text">关于黑裙洗白</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#后续计划"><span class="toc-number">6.</span> <span class="toc-text">后续计划</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker插件"><span class="toc-number">6.1.</span> <span class="toc-text">Docker插件</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MISC"><span class="toc-number">7.</span> <span class="toc-text">MISC</span></a></li></ol>
         
     </div>
     <style>
@@ -528,23 +528,6 @@
         }
     
 </script>
-
-    <script>
-        var originTitle = document.title;
-        var titleTime;
-        document.addEventListener("visibilitychange", function() {
-            if (document.hidden) {
-                document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
-                clearTimeout(titleTime);
-            }
-            else {
-                document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
-                titleTime = setTimeout(function() {
-                    document.title = originTitle;
-                }, 2000);
-            }
-        })
-    </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
