@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://newbilityvery.github.io/"/>
-  <updated>2016-08-01T21:48:51.180Z</updated>
+  <updated>2016-11-03T07:16:47.543Z</updated>
   <id>http://newbilityvery.github.io/</id>
   
   <author>
@@ -14,6 +14,76 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在Galaxy Tab S 8.4 上刷ASOP android N</title>
+    <link href="http://newbilityvery.github.io/2016/11/03/install-android-N-on-galaxy-tab-A/"/>
+    <id>http://newbilityvery.github.io/2016/11/03/install-android-N-on-galaxy-tab-A/</id>
+    <published>2016-11-03T01:54:55.000Z</published>
+    <updated>2016-11-03T07:16:47.543Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="u539F_u56E0"><a href="#u539F_u56E0" class="headerlink" title="原因"></a>原因</h1><p>去年买了台Galaxy Tab S 8.4想用来看小说。结果用得很少，因为没时间。T_T 不过没事的时候还是会拿来玩玩。然而三星的系统让我实在恼火：</p>
+<a id="more"></a>
+<ul>
+<li>自带一堆没用的应用占空间。虽然插了个64G的卡，可是应用没法往里面装。尤其是游戏，数据文件貌似没法转到卡上。</li>
+<li>还有个更重要的原因是超级耗电。我还是root过装了绿色守护，结果待机也只能一天。没精力去研究原因了。</li>
+</ul>
+<h1 id="u8FC7_u7A0B"><a href="#u8FC7_u7A0B" class="headerlink" title="过程"></a>过程</h1><p>过程挺有意思的，心血来潮在XDA上逛发现可以刷ASOP的系统。正是我想要的啊！看了看要求，需要有TWRP recovery。这个还真有。。。不知道什么时候弄上去的。估计是刚买回来折腾的时候。</p>
+<p>那还等什么？开搞！</p>
+<h2 id="u65B9_u6CD5"><a href="#u65B9_u6CD5" class="headerlink" title="方法"></a>方法</h2><p>如果已经有TWRP的recovery了就很容易，（我已经忘了我是怎么装上去的了。。。）直接下载好zip包然后在recovery里面install即可。</p>
+<ul>
+<li><p>Android 6.0 <a href="http://forum.xda-developers.com/galaxy-tab-s/development/rom-android-6-marshmallow-tab-s-10-5-lte-t3219759" target="_blank" rel="external">http://forum.xda-developers.com/galaxy-tab-s/development/rom-android-6-marshmallow-tab-s-10-5-lte-t3219759</a></p>
+</li>
+<li><p>Android 7.0 <a href="http://forum.xda-developers.com/galaxy-tab-s/development/rom-android-7-nougat-t3449078" target="_blank" rel="external">http://forum.xda-developers.com/galaxy-tab-s/development/rom-android-7-nougat-t3449078</a></p>
+</li>
+</ul>
+<p><strong>前提</strong></p>
+<p>已经有了TWRP 2.8.6.2或以上版本。<br>打过bootloader补丁。已经是官方5.0以上的话已经打好了。</p>
+<h2 id="u6B65_u9AA4"><a href="#u6B65_u9AA4" class="headerlink" title="步骤"></a>步骤</h2><ol>
+<li>下载对应版本的ASOP系统，GApps 还有superSU.</li>
+<li>进twrp，先清分区。SD卡和internal SD可以不用请。</li>
+<li>安装ASOP zip, 然后重启至recovery.</li>
+<li>安装Gapps和superSU.</li>
+<li>重启系统.</li>
+<li>就这么简单！</li>
+</ol>
+<h2 id="Android_6-0"><a href="#Android_6-0" class="headerlink" title="Android 6.0"></a>Android 6.0</h2><p>我先考虑的是装6.0，因为稳定而且有xposed。然而装完发现GApps装上去后一直退出。试了好几个版本都不行。煎熬了一天然后第二天果断换N。</p>
+<h2 id="Android_N"><a href="#Android_N" class="headerlink" title="Android N"></a>Android N</h2><p>这个安装很顺利，照着步骤就行。有个小坑，不知道是不是我的特例。我在初始设定时跳过了指纹设置，然后在系统设置里就没法打开了。只好再刷了一次直接在开始时设定就没问题了。</p>
+<h1 id="u611F_u53D7"><a href="#u611F_u53D7" class="headerlink" title="感受"></a>感受</h1><ul>
+<li>爽！还是喜欢原生。装好后系统才占2G不到。</li>
+</ul>
+<p><img src="http://ww4.sinaimg.cn/large/0060lm7Tgw1f9ep9ih4y9j318g1z441n.jpg" alt="系统占用"></p>
+<ul>
+<li>待机也是飞起，这还是没装xposed呢，要等出了还不得飞上天啊。</li>
+</ul>
+<p><img src="http://ww1.sinaimg.cn/large/0060lm7Tgw1f9ep9jxl6cj318g1z4gpo.jpg" alt="电池使用"></p>
+<ul>
+<li>从6开始有个很不错的功能：在系统层面直接把SD卡变成系统内部空间。这样应用就能直接装在卡上啦！</li>
+</ul>
+<h2 id="u51E0_u70B9_u4E0D_u8DB3"><a href="#u51E0_u70B9_u4E0D_u8DB3" class="headerlink" title="几点不足"></a>几点不足</h2><ol>
+<li>有些程序不稳定。比如指纹开锁有时就不灵。系统应用有时会崩溃。</li>
+<li>画面有时候有glitch，作者也在帖子里说明了。</li>
+<li>没Xposed。耐心等着吧。</li>
+</ol>
+<p>不过这些都是小问题，因为我用得并不多。也很少遇到。</p>
+<h2 id="Some_Pictures"><a href="#Some_Pictures" class="headerlink" title="Some Pictures"></a>Some Pictures</h2><p><img src="http://ww1.sinaimg.cn/large/0060lm7Tgw1f9ep9kgixzj318g1z4q7n.jpg" alt="系统信息"></p>
+<p><img src="http://ww4.sinaimg.cn/large/0060lm7Tgw1f9epaegruij318g1z4ams.jpg" alt="N Logo"></p>
+<p><img src="http://ww4.sinaimg.cn/large/0060lm7Tgw1f9epaj5b44j31kw23u4qp.jpg" alt="平板照片"></p>
+<!-- 图片链接放下面 -->
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;u539F_u56E0&quot;&gt;&lt;a href=&quot;#u539F_u56E0&quot; class=&quot;headerlink&quot; title=&quot;原因&quot;&gt;&lt;/a&gt;原因&lt;/h1&gt;&lt;p&gt;去年买了台Galaxy Tab S 8.4想用来看小说。结果用得很少，因为没时间。T_T 不过没事的时候还是会拿来玩玩。然而三星的系统让我实在恼火：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Misc" scheme="http://newbilityvery.github.io/tags/Misc/"/>
+    
+      <category term="刷机" scheme="http://newbilityvery.github.io/tags/%E5%88%B7%E6%9C%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>My Vim Setting for verilog/systemverilog coding (Keep updating)</title>
