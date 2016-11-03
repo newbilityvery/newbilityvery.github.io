@@ -21,7 +21,7 @@
 <meta property="og:url" content="http://newbilityvery.github.io/2016/07/08/vim-env-for-rtl-coding/index.html">
 <meta property="og:site_name" content="Play & Go">
 <meta property="og:description" content="BackgroudI started using Vim after I started working in the first company, because the platform was linux and we were not allowed to install any software. Actually it is not bad, I improved my Linux">
-<meta property="og:updated_time" content="2016-08-01T21:48:51.180Z">
+<meta property="og:updated_time" content="2016-11-03T19:01:21.282Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="My Vim Setting for verilog/systemverilog coding (Keep updating)">
 <meta name="twitter:description" content="BackgroudI started using Vim after I started working in the first company, because the platform was linux and we were not allowed to install any software. Actually it is not bad, I improved my Linux">
@@ -320,7 +320,6 @@ Now I cannot leave vim to edit a file. Every time I start using an IDE for some 
 <p><code>top0.v</code> after processed by verilog-mode:</p>
 <figure class="highlight verilog"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// top0.v</span></div><div class="line"><span class="keyword">module</span> top0 (<span class="comment">/*autoarg*/</span></div><div class="line">   <span class="comment">// Outputs</span></div><div class="line">   o_0,</div><div class="line">   <span class="comment">// Inputs</span></div><div class="line">   i_0</div><div class="line">   );</div><div class="line">  <span class="comment">/*autoinput*/</span></div><div class="line">  <span class="comment">// Beginning of automatic inputs (from unused autoinst inputs)</span></div><div class="line">  <span class="keyword">input</span>                 i_0;                    <span class="comment">// To u_mod0 of mod0.v</span></div><div class="line">  <span class="comment">// End of automatics</span></div><div class="line">  <span class="comment">/*autooutput*/</span></div><div class="line">  <span class="comment">// Beginning of automatic outputs (from unused autoinst outputs)</span></div><div class="line">  <span class="keyword">output</span> [<span class="number">31</span>:<span class="number">0</span>]         o_0;                    <span class="comment">// From u_mod0 of mod0.v</span></div><div class="line">  <span class="comment">// End of automatics</span></div><div class="line"></div><div class="line">  mod0 u_mod0 (<span class="comment">/*autoinst*/</span></div><div class="line">               <span class="comment">// Outputs</span></div><div class="line">               <span class="variable">.o_0</span>                     (o_0[<span class="number">31</span>:<span class="number">0</span>]),</div><div class="line">               <span class="comment">// Inputs</span></div><div class="line">               <span class="variable">.i_0</span>                     (i_0));</div><div class="line"><span class="keyword">endmodule</span></div></pre></td></tr></table></figure>
 <p>Check <a href="http://www.veripool.org/projects/verilog-mode/wiki/Verilog-mode_veritedium" target="_blank" rel="external">here</a> for more features:</p>
-<!-- links -->
 <h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><p>The vim in my company is an old one(7.3), I managed to compile the latest one in my home dir. Therefore I can use the new features such as relative line number and install more new plugins without compatibility issue. (I learnt compiling code here; previously I only know <code>apt-get</code>.)</p>
 <h2 id="Vim-Plugins"><a href="#Vim-Plugins" class="headerlink" title="Vim Plugins"></a>Vim Plugins</h2><p>These are the plugins which are useful in verilog coding.</p>
 <ul>
@@ -329,22 +328,43 @@ Now I cannot leave vim to edit a file. Every time I start using an IDE for some 
 <p><a href="https://github.com/VundleVim/Vundle.vim" target="_blank" rel="external">Vundle</a> is a plugin manager for vim. Just put the github repo in your <code>.vimrc</code> to install and manage them.</p>
 <p>Example:</p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">" Use the name directly from http://vim-scripts.org/vim/scripts.html</span></div><div class="line">Plugin <span class="string">'vividchalk.vim'</span></div><div class="line"></div><div class="line"><span class="comment">" Plugin from Github repo</span></div><div class="line">Plugin <span class="string">'tomasr/molokai'</span></div></pre></td></tr></table></figure>
-<!-- links -->
+<p>The all plugins mentioned below can be install like this.</p>
 <hr>
 <ul>
-<li><a href="http://www.vim.org/scripts/script.php?script_id=1875" target="_blank" rel="external"><strong>verilog_emacsauto.vim</strong></a><br>By using this <a href="http://www.vim.org/scripts/script.php?script_id=1875" target="_blank" rel="external">plugin</a>, use <code>\a</code> to expands all the verilog-mode autos(<code>C-c C-a</code> in emacs) and use <code>\d</code> to delete the autos(<code>C-c C-d</code> in emacs);</li>
+<li><p><a href="http://www.vim.org/scripts/script.php?script_id=1875" target="_blank" rel="external"><strong>verilog_emacsauto.vim</strong></a><br>By using this <a href="http://www.vim.org/scripts/script.php?script_id=1875" target="_blank" rel="external">plugin</a>, use <code>\a</code> to expands all the verilog-mode autos(<code>C-c C-a</code> in emacs) and use <code>\d</code> to delete the autos(<code>C-c C-d</code> in emacs);</p>
+</li>
+<li><p><a href="https://github.com/vim-airline/vim-airline" target="_blank" rel="external"><strong>vim-airline</strong></a></p>
+</li>
 </ul>
-<!-- links -->
+<p><code>vim-airline</code> provides a fancy status line for vim. I switched to this after vim-powerline going to maintenance mode.</p>
+<ul>
+<li><a href="https://github.com/luochen1990/rainbow" target="_blank" rel="external"><strong>rainbow</strong></a></li>
+</ul>
+<p>This plugin can give different colors for different levels of parentheses, which helps to read complex code much easier.</p>
+<ul>
+<li><a href="https://github.com/Yggdroot/indentLine" target="_blank" rel="external"><strong>indentLine</strong></a></li>
+</ul>
+<p>This plugin can show vertical lines at each indent level.</p>
+<ul>
+<li><a href="https://github.com/cazador481/vim-systemverilog" target="_blank" rel="external"><strong>vim-systemverilog</strong></a></li>
+</ul>
+<p>Gives code highlighting and some other features for systemverilog.</p>
+<ul>
+<li><a href="https://github.com/godlygeek/tabular" target="_blank" rel="external"><strong>tabular</strong></a></li>
+</ul>
+<p>Helps to align the code. For example:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var_0 = <span class="number">1</span>;</div><div class="line">long_var_0 = <span class="number">10</span>;</div></pre></td></tr></table></figure>
+<p>after applying <code>:Tabularize /=</code></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var_0      = <span class="number">1</span>;</div><div class="line">long_var_0 = <span class="number">10</span>;</div></pre></td></tr></table></figure>
+<p>And:<br>  <a href="http://vimcasts.org/episodes/aligning-text-with-tabular-vim/" target="_blank" rel="external">Aligning Text with Tabular.vim</a></p>
+<p>For more details please check its github page.</p>
 <hr>
 <p><strong> To be Updated… </strong></p>
 <ul>
-<li><strong>vim-airline</strong></li>
-<li><strong>rainbow</strong></li>
-<li><strong>indentLine</strong></li>
-<li><strong>vim-systemverilog</strong></li>
-<li><strong>tabular</strong></li>
-<li><strong>VisIncr</strong></li>
-<li><strong>supertab</strong></li>
+<li><p><strong>VisIncr</strong></p>
+</li>
+<li><p><strong>supertab</strong></p>
+</li>
 </ul>
 <!--
 * **incsearch**
@@ -355,6 +375,7 @@ Now I cannot leave vim to edit a file. Every time I start using an IDE for some 
 <li>snippet</li>
 <li>…</li>
 </ul>
+<!-- links -->
 
       
     </div>
@@ -366,7 +387,7 @@ Now I cannot leave vim to edit a file. Every time I start using an IDE for some 
         <p><span>Title:</span><a href="/2016/07/08/vim-env-for-rtl-coding/">My Vim Setting for verilog/systemverilog coding (Keep updating)</a></p>
         <p><span>Author:</span><a href="/" title="Back to Homepage">Vivid</a></p>
         <p><span>Created:</span>2016-07-08, 19:07:38</p>
-        <p><span>Updated:</span>2016-08-02, 00:48:51</p>
+        <p><span>Updated:</span>2016-11-03, 22:01:21</p>
         <p>
             <span>Full URL:</span><a class="post-url" href="/2016/07/08/vim-env-for-rtl-coding/" title="My Vim Setting for verilog/systemverilog coding (Keep updating)">http://newbilityvery.github.io/2016/07/08/vim-env-for-rtl-coding/</a>
             <span class="copy-path" data-clipboard-text="From http://newbilityvery.github.io/2016/07/08/vim-env-for-rtl-coding/　　By Vivid" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://newbilityvery.github.io/"/>
-  <updated>2016-11-03T07:16:47.543Z</updated>
+  <updated>2016-11-03T19:04:48.321Z</updated>
   <id>http://newbilityvery.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://newbilityvery.github.io/2016/11/03/install-android-N-on-galaxy-tab-A/"/>
     <id>http://newbilityvery.github.io/2016/11/03/install-android-N-on-galaxy-tab-A/</id>
     <published>2016-11-03T01:54:55.000Z</published>
-    <updated>2016-11-03T07:16:47.543Z</updated>
+    <updated>2016-11-03T19:04:48.321Z</updated>
     
     <content type="html"><![CDATA[<h1 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h1><p>去年买了台Galaxy Tab S 8.4想用来看小说。结果用得很少，因为没时间。T_T 不过没事的时候还是会拿来玩玩。然而三星的系统让我实在恼火：</p>
 <a id="more"></a>
@@ -50,7 +50,7 @@
 <h2 id="Android-6-0"><a href="#Android-6-0" class="headerlink" title="Android 6.0"></a>Android 6.0</h2><p>我先考虑的是装6.0，因为稳定而且有xposed。然而装完发现GApps装上去后一直退出。试了好几个版本都不行。煎熬了一天然后第二天果断换N。</p>
 <h2 id="Android-N"><a href="#Android-N" class="headerlink" title="Android N"></a>Android N</h2><p>这个安装很顺利，照着步骤就行。有个小坑，不知道是不是我的特例。我在初始设定时跳过了指纹设置，然后在系统设置里就没法打开了。只好再刷了一次直接在开始时设定就没问题了。</p>
 <h1 id="感受"><a href="#感受" class="headerlink" title="感受"></a>感受</h1><ul>
-<li>爽！还是喜欢原生。装好后系统才占2G不到。</li>
+<li>爽！还是喜欢原生。装好后系统才占2G。</li>
 </ul>
 <p><img src="http://ww4.sinaimg.cn/large/0060lm7Tgw1f9ep9ih4y9j318g1z441n.jpg" alt="系统占用"></p>
 <ul>
@@ -90,7 +90,7 @@
     <link href="http://newbilityvery.github.io/2016/07/08/vim-env-for-rtl-coding/"/>
     <id>http://newbilityvery.github.io/2016/07/08/vim-env-for-rtl-coding/</id>
     <published>2016-07-08T16:07:38.000Z</published>
-    <updated>2016-08-01T21:48:51.180Z</updated>
+    <updated>2016-11-03T19:01:21.282Z</updated>
     
     <content type="html"><![CDATA[<!--
 original: true
@@ -122,7 +122,6 @@ Now I cannot leave vim to edit a file. Every time I start using an IDE for some 
 <p><code>top0.v</code> after processed by verilog-mode:</p>
 <figure class="highlight verilog"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// top0.v</span></div><div class="line"><span class="keyword">module</span> top0 (<span class="comment">/*autoarg*/</span></div><div class="line">   <span class="comment">// Outputs</span></div><div class="line">   o_0,</div><div class="line">   <span class="comment">// Inputs</span></div><div class="line">   i_0</div><div class="line">   );</div><div class="line">  <span class="comment">/*autoinput*/</span></div><div class="line">  <span class="comment">// Beginning of automatic inputs (from unused autoinst inputs)</span></div><div class="line">  <span class="keyword">input</span>                 i_0;                    <span class="comment">// To u_mod0 of mod0.v</span></div><div class="line">  <span class="comment">// End of automatics</span></div><div class="line">  <span class="comment">/*autooutput*/</span></div><div class="line">  <span class="comment">// Beginning of automatic outputs (from unused autoinst outputs)</span></div><div class="line">  <span class="keyword">output</span> [<span class="number">31</span>:<span class="number">0</span>]         o_0;                    <span class="comment">// From u_mod0 of mod0.v</span></div><div class="line">  <span class="comment">// End of automatics</span></div><div class="line"></div><div class="line">  mod0 u_mod0 (<span class="comment">/*autoinst*/</span></div><div class="line">               <span class="comment">// Outputs</span></div><div class="line">               <span class="variable">.o_0</span>                     (o_0[<span class="number">31</span>:<span class="number">0</span>]),</div><div class="line">               <span class="comment">// Inputs</span></div><div class="line">               <span class="variable">.i_0</span>                     (i_0));</div><div class="line"><span class="keyword">endmodule</span></div></pre></td></tr></table></figure>
 <p>Check <a href="http://www.veripool.org/projects/verilog-mode/wiki/Verilog-mode_veritedium" target="_blank" rel="external">here</a> for more features:</p>
-<!-- links -->
 <h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><p>The vim in my company is an old one(7.3), I managed to compile the latest one in my home dir. Therefore I can use the new features such as relative line number and install more new plugins without compatibility issue. (I learnt compiling code here; previously I only know <code>apt-get</code>.)</p>
 <h2 id="Vim-Plugins"><a href="#Vim-Plugins" class="headerlink" title="Vim Plugins"></a>Vim Plugins</h2><p>These are the plugins which are useful in verilog coding.</p>
 <ul>
@@ -131,22 +130,43 @@ Now I cannot leave vim to edit a file. Every time I start using an IDE for some 
 <p><a href="https://github.com/VundleVim/Vundle.vim" target="_blank" rel="external">Vundle</a> is a plugin manager for vim. Just put the github repo in your <code>.vimrc</code> to install and manage them.</p>
 <p>Example:</p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">" Use the name directly from http://vim-scripts.org/vim/scripts.html</span></div><div class="line">Plugin <span class="string">'vividchalk.vim'</span></div><div class="line"></div><div class="line"><span class="comment">" Plugin from Github repo</span></div><div class="line">Plugin <span class="string">'tomasr/molokai'</span></div></pre></td></tr></table></figure>
-<!-- links -->
+<p>The all plugins mentioned below can be install like this.</p>
 <hr>
 <ul>
-<li><a href="http://www.vim.org/scripts/script.php?script_id=1875" target="_blank" rel="external"><strong>verilog_emacsauto.vim</strong></a><br>By using this <a href="http://www.vim.org/scripts/script.php?script_id=1875" target="_blank" rel="external">plugin</a>, use <code>\a</code> to expands all the verilog-mode autos(<code>C-c C-a</code> in emacs) and use <code>\d</code> to delete the autos(<code>C-c C-d</code> in emacs);</li>
+<li><p><a href="http://www.vim.org/scripts/script.php?script_id=1875" target="_blank" rel="external"><strong>verilog_emacsauto.vim</strong></a><br>By using this <a href="http://www.vim.org/scripts/script.php?script_id=1875" target="_blank" rel="external">plugin</a>, use <code>\a</code> to expands all the verilog-mode autos(<code>C-c C-a</code> in emacs) and use <code>\d</code> to delete the autos(<code>C-c C-d</code> in emacs);</p>
+</li>
+<li><p><a href="https://github.com/vim-airline/vim-airline" target="_blank" rel="external"><strong>vim-airline</strong></a></p>
+</li>
 </ul>
-<!-- links -->
+<p><code>vim-airline</code> provides a fancy status line for vim. I switched to this after vim-powerline going to maintenance mode.</p>
+<ul>
+<li><a href="https://github.com/luochen1990/rainbow" target="_blank" rel="external"><strong>rainbow</strong></a></li>
+</ul>
+<p>This plugin can give different colors for different levels of parentheses, which helps to read complex code much easier.</p>
+<ul>
+<li><a href="https://github.com/Yggdroot/indentLine" target="_blank" rel="external"><strong>indentLine</strong></a></li>
+</ul>
+<p>This plugin can show vertical lines at each indent level.</p>
+<ul>
+<li><a href="https://github.com/cazador481/vim-systemverilog" target="_blank" rel="external"><strong>vim-systemverilog</strong></a></li>
+</ul>
+<p>Gives code highlighting and some other features for systemverilog.</p>
+<ul>
+<li><a href="https://github.com/godlygeek/tabular" target="_blank" rel="external"><strong>tabular</strong></a></li>
+</ul>
+<p>Helps to align the code. For example:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var_0 = <span class="number">1</span>;</div><div class="line">long_var_0 = <span class="number">10</span>;</div></pre></td></tr></table></figure>
+<p>after applying <code>:Tabularize /=</code></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var_0      = <span class="number">1</span>;</div><div class="line">long_var_0 = <span class="number">10</span>;</div></pre></td></tr></table></figure>
+<p>And:<br>  <a href="http://vimcasts.org/episodes/aligning-text-with-tabular-vim/" target="_blank" rel="external">Aligning Text with Tabular.vim</a></p>
+<p>For more details please check its github page.</p>
 <hr>
 <p><strong> To be Updated… </strong></p>
 <ul>
-<li><strong>vim-airline</strong></li>
-<li><strong>rainbow</strong></li>
-<li><strong>indentLine</strong></li>
-<li><strong>vim-systemverilog</strong></li>
-<li><strong>tabular</strong></li>
-<li><strong>VisIncr</strong></li>
-<li><strong>supertab</strong></li>
+<li><p><strong>VisIncr</strong></p>
+</li>
+<li><p><strong>supertab</strong></p>
+</li>
 </ul>
 <!--
 * **incsearch**
@@ -157,6 +177,7 @@ Now I cannot leave vim to edit a file. Every time I start using an IDE for some 
 <li>snippet</li>
 <li>…</li>
 </ul>
+<!-- links -->
 ]]></content>
     
     <summary type="html">
