@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://newbilityvery.github.io/"/>
-  <updated>2016-11-03T19:04:48.321Z</updated>
+  <updated>2016-11-25T20:45:16.600Z</updated>
   <id>http://newbilityvery.github.io/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>在Galaxy Tab S 8.4 上刷ASOP android N</title>
+    <title>在Galaxy Tab S 8.4 上刷AOSP android N</title>
     <link href="http://newbilityvery.github.io/2016/11/03/install-android-N-on-galaxy-tab-A/"/>
     <id>http://newbilityvery.github.io/2016/11/03/install-android-N-on-galaxy-tab-A/</id>
     <published>2016-11-03T01:54:55.000Z</published>
-    <updated>2016-11-03T19:04:48.321Z</updated>
+    <updated>2016-11-25T20:45:16.600Z</updated>
     
     <content type="html"><![CDATA[<h1 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h1><p>去年买了台Galaxy Tab S 8.4想用来看小说。结果用得很少，因为没时间。T_T 不过没事的时候还是会拿来玩玩。然而三星的系统让我实在恼火：</p>
 <a id="more"></a>
@@ -28,7 +28,7 @@
 <li>自带一堆没用的应用占空间。虽然插了个64G的卡，可是应用没法往里面装。尤其是游戏，数据文件貌似没法转到卡上。</li>
 <li>还有个更重要的原因是超级耗电。我还是root过装了绿色守护，结果待机也只能一天。没精力去研究原因了。</li>
 </ul>
-<h1 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h1><p>过程挺有意思的，心血来潮在XDA上逛发现可以刷ASOP的系统。正是我想要的啊！看了看要求，需要有TWRP recovery。这个还真有。。。不知道什么时候弄上去的。估计是刚买回来折腾的时候。</p>
+<h1 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h1><p>过程挺有意思的，心血来潮在XDA上逛发现可以刷AOSP的系统。正是我想要的啊！看了看要求，需要有TWRP recovery。这个还真有。。。不知道什么时候弄上去的。估计是刚买回来折腾的时候。</p>
 <p>那还等什么？开搞！</p>
 <h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>如果已经有TWRP的recovery了就很容易，（我已经忘了我是怎么装上去的了。。。）直接下载好zip包然后在recovery里面install即可。</p>
 <ul>
@@ -40,9 +40,9 @@
 <p><strong>前提</strong></p>
 <p>已经有了TWRP 2.8.6.2或以上版本。<br>打过bootloader补丁。已经是官方5.0以上的话已经打好了。</p>
 <h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
-<li>下载对应版本的ASOP系统，GApps 还有superSU.</li>
+<li>下载对应版本的AOSP系统，GApps 还有superSU.</li>
 <li>进twrp，先清分区。SD卡和internal SD可以不用请。</li>
-<li>安装ASOP zip, 然后重启至recovery.</li>
+<li>安装AOSP zip, 然后重启至recovery.</li>
 <li>安装Gapps和superSU.</li>
 <li>重启系统.</li>
 <li>就这么简单！</li>
