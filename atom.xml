@@ -86,11 +86,11 @@
   </entry>
   
   <entry>
-    <title>My Vim Setting for verilog/systemverilog coding (Keep updating)</title>
+    <title>My Vim Setting for verilog/systemverilog coding</title>
     <link href="http://newbilityvery.github.io/2016/07/08/vim-env-for-rtl-coding/"/>
     <id>http://newbilityvery.github.io/2016/07/08/vim-env-for-rtl-coding/</id>
     <published>2016-07-08T16:07:38.000Z</published>
-    <updated>2016-11-03T19:01:21.282Z</updated>
+    <updated>2017-01-27T20:12:26.595Z</updated>
     
     <content type="html"><![CDATA[<!--
 original: true
@@ -160,12 +160,13 @@ Now I cannot leave vim to edit a file. Every time I start using an IDE for some 
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var_0      = <span class="number">1</span>;</div><div class="line">long_var_0 = <span class="number">10</span>;</div></pre></td></tr></table></figure>
 <p>And:<br>  <a href="http://vimcasts.org/episodes/aligning-text-with-tabular-vim/" target="_blank" rel="external">Aligning Text with Tabular.vim</a></p>
 <p>For more details please check its github page.</p>
-<hr>
-<p><strong> To be Updated… </strong></p>
 <ul>
-<li><p><strong>VisIncr</strong></p>
-</li>
-<li><p><strong>supertab</strong></p>
+<li><a href="https://github.com/vim-scripts/VisIncr" target="_blank" rel="external"><strong>VisIncr</strong></a></li>
+</ul>
+<p>Easier to make a column of increasing or decreasing numbers, dates, or daynames.</p>
+<ul>
+<li><p><a href="https://github.com/ervandew/supertab" target="_blank" rel="external"><strong>supertab</strong></a></p>
+<p>It allows you to use <tab> for all your insert completion needs</tab></p>
 </li>
 </ul>
 <!--
