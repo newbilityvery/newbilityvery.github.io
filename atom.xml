@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://newbilityvery.github.io/"/>
-  <updated>2017-05-19T22:07:19.999Z</updated>
+  <updated>2017-05-19T22:56:52.395Z</updated>
   <id>http://newbilityvery.github.io/</id>
   
   <author>
@@ -20,11 +20,13 @@
     <link href="http://newbilityvery.github.io/2017/05/19/rasp-gb-diy/"/>
     <id>http://newbilityvery.github.io/2017/05/19/rasp-gb-diy/</id>
     <published>2017-05-19T19:07:35.000Z</published>
-    <updated>2017-05-19T22:07:19.999Z</updated>
+    <updated>2017-05-19T22:56:52.395Z</updated>
     
     <content type="html"><![CDATA[<h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>家里有两个闲置的树莓派（1B ＆ 2B）。最初是用来当下载机使用的，NAS组好了后就丢在一边了。一直觉得有点浪费。这次有人从中国过来就手痒在淘宝买了套树莓派DIY掌机套件。</p>
 <!-- put ad picture -->
-<p><img src="http://i4.buimg.com/588926/4198bff5c3a3c56a.jpg" alt="宣传图1"><br><img src="http://i2.muimg.com/588926/1403f22bb178dc85.jpg" alt="宣传图2"><br><img src="http://i2.muimg.com/588926/641c7cbc19d9b039.jpg" alt="宣传图3"></p>
+<p><img src="http://i4.buimg.com/588926/4198bff5c3a3c56a.jpg" alt="宣传图1"></p>
+<a id="more"></a>
+<p><img src="http://i2.muimg.com/588926/1403f22bb178dc85.jpg" alt="宣传图2"><br><img src="http://i2.muimg.com/588926/641c7cbc19d9b039.jpg" alt="宣传图3"></p>
 <!-- 图片链接放下面 -->
 <p>效果图(来源：<a href="http://tieba.baidu.com/p/4771137780" target="_blank" rel="external">百度贴吧</a>)看着挺不错，加上上面还说是模块化组装，感觉不是很难的样子，就下手了。其实算下来也不算便宜，一共400人民币。还要先付款确认收货才发货，感觉挺怪，不过还是照做了。DIY的东西嘛，没啥保障也可以理解。</p>
 <h1 id="入坑"><a href="#入坑" class="headerlink" title="入坑"></a>入坑</h1><p>发完货以后才给我组装说明。一看傻眼了：比我想象的难度高了一个级别。需要焊接，还需要一堆高温绝缘胶带等电子设计的工具。还好公司实验室都有。但是如果让我先看到这个说明的话，我应该是不会买的。倒不是不会，只是有点嫌麻烦。我看到模块化字样时心里想的是一堆接插件拼装起来就好的。</p>
@@ -66,7 +68,9 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot; title=&quot;起因&quot;&gt;&lt;/a&gt;起因&lt;/h1&gt;&lt;p&gt;家里有两个闲置的树莓派（1B ＆ 2B）。最初是用来当下载机使用的，NAS组好了后就丢在一边了。一直觉得有点浪费。这次有人从中国过来就手痒在
+      &lt;h1 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot; title=&quot;起因&quot;&gt;&lt;/a&gt;起因&lt;/h1&gt;&lt;p&gt;家里有两个闲置的树莓派（1B ＆ 2B）。最初是用来当下载机使用的，NAS组好了后就丢在一边了。一直觉得有点浪费。这次有人从中国过来就手痒在淘宝买了套树莓派DIY掌机套件。&lt;/p&gt;
+&lt;!-- put ad picture --&gt;
+&lt;p&gt;&lt;img src=&quot;http://i4.buimg.com/588926/4198bff5c3a3c56a.jpg&quot; alt=&quot;宣传图1&quot;&gt;&lt;/p&gt;
     
     </summary>
     

@@ -296,47 +296,10 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>家里有两个闲置的树莓派（1B ＆ 2B）。最初是用来当下载机使用的，NAS组好了后就丢在一边了。一直觉得有点浪费。这次有人从中国过来就手痒在淘宝买了套树莓派DIY掌机套件。</p>
+              <h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>家里有两个闲置的树莓派（1B ＆ 2B）。最初是用来当下载机使用的，NAS组好了后就丢在一边了。一直觉得有点浪费。这次有人从中国过来就手痒在淘宝买了套树莓派DIY掌机套件。</p>
 <!-- put ad picture -->
-<p><img src="http://i4.buimg.com/588926/4198bff5c3a3c56a.jpg" alt="宣传图1"><br><img src="http://i2.muimg.com/588926/1403f22bb178dc85.jpg" alt="宣传图2"><br><img src="http://i2.muimg.com/588926/641c7cbc19d9b039.jpg" alt="宣传图3"></p>
-<!-- 图片链接放下面 -->
-<p>效果图(来源：<a href="http://tieba.baidu.com/p/4771137780" target="_blank" rel="external">百度贴吧</a>)看着挺不错，加上上面还说是模块化组装，感觉不是很难的样子，就下手了。其实算下来也不算便宜，一共400人民币。还要先付款确认收货才发货，感觉挺怪，不过还是照做了。DIY的东西嘛，没啥保障也可以理解。</p>
-<h1 id="入坑"><a href="#入坑" class="headerlink" title="入坑"></a>入坑</h1><p>发完货以后才给我组装说明。一看傻眼了：比我想象的难度高了一个级别。需要焊接，还需要一堆高温绝缘胶带等电子设计的工具。还好公司实验室都有。但是如果让我先看到这个说明的话，我应该是不会买的。倒不是不会，只是有点嫌麻烦。我看到模块化字样时心里想的是一堆接插件拼装起来就好的。</p>
-<p><img src="http://i2.muimg.com/588926/3443e72b33c3f3e5.jpg" style="zoom:60%"><br><!-- ![零件][parts] --></p>
-<!-- 图片链接放下面 -->
-<p><strong>零件，实际比照片多，已经焊了一部分才想起照相。</strong></p>
-<p>不过都入坑了还是硬着头皮开搞吧。凭着自己大学时金工实习焊电视电路板的菜鸟水平再加上实验室里的高人指点总算慢慢上手了。</p>
-<p>里面有些焊点还真是挺hack的，又是要刮开覆铜，又是直接焊在某个原件的引脚，刁钻得很。。</p>
-<!-- put 刁钻引脚 picture -->
-<h1 id="半成品"><a href="#半成品" class="headerlink" title="半成品"></a>半成品</h1><p>自己边琢磨边弄也算是搞得差不多了。黑色的是锂电池充电板加升压板，输出的应该是5V然后通过树莓派的GPIO供电。（这个我研究了半天，后来查了资料才发现可以不用Mini USB供电。学到了！）</p>
-<p><img src="http://i2.muimg.com/588926/b9d55dc912ca1c52.jpg" style="zoom:60%"><br><!-- ![半成品1][half_baked1] --></p>
-<p>觉得有点怪的地方是接地是靠耳机视频复合插口和树莓派连上的。这样的话不插这个插口就没法给树莓派供电了。。。为什不通过侧边的引脚连到GPIO呢？</p>
-<p><img src="http://i2.muimg.com/588926/3648f5f2e9f0a58b.jpg" style="zoom:60%"><br><!-- ![半成品2][half_baked2] --></p>
-<p>屏幕则是通过复合视频输入的。我单独在树莓派1B上试过，可以点亮，就是有点模糊。</p>
-<!-- put 屏幕 picture -->
-<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>快装好准备测试时，问题来了。。。</p>
-<h2 id="供电"><a href="#供电" class="headerlink" title="供电"></a>供电</h2><p>不能边充电边用。单独用电池的时候是可以启动的，可一插usb充电线马上就没输出了。量下输出电压只有0.5V。</p>
-<p>不知道是板子坏了还是我没焊对地方。</p>
-<h2 id="显示"><a href="#显示" class="headerlink" title="显示"></a>显示</h2><p>屏幕没显示。单独测过屏幕是可以点亮的（PAL 和 NTSC 均有显示），所以问题还是在另外一边。量得电压是有5V，难道是没有视频输出？</p>
-<hr>
-<p>搞不定这些问题就没法接着弄下去了。。。</p>
-<h1 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h1><p>最近是没时间弄了，不过自己挖的坑喊着泪也要填回去。于是想了几个点子希望能解决上面的问题。</p>
-<ul>
-<li><p>另外买一个电源板，看看结果是不是一样。</p>
-</li>
-<li><p>买根视频线看看手头的树莓派能不能输出复合视频。</p>
-</li>
-</ul>
-<h2 id="改进"><a href="#改进" class="headerlink" title="改进"></a>改进</h2><p>还有些改进的想法：</p>
-<ul>
-<li><p>用树莓派 zero W 换掉2B。这样可以多出更多空间。而且复合视频输出是焊点，Debug也比较容易。</p>
-</li>
-<li><p>考虑用HDMI的高清屏。不过成本上应该会高不少，先搁置。</p>
-</li>
-</ul>
-<hr>
-<p>等有时间再说了。。。</p>
-
+<p><img src="http://i4.buimg.com/588926/4198bff5c3a3c56a.jpg" alt="宣传图1"></p>
+          
       
     </div>
     
@@ -349,6 +312,10 @@
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DIY/">DIY</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/raspberry-pi/">raspberry pi</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/树莓派/">树莓派</a></li></ul>
     </div>
 
+      
+        <p class="article-more-link">
+          <a href="/2017/05/19/rasp-gb-diy/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
