@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://newbilityvery.github.io/"/>
-  <updated>2017-05-19T22:56:52.395Z</updated>
+  <updated>2017-06-12T23:58:43.944Z</updated>
   <id>http://newbilityvery.github.io/</id>
   
   <author>
@@ -16,11 +16,62 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Raspberry Pi GB DIY</title>
+    <title>Raspberry Pi GB DIY (2)</title>
+    <link href="http://newbilityvery.github.io/2017/06/09/rasp-gb-diy2/"/>
+    <id>http://newbilityvery.github.io/2017/06/09/rasp-gb-diy2/</id>
+    <published>2017-06-09T18:07:40.000Z</published>
+    <updated>2017-06-12T23:58:43.944Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="完工"><a href="#完工" class="headerlink" title="完工"></a>完工</h1><p>之前因为各种问题，搁置了一段时间。最近，由于调试工具的到货，终于完成了！</p>
+<p><img src="https://ooo.0o0.ooo/2017/06/13/593f28141888d.jpg" alt="完工图1"></p>
+<a id="more"></a>
+<p><img src="https://ooo.0o0.ooo/2017/06/13/593f28141993d.jpg" alt="完工图2"></p>
+<h1 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h1><p>之前没法继续主要由于以下几个问题。</p>
+<ol>
+<li>供电没法做到边充边玩。</li>
+<li>屏幕点不亮。</li>
+</ol>
+<h2 id="屏幕"><a href="#屏幕" class="headerlink" title="屏幕"></a>屏幕</h2><p>之前说过屏幕用Pi B测过是好的。之所以没法测试2是因为没有专门的线。又从网上淘了根线，试完发现板子没问题。可是屏幕老是点不亮。又想起之前觉得GND只是靠耳机插口连起来的不牢靠。干脆自己又从侧边板子飞了根线把GND接上了。</p>
+<p>也不知道是不是这个原因，反正再插屏幕就这么点亮了。</p>
+<p><img src="https://ooo.0o0.ooo/2017/06/13/593f2988d0be8.jpg" alt="飞线"></p>
+<p><img src="https://ooo.0o0.ooo/2017/06/13/593f29a8942ae.jpg" alt="点亮屏幕"></p>
+<h2 id="供电"><a href="#供电" class="headerlink" title="供电"></a>供电</h2><p>这个折腾了最久。开始以为是的升压板被自己不小心剪坏了。在ebay找了好久居然找到一模一样的卖。由于邮费的原因，直接买了5个；否则邮费比物品还贵实在忍不了。多出来的大不了再用来干别的。</p>
+<p>到货后试了两个发现都没法边充边玩，应该是设计本身就这样了。又去卖家给的群里问了一圈，得到一个重要信息：有个地方飞线以后可以做到。又去追问了卖家，终于把图给我了。</p>
+<p>飞完后试了下，边冲边完时电压有点低，才4.6V左右。不过至少可以启动了。</p>
+<p>很奇怪的是为什么卖家不把这个飞线的写在组装说明上，问了半天才给。难道大家都没有这个需求吗？或者我运气不好，其实其他人的都支持边充边玩？</p>
+<p>不过用了一会儿总觉得电池很危险，最后又取掉了。这样一来其实没必要去折腾这块升压板，直接从USB取电就好了。早知如此何必当初。。。</p>
+<h1 id="杂项"><a href="#杂项" class="headerlink" title="杂项"></a>杂项</h1><h2 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h2><p>我用的是<a href="http://www.recalbox.com" target="_blank" rel="external">Recalbox</a>，照着官网的步骤很容易安装。</p>
+<p>然后需要改设置。由于屏幕是复合端子输入，需要设置成默认。还要开启GPIO控制，这样就能用按键了。</p>
+<!-- Links -->
+<h2 id="改进想法"><a href="#改进想法" class="headerlink" title="改进想法"></a>改进想法</h2><p>随便放几个游戏玩了一下发现AV屏闪的厉害。儿子玩了一会儿看他眼睛都快挨着屏幕了赶紧不让他玩了。</p>
+<p><img src="https://ooo.0o0.ooo/2017/06/13/593f2a5fce5bb.jpg" alt="FC 魂斗罗"><br><img src="https://ooo.0o0.ooo/2017/06/13/593f2a71c0cb8.jpg" alt="NEOGEO 吞食天地"></p>
+<p>如果真想拿来当掌机经常玩的话，确实应该换成HDMI屏才行。如果不需要锂电池的话，可以把升压板拿掉。会多出好多空位，放<a href="https://www.amazon.com/OSOYOO-Display-Monitor-1920x1080-Raspberry/dp/B01N447AEY/ref=sr_1_1?ie=UTF8&amp;qid=1497305645&amp;sr=8-1&amp;keywords=raspberry+pi+hdmi+screen" target="_blank" rel="external">这个屏幕</a>上去的话应该是能放下的。</p>
+<h1 id="收获"><a href="#收获" class="headerlink" title="收获"></a>收获</h1><p>毕竟是买的半成品散件，总的来说不是很难组装。很多问题只要有资料和工具应该不会拖这么久。唯一感觉有长进的就是发现自己的电焊技术居然没丢。再加上实验室的大师指导两下还有进步。</p>
+<p>装上后玩的机会应该不多，不过其实只是享受这个过程而已。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;完工&quot;&gt;&lt;a href=&quot;#完工&quot; class=&quot;headerlink&quot; title=&quot;完工&quot;&gt;&lt;/a&gt;完工&lt;/h1&gt;&lt;p&gt;之前因为各种问题，搁置了一段时间。最近，由于调试工具的到货，终于完成了！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ooo.0o0.ooo/2017/06/13/593f28141888d.jpg&quot; alt=&quot;完工图1&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="DIY" scheme="http://newbilityvery.github.io/tags/DIY/"/>
+    
+      <category term="raspberry pi" scheme="http://newbilityvery.github.io/tags/raspberry-pi/"/>
+    
+      <category term="树莓派" scheme="http://newbilityvery.github.io/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Raspberry Pi GB DIY (1)</title>
     <link href="http://newbilityvery.github.io/2017/05/19/rasp-gb-diy/"/>
     <id>http://newbilityvery.github.io/2017/05/19/rasp-gb-diy/</id>
     <published>2017-05-19T19:07:35.000Z</published>
-    <updated>2017-05-19T22:56:52.395Z</updated>
+    <updated>2017-06-09T18:10:00.429Z</updated>
     
     <content type="html"><![CDATA[<h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>家里有两个闲置的树莓派（1B ＆ 2B）。最初是用来当下载机使用的，NAS组好了后就丢在一边了。一直觉得有点浪费。这次有人从中国过来就手痒在淘宝买了套树莓派DIY掌机套件。</p>
 <!-- put ad picture -->
