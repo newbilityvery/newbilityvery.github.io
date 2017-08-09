@@ -15,22 +15,18 @@
 
 
 
-<meta name="description" content="原因去年买了台Galaxy Tab S 8.4想用来看小说。结果用得很少，因为没时间。T_T 不过没事的时候还是会拿来玩玩。然而三星的系统让我实在恼火：">
+<meta name="description" content="Reasonvim-airline is an excellent vim plugin which gives you a fancy status line and makes the coding not that boring. However, recently I found it slowing down the vim start-up time.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在Galaxy Tab S 8.4 上刷AOSP android N">
-<meta property="og:url" content="http://newbilityvery.github.io/2016/11/03/install-android-N-on-galaxy-tab-A/index.html">
+<meta property="og:title" content="Switch from vim-airline to lightline">
+<meta property="og:url" content="http://newbilityvery.github.io/2017/08/04/switch-to-lightline/index.html">
 <meta property="og:site_name" content="Play & Go">
-<meta property="og:description" content="原因去年买了台Galaxy Tab S 8.4想用来看小说。结果用得很少，因为没时间。T_T 不过没事的时候还是会拿来玩玩。然而三星的系统让我实在恼火：">
-<meta property="og:image" content="http://ww4.sinaimg.cn/large/0060lm7Tgw1f9ep9ih4y9j318g1z441n.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/0060lm7Tgw1f9ep9jxl6cj318g1z4gpo.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/0060lm7Tgw1f9ep9kgixzj318g1z4q7n.jpg">
-<meta property="og:image" content="http://ww4.sinaimg.cn/large/0060lm7Tgw1f9epaegruij318g1z4ams.jpg">
-<meta property="og:image" content="http://ww4.sinaimg.cn/large/0060lm7Tgw1f9epaj5b44j31kw23u4qp.jpg">
-<meta property="og:updated_time" content="2016-11-25T20:45:16.600Z">
+<meta property="og:description" content="Reasonvim-airline is an excellent vim plugin which gives you a fancy status line and makes the coding not that boring. However, recently I found it slowing down the vim start-up time.">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/9feba6cdly1fie6k9l26xj20py0i3jyx.jpg">
+<meta property="og:updated_time" content="2017-08-09T21:34:29.234Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在Galaxy Tab S 8.4 上刷AOSP android N">
-<meta name="twitter:description" content="原因去年买了台Galaxy Tab S 8.4想用来看小说。结果用得很少，因为没时间。T_T 不过没事的时候还是会拿来玩玩。然而三星的系统让我实在恼火：">
-<meta name="twitter:image" content="http://ww4.sinaimg.cn/large/0060lm7Tgw1f9ep9ih4y9j318g1z441n.jpg">
+<meta name="twitter:title" content="Switch from vim-airline to lightline">
+<meta name="twitter:description" content="Reasonvim-airline is an excellent vim plugin which gives you a fancy status line and makes the coding not that boring. However, recently I found it slowing down the vim start-up time.">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/9feba6cdly1fie6k9l26xj20py0i3jyx.jpg">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -60,7 +56,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>在Galaxy Tab S 8.4 上刷AOSP android N | Play &amp; Go</title>
+<title>Switch from vim-airline to lightline | Play &amp; Go</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -257,11 +253,11 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
-      <div class="body-wrap"><article id="post-install-android-N-on-galaxy-tab-A" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-switch-to-lightline" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/11/03/install-android-N-on-galaxy-tab-A/" class="article-date">
-      <time datetime="2016-11-03T01:54:55.000Z" itemprop="datePublished">2016-11-03</time>
+      <a href="/2017/08/04/switch-to-lightline/" class="article-date">
+      <time datetime="2017-08-03T21:48:08.000Z" itemprop="datePublished">2017-08-04</time>
 </a>
 
 
@@ -276,7 +272,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      在Galaxy Tab S 8.4 上刷AOSP android N
+      Switch from vim-airline to lightline
     </h1>
   
 
@@ -287,7 +283,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Misc/">Misc</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/刷机/">刷机</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vim/">vim</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -297,54 +293,32 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h1><p>去年买了台Galaxy Tab S 8.4想用来看小说。结果用得很少，因为没时间。T_T 不过没事的时候还是会拿来玩玩。然而三星的系统让我实在恼火：</p>
+        <!--
+original: true
+catagory:
+-->
+<h1 id="Reason"><a href="#Reason" class="headerlink" title="Reason"></a>Reason</h1><p><a href="https://github.com/vim-airline/vim-airline" target="_blank" rel="external">vim-airline</a> is an excellent vim plugin which gives you a fancy status line and makes the coding not that boring. However, recently I found it slowing down the vim start-up time.</p>
 <a id="more"></a>
+<p>I haven’t had this issue before, now it took at least 2 seconds to start the a vim session. I guess one reason may be the <code>/home</code> directory is NFS-mounted and recently more people are using it.</p>
+<p>I suspect the vim-airline plugin because vim is freezing for 1s before airline status bar shows up. Then I disable the plugin, vim starts up in almost no time. It might be too heavy.</p>
+<h1 id="Switch-to-lightline"><a href="#Switch-to-lightline" class="headerlink" title="Switch to lightline"></a>Switch to <a href="https://github.com/itchyny/lightline.vim" target="_blank" rel="external">lightline</a></h1><p>However, I really like the fancy status bar. After searching, I find a very nice alternative - <a href="https://github.com/itchyny/lightline.vim" target="_blank" rel="external">lightline</a>.</p>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>Installation is very simple if you have a plugin manager like <strong>vundle</strong> or <strong>vim-plug</strong>. (BTW, I am using vim-plug now.) Just comment out the old and add the new plugin.</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">" Comment the Old</span></div><div class="line"><span class="comment">" Plug 'vim-airline/vim-airline'</span></div><div class="line"><span class="comment">" Plug 'vim-airline/vim-airline-themes'</span></div><div class="line"><span class="comment">" Add new plugin</span></div><div class="line">Plug <span class="string">'itchyny/lightline.vim'</span></div></pre></td></tr></table></figure>
+<h2 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h2><p>Actually the default setting is good enough. I just did some simple Configuration.</p>
 <ul>
-<li>自带一堆没用的应用占空间。虽然插了个64G的卡，可是应用没法往里面装。尤其是游戏，数据文件貌似没法转到卡上。</li>
-<li>还有个更重要的原因是超级耗电。我还是root过装了绿色守护，结果待机也只能一天。没精力去研究原因了。</li>
+<li>Change color scheme</li>
+<li>Show git branch info (need <a href="https://github.com/tpope/vim-fugitive" target="_blank" rel="external">vim-fugtive</a> plugin)</li>
+<li>Use powerline symbols</li>
 </ul>
-<h1 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h1><p>过程挺有意思的，心血来潮在XDA上逛发现可以刷AOSP的系统。正是我想要的啊！看了看要求，需要有TWRP recovery。这个还真有。。。不知道什么时候弄上去的。估计是刚买回来折腾的时候。</p>
-<p>那还等什么？开搞！</p>
-<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>如果已经有TWRP的recovery了就很容易，（我已经忘了我是怎么装上去的了。。。）直接下载好zip包然后在recovery里面install即可。</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> <span class="variable">g:lightline</span> = &#123;</div><div class="line">  \   <span class="string">'colorscheme'</span>: <span class="string">'Dracula'</span>,</div><div class="line">  \   <span class="string">'active'</span>: &#123;</div><div class="line">  \     <span class="string">'left'</span>:[ [ <span class="string">'mode'</span>, <span class="string">'paste'</span> ],</div><div class="line">  \              [ <span class="string">'gitbranch'</span>, <span class="string">'readonly'</span>, <span class="string">'filename'</span>, <span class="string">'modified'</span> ]</div><div class="line">  \     ]</div><div class="line">  \   &#125;,</div><div class="line">	\   <span class="string">'component'</span>: &#123;</div><div class="line">	\     <span class="string">'lineinfo'</span>: <span class="string">' %3l:%-2v'</span>,</div><div class="line">	\   &#125;,</div><div class="line">  \   <span class="string">'component_function'</span>: &#123;</div><div class="line">  \     <span class="string">'gitbranch'</span>: <span class="string">'fugitive#head'</span>,</div><div class="line">  \   &#125;</div><div class="line">  \ &#125;</div><div class="line"></div><div class="line"><span class="keyword">let</span> <span class="variable">g:lightline</span>.separator = &#123;</div><div class="line">	\   <span class="string">'left'</span>: <span class="string">''</span>, <span class="string">'right'</span>: <span class="string">''</span></div><div class="line">  \&#125;</div><div class="line"></div><div class="line"><span class="keyword">let</span> <span class="variable">g:lightline</span>.subseparator = &#123;</div><div class="line">	\   <span class="string">'left'</span>: <span class="string">''</span>, <span class="string">'right'</span>: <span class="string">''</span> </div><div class="line">  \&#125;</div></pre></td></tr></table></figure>
 <ul>
-<li><p>Android 6.0 <a href="http://forum.xda-developers.com/galaxy-tab-s/development/rom-android-6-marshmallow-tab-s-10-5-lte-t3219759" target="_blank" rel="external">http://forum.xda-developers.com/galaxy-tab-s/development/rom-android-6-marshmallow-tab-s-10-5-lte-t3219759</a></p>
-</li>
-<li><p>Android 7.0 <a href="http://forum.xda-developers.com/galaxy-tab-s/development/rom-android-7-nougat-t3449078" target="_blank" rel="external">http://forum.xda-developers.com/galaxy-tab-s/development/rom-android-7-nougat-t3449078</a></p>
-</li>
+<li>Show tabline and disable the GUI tabline</li>
 </ul>
-<p><strong>前提</strong></p>
-<p>已经有了TWRP 2.8.6.2或以上版本。<br>打过bootloader补丁。已经是官方5.0以上的话已经打好了。</p>
-<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
-<li>下载对应版本的AOSP系统，GApps 还有superSU.</li>
-<li>进twrp，先清分区。SD卡和internal SD可以不用请。</li>
-<li>安装AOSP zip, 然后重启至recovery.</li>
-<li>安装Gapps和superSU.</li>
-<li>重启系统.</li>
-<li>就这么简单！</li>
-</ol>
-<h2 id="Android-6-0"><a href="#Android-6-0" class="headerlink" title="Android 6.0"></a>Android 6.0</h2><p>我先考虑的是装6.0，因为稳定而且有xposed。然而装完发现GApps装上去后一直退出。试了好几个版本都不行。煎熬了一天然后第二天果断换N。</p>
-<h2 id="Android-N"><a href="#Android-N" class="headerlink" title="Android N"></a>Android N</h2><p>这个安装很顺利，照着步骤就行。有个小坑，不知道是不是我的特例。我在初始设定时跳过了指纹设置，然后在系统设置里就没法打开了。只好再刷了一次直接在开始时设定就没问题了。</p>
-<h1 id="感受"><a href="#感受" class="headerlink" title="感受"></a>感受</h1><ul>
-<li>爽！还是喜欢原生。装好后系统才占2G。</li>
-</ul>
-<p><img src="http://ww4.sinaimg.cn/large/0060lm7Tgw1f9ep9ih4y9j318g1z441n.jpg" alt="系统占用"></p>
-<ul>
-<li>待机也是飞起，这还是没装xposed呢，要等出了还不得飞上天啊。</li>
-</ul>
-<p><img src="http://ww1.sinaimg.cn/large/0060lm7Tgw1f9ep9jxl6cj318g1z4gpo.jpg" alt="电池使用"></p>
-<ul>
-<li>从6开始有个很不错的功能：在系统层面直接把SD卡变成系统内部空间。这样应用就能直接装在卡上啦！</li>
-</ul>
-<h2 id="几点不足"><a href="#几点不足" class="headerlink" title="几点不足"></a>几点不足</h2><ol>
-<li>有些程序不稳定。比如指纹开锁有时就不灵。系统应用有时会崩溃。</li>
-<li>画面有时候有glitch，作者也在帖子里说明了。</li>
-<li>没Xposed。耐心等着吧。</li>
-</ol>
-<p>不过这些都是小问题，因为我用得并不多。也很少遇到。</p>
-<h2 id="Some-Pictures"><a href="#Some-Pictures" class="headerlink" title="Some Pictures"></a>Some Pictures</h2><p><img src="http://ww1.sinaimg.cn/large/0060lm7Tgw1f9ep9kgixzj318g1z4q7n.jpg" alt="系统信息"></p>
-<p><img src="http://ww4.sinaimg.cn/large/0060lm7Tgw1f9epaegruij318g1z4ams.jpg" alt="N Logo"></p>
-<p><img src="http://ww4.sinaimg.cn/large/0060lm7Tgw1f9epaj5b44j31kw23u4qp.jpg" alt="平板照片"></p>
-<!-- 图片链接放下面 -->
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> <span class="variable">g:lightline</span>.tabline = &#123;</div><div class="line">  \   <span class="string">'left'</span>: [ [<span class="string">'tabs'</span>] ],</div><div class="line">  \   <span class="string">'right'</span>: [ [<span class="string">'close'</span>] ]</div><div class="line">  \ &#125;</div><div class="line"><span class="keyword">set</span> showtabline=<span class="number">2</span>  <span class="comment">" Show tabline</span></div><div class="line"><span class="keyword">set</span> guioptions-=<span class="keyword">e</span>  <span class="comment">" Don't use GUI tabline</span></div></pre></td></tr></table></figure>
+<h3 id="Misc"><a href="#Misc" class="headerlink" title="Misc"></a>Misc</h3><p>I managed to show buffers on tabline, but it is too long when you open many files. Then I use <a href="https://github.com/bling/vim-bufferline" target="_blank" rel="external">vim-bufferline</a> plugin instead.</p>
+<h2 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h2><p><img src="https://ws1.sinaimg.cn/large/9feba6cdly1fie6k9l26xj20py0i3jyx.jpg" alt="Final Result"></p>
+<p>Vim start-up time is very fast now and I still have a fancy status bar. I am happy with it ^_^.</p>
+<!-- links -->
 
       
     </div>
@@ -353,13 +327,13 @@
   
     
     <div class="copyright">
-        <p><span>Title:</span><a href="/2016/11/03/install-android-N-on-galaxy-tab-A/">在Galaxy Tab S 8.4 上刷AOSP android N</a></p>
+        <p><span>Title:</span><a href="/2017/08/04/switch-to-lightline/">Switch from vim-airline to lightline</a></p>
         <p><span>Author:</span><a href="/" title="Back to Homepage">Vivid</a></p>
-        <p><span>Created:</span>2016-11-03, 04:54:55</p>
-        <p><span>Updated:</span>2016-11-25, 23:45:16</p>
+        <p><span>Created:</span>2017-08-04, 00:48:08</p>
+        <p><span>Updated:</span>2017-08-10, 00:34:29</p>
         <p>
-            <span>Full URL:</span><a class="post-url" href="/2016/11/03/install-android-N-on-galaxy-tab-A/" title="在Galaxy Tab S 8.4 上刷AOSP android N">http://newbilityvery.github.io/2016/11/03/install-android-N-on-galaxy-tab-A/</a>
-            <span class="copy-path" data-clipboard-text="From http://newbilityvery.github.io/2016/11/03/install-android-N-on-galaxy-tab-A/　　By Vivid" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <span>Full URL:</span><a class="post-url" href="/2017/08/04/switch-to-lightline/" title="Switch from vim-airline to lightline">http://newbilityvery.github.io/2017/08/04/switch-to-lightline/</a>
+            <span class="copy-path" data-clipboard-text="From http://newbilityvery.github.io/2017/08/04/switch-to-lightline/　　By Vivid" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -371,16 +345,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2017/05/19/rasp-gb-diy/">
-                    Raspberry Pi GB DIY (1)
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/07/08/vim-env-for-rtl-coding/">
-                    My Vim Setting for verilog/systemverilog coding
+                <a href="/2017/06/09/rasp-gb-diy2/">
+                    Raspberry Pi GB DIY (2)
                 </a>
             </div>
         
@@ -392,7 +360,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#原因"><span class="toc-number">1.</span> <span class="toc-text">原因</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#过程"><span class="toc-number">2.</span> <span class="toc-text">过程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#方法"><span class="toc-number">2.1.</span> <span class="toc-text">方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#步骤"><span class="toc-number">2.2.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android-6-0"><span class="toc-number">2.3.</span> <span class="toc-text">Android 6.0</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android-N"><span class="toc-number">2.4.</span> <span class="toc-text">Android N</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#感受"><span class="toc-number">3.</span> <span class="toc-text">感受</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#几点不足"><span class="toc-number">3.1.</span> <span class="toc-text">几点不足</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Some-Pictures"><span class="toc-number">3.2.</span> <span class="toc-text">Some Pictures</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Reason"><span class="toc-number">1.</span> <span class="toc-text">Reason</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Switch-to-lightline"><span class="toc-number">2.</span> <span class="toc-text">Switch to lightline</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Installation"><span class="toc-number">2.1.</span> <span class="toc-text">Installation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Configuration"><span class="toc-number">2.2.</span> <span class="toc-text">Configuration</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Misc"><span class="toc-number">2.2.1.</span> <span class="toc-text">Misc</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Result"><span class="toc-number">2.3.</span> <span class="toc-text">Result</span></a></li></ol></li></ol>
         
     </div>
     <style>
@@ -422,8 +390,8 @@
     <div id="disqus_thread"></div>
     <script>
         var disqus_config = function(){
-            this.page.url = 'http://newbilityvery.github.io/2016/11/03/install-android-N-on-galaxy-tab-A/';
-            this.page.identifier = '2016/11/03/install-android-N-on-galaxy-tab-A/';
+            this.page.url = 'http://newbilityvery.github.io/2017/08/04/switch-to-lightline/';
+            this.page.identifier = '2017/08/04/switch-to-lightline/';
         };
         var loadComment = function(){
             var d = document, s = d.createElement('script');
@@ -445,15 +413,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/05/19/rasp-gb-diy/" title="Pre: Raspberry Pi GB DIY (1)">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
         
 
         <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/07/08/vim-env-for-rtl-coding/" title="Next: My Vim Setting for verilog/systemverilog coding">
+            <a href="/2017/06/09/rasp-gb-diy2/" title="Next: Raspberry Pi GB DIY (2)">
                 <i class="fa fa-angle-right"></i>
             </a>
         

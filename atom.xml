@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://newbilityvery.github.io/"/>
-  <updated>2017-06-12T23:58:43.944Z</updated>
+  <updated>2017-08-09T21:34:29.234Z</updated>
   <id>http://newbilityvery.github.io/</id>
   
   <author>
@@ -14,6 +14,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Switch from vim-airline to lightline</title>
+    <link href="http://newbilityvery.github.io/2017/08/04/switch-to-lightline/"/>
+    <id>http://newbilityvery.github.io/2017/08/04/switch-to-lightline/</id>
+    <published>2017-08-03T21:48:08.000Z</published>
+    <updated>2017-08-09T21:34:29.234Z</updated>
+    
+    <content type="html"><![CDATA[<!--
+original: true
+catagory:
+-->
+<h1 id="Reason"><a href="#Reason" class="headerlink" title="Reason"></a>Reason</h1><p><a href="https://github.com/vim-airline/vim-airline" target="_blank" rel="external">vim-airline</a> is an excellent vim plugin which gives you a fancy status line and makes the coding not that boring. However, recently I found it slowing down the vim start-up time.</p>
+<a id="more"></a>
+<p>I haven’t had this issue before, now it took at least 2 seconds to start the a vim session. I guess one reason may be the <code>/home</code> directory is NFS-mounted and recently more people are using it.</p>
+<p>I suspect the vim-airline plugin because vim is freezing for 1s before airline status bar shows up. Then I disable the plugin, vim starts up in almost no time. It might be too heavy.</p>
+<h1 id="Switch-to-lightline"><a href="#Switch-to-lightline" class="headerlink" title="Switch to lightline"></a>Switch to <a href="https://github.com/itchyny/lightline.vim" target="_blank" rel="external">lightline</a></h1><p>However, I really like the fancy status bar. After searching, I find a very nice alternative - <a href="https://github.com/itchyny/lightline.vim" target="_blank" rel="external">lightline</a>.</p>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>Installation is very simple if you have a plugin manager like <strong>vundle</strong> or <strong>vim-plug</strong>. (BTW, I am using vim-plug now.) Just comment out the old and add the new plugin.</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">" Comment the Old</span></div><div class="line"><span class="comment">" Plug 'vim-airline/vim-airline'</span></div><div class="line"><span class="comment">" Plug 'vim-airline/vim-airline-themes'</span></div><div class="line"><span class="comment">" Add new plugin</span></div><div class="line">Plug <span class="string">'itchyny/lightline.vim'</span></div></pre></td></tr></table></figure>
+<h2 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h2><p>Actually the default setting is good enough. I just did some simple Configuration.</p>
+<ul>
+<li>Change color scheme</li>
+<li>Show git branch info (need <a href="https://github.com/tpope/vim-fugitive" target="_blank" rel="external">vim-fugtive</a> plugin)</li>
+<li>Use powerline symbols</li>
+</ul>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> <span class="variable">g:lightline</span> = &#123;</div><div class="line">  \   <span class="string">'colorscheme'</span>: <span class="string">'Dracula'</span>,</div><div class="line">  \   <span class="string">'active'</span>: &#123;</div><div class="line">  \     <span class="string">'left'</span>:[ [ <span class="string">'mode'</span>, <span class="string">'paste'</span> ],</div><div class="line">  \              [ <span class="string">'gitbranch'</span>, <span class="string">'readonly'</span>, <span class="string">'filename'</span>, <span class="string">'modified'</span> ]</div><div class="line">  \     ]</div><div class="line">  \   &#125;,</div><div class="line">	\   <span class="string">'component'</span>: &#123;</div><div class="line">	\     <span class="string">'lineinfo'</span>: <span class="string">' %3l:%-2v'</span>,</div><div class="line">	\   &#125;,</div><div class="line">  \   <span class="string">'component_function'</span>: &#123;</div><div class="line">  \     <span class="string">'gitbranch'</span>: <span class="string">'fugitive#head'</span>,</div><div class="line">  \   &#125;</div><div class="line">  \ &#125;</div><div class="line"></div><div class="line"><span class="keyword">let</span> <span class="variable">g:lightline</span>.separator = &#123;</div><div class="line">	\   <span class="string">'left'</span>: <span class="string">''</span>, <span class="string">'right'</span>: <span class="string">''</span></div><div class="line">  \&#125;</div><div class="line"></div><div class="line"><span class="keyword">let</span> <span class="variable">g:lightline</span>.subseparator = &#123;</div><div class="line">	\   <span class="string">'left'</span>: <span class="string">''</span>, <span class="string">'right'</span>: <span class="string">''</span> </div><div class="line">  \&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Show tabline and disable the GUI tabline</li>
+</ul>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> <span class="variable">g:lightline</span>.tabline = &#123;</div><div class="line">  \   <span class="string">'left'</span>: [ [<span class="string">'tabs'</span>] ],</div><div class="line">  \   <span class="string">'right'</span>: [ [<span class="string">'close'</span>] ]</div><div class="line">  \ &#125;</div><div class="line"><span class="keyword">set</span> showtabline=<span class="number">2</span>  <span class="comment">" Show tabline</span></div><div class="line"><span class="keyword">set</span> guioptions-=<span class="keyword">e</span>  <span class="comment">" Don't use GUI tabline</span></div></pre></td></tr></table></figure>
+<h3 id="Misc"><a href="#Misc" class="headerlink" title="Misc"></a>Misc</h3><p>I managed to show buffers on tabline, but it is too long when you open many files. Then I use <a href="https://github.com/bling/vim-bufferline" target="_blank" rel="external">vim-bufferline</a> plugin instead.</p>
+<h2 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h2><p><img src="https://ws1.sinaimg.cn/large/9feba6cdly1fie6k9l26xj20py0i3jyx.jpg" alt="Final Result"></p>
+<p>Vim start-up time is very fast now and I still have a fancy status bar. I am happy with it ^_^.</p>
+<!-- links -->
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;!--
+original: true
+catagory:
+--&gt;
+&lt;h1 id=&quot;Reason&quot;&gt;&lt;a href=&quot;#Reason&quot; class=&quot;headerlink&quot; title=&quot;Reason&quot;&gt;&lt;/a&gt;Reason&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/vim-airline/vim-airline&quot;&gt;vim-airline&lt;/a&gt; is an excellent vim plugin which gives you a fancy status line and makes the coding not that boring. However, recently I found it slowing down the vim start-up time.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="vim" scheme="http://newbilityvery.github.io/tags/vim/"/>
+    
+      <category term="English" scheme="http://newbilityvery.github.io/tags/English/"/>
+    
+  </entry>
   
   <entry>
     <title>Raspberry Pi GB DIY (2)</title>
@@ -311,11 +363,11 @@ catagory:
     </summary>
     
     
+      <category term="English" scheme="http://newbilityvery.github.io/tags/English/"/>
+    
       <category term="Vim" scheme="http://newbilityvery.github.io/tags/Vim/"/>
     
       <category term="verilog" scheme="http://newbilityvery.github.io/tags/verilog/"/>
-    
-      <category term="English" scheme="http://newbilityvery.github.io/tags/English/"/>
     
   </entry>
   
