@@ -1,0 +1,223 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Raspberry Pi GB DIY | Play &amp; Go</title><meta name="author" content="Vivid"><meta name="copyright" content="Vivid"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="起因家里有两个闲置的树莓派（1B ＆ 2B）。最初是用来当下载机使用的，NAS组好了后就丢在一边了。一直觉得有点浪费。这次有人从中国过来就手痒在淘宝买了套树莓派DIY掌机套件。       效果图(来源：百度贴吧)看着挺不错，加上上面还说是模块化组装，感觉不是很难的样子，就下手了。其实算下来也不算便"><link rel="shortcut icon" href="/img/favicon-custom.png"><link rel="canonical" href="http://newbilityvery.github.io/hiden_posts/rasp-gb-diy"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="tp85EhSf8_R_D9hn4BAI934ekgYECjbwrmShWB49YJ4"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-4569241372682582',
+  enable_page_level_ads: 'true'
+});</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Raspberry Pi GB DIY',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-01-06 22:26:44'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/little_goku.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Play &amp; Go</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="page"><h1 class="page-title">Raspberry Pi GB DIY</h1><div id="article-container"><h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>家里有两个闲置的树莓派（1B ＆ 2B）。最初是用来当下载机使用的，NAS组好了后就丢在一边了。一直觉得有点浪费。这次有人从中国过来就手痒在淘宝买了套树莓派DIY掌机套件。</p>
+<!-- put ad picture -->
+<p><img src="http://i4.buimg.com/588926/4198bff5c3a3c56a.jpg" alt="宣传图1"></p>
+<span id="more"></span>
+
+<p><img src="http://i2.muimg.com/588926/1403f22bb178dc85.jpg" alt="宣传图2"><br><img src="http://i2.muimg.com/588926/641c7cbc19d9b039.jpg" alt="宣传图3"></p>
+<!-- 图片链接放下面 -->
+<p>效果图(来源：<a target="_blank" rel="noopener" href="http://tieba.baidu.com/p/4771137780">百度贴吧</a>)看着挺不错，加上上面还说是模块化组装，感觉不是很难的样子，就下手了。其实算下来也不算便宜，一共400人民币。还要先付款确认收货才发货，感觉挺怪，不过还是照做了。DIY的东西嘛，没啥保障也可以理解。</p>
+<h1 id="入坑"><a href="#入坑" class="headerlink" title="入坑"></a>入坑</h1><p>发完货以后才给我组装说明。一看傻眼了：比我想象的难度高了一个级别。需要焊接，还需要一堆高温绝缘胶带等电子设计的工具。还好公司实验室都有。但是如果让我先看到这个说明的话，我应该是不会买的。倒不是不会，只是有点嫌麻烦。我看到模块化字样时心里想的是一堆接插件拼装起来就好的。</p>
+<img src="http://i2.muimg.com/588926/3443e72b33c3f3e5.jpg" style="zoom:60%" />
+<!-- ![零件][parts] -->
+
+<!-- 图片链接放下面 -->
+<p><strong>零件，实际比照片多，已经焊了一部分才想起照相。</strong></p>
+<p>不过都入坑了还是硬着头皮开搞吧。凭着自己大学时金工实习焊电视电路板的菜鸟水平再加上实验室里的高人指点总算慢慢上手了。</p>
+<p>里面有些焊点还真是挺hack的，又是要刮开覆铜，又是直接焊在某个原件的引脚，刁钻得很。。</p>
+<!-- put 刁钻引脚 picture -->
+
+<h1 id="半成品"><a href="#半成品" class="headerlink" title="半成品"></a>半成品</h1><p>自己边琢磨边弄也算是搞得差不多了。黑色的是锂电池充电板加升压板，输出的应该是5V然后通过树莓派的GPIO供电。（这个我研究了半天，后来查了资料才发现可以不用Mini USB供电。学到了！）</p>
+<img src="http://i2.muimg.com/588926/b9d55dc912ca1c52.jpg" style="zoom:60%" />
+<!-- ![半成品1][half_baked1] -->
+
+<p>觉得有点怪的地方是接地是靠耳机视频复合插口和树莓派连上的。这样的话不插这个插口就没法给树莓派供电了。。。为什不通过侧边的引脚连到GPIO呢？</p>
+<img src="http://i2.muimg.com/588926/3648f5f2e9f0a58b.jpg" style="zoom:60%" />
+<!-- ![半成品2][half_baked2] -->
+
+<p>屏幕则是通过复合视频输入的。我单独在树莓派1B上试过，可以点亮，就是有点模糊。</p>
+<!-- put 屏幕 picture -->
+
+<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>快装好准备测试时，问题来了。。。</p>
+<h2 id="供电"><a href="#供电" class="headerlink" title="供电"></a>供电</h2><p>不能边充电边用。单独用电池的时候是可以启动的，可一插usb充电线马上就没输出了。量下输出电压只有0.5V。</p>
+<p>不知道是板子坏了还是我没焊对地方。</p>
+<h2 id="显示"><a href="#显示" class="headerlink" title="显示"></a>显示</h2><p>屏幕没显示。单独测过屏幕是可以点亮的（PAL 和 NTSC 均有显示），所以问题还是在另外一边。量得电压是有5V，难道是没有视频输出？</p>
+<hr>
+<p>搞不定这些问题就没法接着弄下去了。。。</p>
+<h1 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h1><p>最近是没时间弄了，不过自己挖的坑喊着泪也要填回去。于是想了几个点子希望能解决上面的问题。</p>
+<ul>
+<li><p>另外买一个电源板，看看结果是不是一样。</p>
+</li>
+<li><p>买根视频线看看手头的树莓派能不能输出复合视频。</p>
+</li>
+</ul>
+<h2 id="改进"><a href="#改进" class="headerlink" title="改进"></a>改进</h2><p>还有些改进的想法：</p>
+<ul>
+<li><p>用树莓派 zero W 换掉2B。这样可以多出更多空间。而且复合视频输出是焊点，Debug也比较容易。</p>
+</li>
+<li><p>考虑用HDMI的高清屏。不过成本上应该会高不少，先搁置。</p>
+</li>
+</ul>
+<hr>
+<p>等有时间再说了。。。</p>
+</div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/little_goku.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Vivid</div><div class="author-info__description">...</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2016/11/03/install-android-N-on-galaxy-tab-A/" title="在Galaxy Tab S 8.4 上刷AOSP android N">在Galaxy Tab S 8.4 上刷AOSP android N</a><time datetime="2023-01-07T06:26:44.152Z" title="Updated 2023-01-06 22:26:44">2023-01-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2016/07/06/nas-build/" title="想组个NAS">想组个NAS</a><time datetime="2023-01-07T06:26:44.152Z" title="Updated 2023-01-06 22:26:44">2023-01-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2016/07/06/nas-cfg/" title="NAS硬件配置">NAS硬件配置</a><time datetime="2023-01-07T06:26:44.152Z" title="Updated 2023-01-06 22:26:44">2023-01-06</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/DIY/" style="font-size: 1.1em; color: #999">DIY</a> <a href="/tags/DSM/" style="font-size: 1.1em; color: #999">DSM</a> <a href="/tags/English/" style="font-size: 1.3em; color: #99a1ac">English</a> <a href="/tags/Misc/" style="font-size: 1.3em; color: #99a1ac">Misc</a> <a href="/tags/NAS/" style="font-size: 1.5em; color: #99a9bf">NAS</a> <a href="/tags/OMV/" style="font-size: 1.1em; color: #999">OMV</a> <a href="/tags/OpenMediaVault/" style="font-size: 1.1em; color: #999">OpenMediaVault</a> <a href="/tags/PC/" style="font-size: 1.1em; color: #999">PC</a> <a href="/tags/Vim/" style="font-size: 1.3em; color: #99a1ac">Vim</a> <a href="/tags/synology/" style="font-size: 1.1em; color: #999">synology</a> <a href="/tags/verilog/" style="font-size: 1.1em; color: #999">verilog</a> <a href="/tags/%E5%88%B7%E6%9C%BA/" style="font-size: 1.1em; color: #999">刷机</a> <a href="/tags/%E7%BE%A4%E6%99%96/" style="font-size: 1.1em; color: #999">群晖</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/11/"><span class="card-archive-list-date">November 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2017/08/"><span class="card-archive-list-date">August 2017</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2016/11/"><span class="card-archive-list-date">November 2016</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2016/07/"><span class="card-archive-list-date">July 2016</span><span class="card-archive-list-count">4</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">7</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-01-07T07:37:27.342Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2016 - 2023 By Vivid</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'http://newbilityvery.github.io/hiden_posts/rasp-gb-diy.html'
+    this.page.identifier = '/hiden_posts/rasp-gb-diy.html'
+    this.page.title = 'Raspberry Pi GB DIY'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://vivid-clock.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+
+  document.getElementById('darkmode').addEventListener('click', () => {
+    setTimeout(() => window.disqusReset(), 200)
+  })
+}
+
+if ('Disqus' === 'Disqus' || !true) {
+  if (true) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

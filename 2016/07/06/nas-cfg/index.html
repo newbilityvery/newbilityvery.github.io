@@ -1,0 +1,237 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>NAS硬件配置 | Play &amp; Go</title><meta name="author" content="Vivid"><meta name="copyright" content="Vivid"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="(接上篇) 自己的想法其实最初的定位应该就是文件服务器外加能跑虚拟机以便虚拟群晖。这样的话其实弄台Atom的板子就够了，而且功耗还很小。不过后来考虑到可能以后会兼一部分HTPC的功能，所以还是转向了桌面平台。   机箱这个是想了最久的，我想要一台尽量小的然后又能塞下4块3.5寸硬盘和至少一个2.5寸"><link rel="shortcut icon" href="/img/favicon-custom.png"><link rel="canonical" href="http://newbilityvery.github.io/2016/07/06/nas-cfg/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="tp85EhSf8_R_D9hn4BAI934ekgYECjbwrmShWB49YJ4"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-4569241372682582',
+  enable_page_level_ads: 'true'
+});</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'NAS硬件配置',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-01-06 22:26:44'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/little_goku.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Play &amp; Go</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">NAS硬件配置</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2016-07-07T06:21:14.000Z" title="Created 2016-07-06 23:21:14">2016-07-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-01-07T06:26:44.152Z" title="Updated 2023-01-06 22:26:44">2023-01-06</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="NAS硬件配置"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><p>(<a href="/2016/07/06/nas-build/index.html">接上篇</a>)</p>
+<h1 id="自己的想法"><a href="#自己的想法" class="headerlink" title="自己的想法"></a>自己的想法</h1><p>其实最初的定位应该就是文件服务器外加能跑虚拟机以便虚拟群晖。这样的话其实弄台Atom的板子就够了，而且功耗还很小。不过后来考虑到可能以后会兼一部分HTPC的功能，所以还是转向了桌面平台。</p>
+<span id="more"></span>
+
+<h2 id="机箱"><a href="#机箱" class="headerlink" title="机箱"></a>机箱</h2><p>这个是想了最久的，我想要一台尽量小的然后又能塞下4块3.5寸硬盘和至少一个2.5寸盘的，外观还不要太难看。说实在的，美国这些东西种类太匮乏了，价格也不算便宜，跟天朝没法比啊。<br>找来找去， 在美国能找到的型号里，考虑过下面一些：</p>
+<h3 id="Lian-Li-Q25"><a href="#Lian-Li-Q25" class="headerlink" title="Lian Li Q25"></a>Lian Li Q25</h3><p><a target="_blank" rel="noopener" href="http://www.lian-li.com/en/dt_portfolio/pc-q25/">这个机箱</a>其实设计得很不错，能放至少6块3.5寸盘。不过这样以来导致机箱偏大，对我来说有点多余了。我感觉我放4x8T（逐次添加）应该够用很久了。而且价格也不算便宜，不带电源120刀。</p>
+<h3 id="U-NAS-NSC-400"><a href="#U-NAS-NSC-400" class="headerlink" title="U-NAS NSC-400"></a>U-NAS NSC-400</h3><p><a target="_blank" rel="noopener" href="http://www.u-nas.com/xcart/product.php?productid=17610">这个</a>倒是够小，差点就买了。不过淘宝一搜发现是国产的。倒不是嫌弃这个，主要是发现国内才卖700块，美国要150刀，忒不爽了。（不过从民族大义来说，倒是比联想有良心。）</p>
+<h3 id="IN-WIN-MS04"><a href="#IN-WIN-MS04" class="headerlink" title="IN WIN MS04"></a>IN WIN MS04</h3><p>最终选了<a target="_blank" rel="noopener" href="http://www.in-win.com.tw/Server/zh/goods.php?act=view&id=IW-MS04">这个</a>。某天研究Gen8换主板可行性的时候无意中发现的。明显的仿Gen8设计，不过却是用mini-iTX板。这样就能用普通的主板了。有人说样子不好看，我感觉倒还行，而且这东西扔角落里也不会天天看。129刀含电源，感觉比上面两个都值。</p>
+<h2 id="平台"><a href="#平台" class="headerlink" title="平台"></a>平台</h2><p>我这人就喜欢新东西，所以选择skylake平台。</p>
+<h3 id="CPU"><a href="#CPU" class="headerlink" title="CPU"></a>CPU</h3><p>开始想上i3，结果发现居然要100多刀！考虑再三，选择了奔腾G4400。好像能硬解4K，做HTPC应该够了吧。（最后会不会这么用都不知道呢。）无非就是没有超线程，好像也没哪里一定需要这个功能。</p>
+<h3 id="主板"><a href="#主板" class="headerlink" title="主板"></a>主板</h3><p>其实没啥好说的，mini-iTX的板子就那么几个。开始考虑华擎的，但上面只有4个SATA口。算上PCIE转接板的钱还不如直接买个贵点的带6个SATA口的。还省下个pcie槽。</p>
+<h3 id="内存"><a href="#内存" class="headerlink" title="内存"></a>内存</h3><p>不懂。看着打折买了个感觉算便宜的。</p>
+<h3 id="SSD"><a href="#SSD" class="headerlink" title="SSD"></a>SSD</h3><p>本来想弄个MLC，不过发现现在市面上大多数都是TLC。MLC的价格升高了。所以也是看打折买了个三星的。</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="数据盘"><a href="#数据盘" class="headerlink" title="数据盘"></a>数据盘</h3><p>还没买，等打折再看看吧。</p>
+<h1 id="最终的配置"><a href="#最终的配置" class="headerlink" title="最终的配置"></a>最终的配置</h1><p>最终买的配置如下。数据盘还没买，因为想买8T的。一次性投资太大，先组起来挂NFS熟悉熟悉。</p>
+<table>
+<thead>
+<tr>
+<th>种类</th>
+<th>型号</th>
+<th>价格(w&#x2F; tax)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>主板</td>
+<td>Gigabyte GA-H170N-WIFI</td>
+<td>$123.11</td>
+</tr>
+<tr>
+<td>CPU</td>
+<td>Intel Pentium G4400</td>
+<td>$64.79</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>G.SKILL Ripjaws V Series (8Gx2)</td>
+<td>$52.99</td>
+</tr>
+<tr>
+<td>硬盘</td>
+<td>Samsung Evo750 240G</td>
+<td>$79.99</td>
+</tr>
+<tr>
+<td>机箱</td>
+<td>In Win MS04</td>
+<td>$139.74</td>
+</tr>
+<tr>
+<td>合计</td>
+<td></td>
+<td>$460.62</td>
+</tr>
+</tbody></table>
+<p>其实算下来也不算很便宜。如果想省的话，主板和SSD都能省一些；内存可以配8G；还有可以考虑换上一代的平台。如果在天朝，机箱也有更便宜的。不过这也算是从头到尾完全自己配自己装的第一台PC了。平时对这些产品的价格还有品牌之间的一些特点都不是很了解，所以可能不是配得非常平衡。尤其是内存和硬盘，基本就是认价格和牌子的熟悉程度。现在想想SSD买得可能有点草率，不过即使现在也不知道应该买哪个。</p>
+<h1 id="装机过程"><a href="#装机过程" class="headerlink" title="装机过程"></a>装机过程</h1><p>上一次装机还是10年前。不过隔了这么久发现其实过程也很简单，买来照插槽插就好了。没几根线所以走线什么的也算了。中间碰到了几个小问题。</p>
+<h2 id="机箱风扇"><a href="#机箱风扇" class="headerlink" title="机箱风扇"></a>机箱风扇</h2><p>貌似MS04的机箱风扇不是和主板SYS FAN口兼容的，插上去不转。后来琢磨了半天，插背板的接口就能用了。查了说明书，针脚定义和CPU风扇的一样。</p>
+<h2 id="主板SATA口"><a href="#主板SATA口" class="headerlink" title="主板SATA口"></a>主板SATA口</h2><p>应该是自己SB，插拔太暴力，把一个SATA口的塑料整个扒下来了。后面勉强装了回去，居然还能用。</p>
+<h1 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h1><p><del>有时间放几张图吧。总之装好后就这么放角落里去了。</del></p>
+<p><strong>Update 7&#x2F;26&#x2F;2016:</strong><br>数据盘也买了，随便照了几张。。。</p>
+<p>WD Red 8TB，$320左右买的。今天一看又有新折扣，309刀，晕。</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/9feba6cdgw1f67vpi0s6ej21kw0w0tqv.jpg" alt="装好后的样子1"></p>
+<!-- 图片链接放下面 -->
+<h1 id="MISC"><a href="#MISC" class="headerlink" title="MISC"></a>MISC</h1><p>下次再写点装系统装软件的过程。</p>
+<!-- 链接放下面 -->
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://newbilityvery.github.io">Vivid</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://newbilityvery.github.io/2016/07/06/nas-cfg/">http://newbilityvery.github.io/2016/07/06/nas-cfg/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/NAS/">NAS</a><a class="post-meta__tags" href="/tags/DIY/">DIY</a></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2016/07/07/nas-sys-install/"><img class="prev-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">NAS系统及软件安装</div></div></a></div><div class="next-post pull-right"><a href="/2016/07/06/nas-build/"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">想组个NAS</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2016/07/06/nas-build/" title="想组个NAS"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2016-07-06</div><div class="title">想组个NAS</div></div></a></div><div><a href="/2016/07/07/nas-sys-install/" title="NAS系统及软件安装"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2016-07-07</div><div class="title">NAS系统及软件安装</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/little_goku.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Vivid</div><div class="author-info__description">...</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%87%AA%E5%B7%B1%E7%9A%84%E6%83%B3%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">自己的想法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%BA%E7%AE%B1"><span class="toc-number">1.1.</span> <span class="toc-text">机箱</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Lian-Li-Q25"><span class="toc-number">1.1.1.</span> <span class="toc-text">Lian Li Q25</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#U-NAS-NSC-400"><span class="toc-number">1.1.2.</span> <span class="toc-text">U-NAS NSC-400</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IN-WIN-MS04"><span class="toc-number">1.1.3.</span> <span class="toc-text">IN WIN MS04</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B9%B3%E5%8F%B0"><span class="toc-number">1.2.</span> <span class="toc-text">平台</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CPU"><span class="toc-number">1.2.1.</span> <span class="toc-text">CPU</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E6%9D%BF"><span class="toc-number">1.2.2.</span> <span class="toc-text">主板</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E5%AD%98"><span class="toc-number">1.2.3.</span> <span class="toc-text">内存</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SSD"><span class="toc-number">1.2.4.</span> <span class="toc-text">SSD</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-number">1.3.</span> <span class="toc-text">其他</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%9B%98"><span class="toc-number">1.3.1.</span> <span class="toc-text">数据盘</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%80%E7%BB%88%E7%9A%84%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">最终的配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A3%85%E6%9C%BA%E8%BF%87%E7%A8%8B"><span class="toc-number">3.</span> <span class="toc-text">装机过程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%BA%E7%AE%B1%E9%A3%8E%E6%89%87"><span class="toc-number">3.1.</span> <span class="toc-text">机箱风扇</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E6%9D%BFSATA%E5%8F%A3"><span class="toc-number">3.2.</span> <span class="toc-text">主板SATA口</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%80%E7%BB%88%E6%95%88%E6%9E%9C"><span class="toc-number">4.</span> <span class="toc-text">最终效果</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MISC"><span class="toc-number">5.</span> <span class="toc-text">MISC</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2016/11/03/install-android-N-on-galaxy-tab-A/" title="在Galaxy Tab S 8.4 上刷AOSP android N">在Galaxy Tab S 8.4 上刷AOSP android N</a><time datetime="2023-01-07T06:26:44.152Z" title="Updated 2023-01-06 22:26:44">2023-01-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2016/07/06/nas-build/" title="想组个NAS">想组个NAS</a><time datetime="2023-01-07T06:26:44.152Z" title="Updated 2023-01-06 22:26:44">2023-01-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2016/07/06/nas-cfg/" title="NAS硬件配置">NAS硬件配置</a><time datetime="2023-01-07T06:26:44.152Z" title="Updated 2023-01-06 22:26:44">2023-01-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2016 - 2023 By Vivid</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'http://newbilityvery.github.io/2016/07/06/nas-cfg/'
+    this.page.identifier = '/2016/07/06/nas-cfg/'
+    this.page.title = 'NAS硬件配置'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://vivid-clock.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+
+  document.getElementById('darkmode').addEventListener('click', () => {
+    setTimeout(() => window.disqusReset(), 200)
+  })
+}
+
+if ('Disqus' === 'Disqus' || !true) {
+  if (true) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
