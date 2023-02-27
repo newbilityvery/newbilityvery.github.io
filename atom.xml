@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://newbilityvery.github.io/"/>
-  <updated>2023-02-04T06:33:42.379Z</updated>
+  <updated>2023-02-27T06:37:18.887Z</updated>
   <id>http://newbilityvery.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Docker services I&#39;m currently Using</title>
+    <link href="http://newbilityvery.github.io/2023/02/25/Docker-services-I-m-currenlty-Using/"/>
+    <id>http://newbilityvery.github.io/2023/02/25/Docker-services-I-m-currenlty-Using/</id>
+    <published>2023-02-26T06:54:26.000Z</published>
+    <updated>2023-02-27T06:37:18.887Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="List-of-the-dockers-I-am-currently-using"><a href="#List-of-the-dockers-I-am-currently-using" class="headerlink" title="List of the dockers I am currently using"></a>List of the dockers I am currently using</h1><p>I deployed a few docker services on my home NAS and VPS. Here is the list:</p><ul><li><strong>Home NAS</strong><ul><li><a href="https://github.com/reorx/sui2">SUI2</a> - Start Page &#x2F; Navigation Page</li><li><a href="https://github.com/linuxserver/docker-nginx">Linuxserver docker-nginx</a> - nginx with config files for easy customization</li><li><a href="https://github.com/jellyfin/jellyfin">Jellyfin</a> - Media management</li><li><a href="https://github.com/janeczku/calibre-web">Calibre-web</a> - Ebook management</li><li><a href="https://github.com/photoprism/photoprism">photoprism</a> - Photo management</li><li><a href="https://github.com/navidrome/navidrome">navidrome</a> - Music server and streamer</li></ul></li><li><strong>VPS</strong><ul><li><a href="https://docs.linuxserver.io/general/swag">Linuxserver SWAG</a> - nginx + certbot, for easier reverse proxy settings and automated certification renew</li><li><a href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a> - Alternative implementation of the Bitwarden server API written in Rust.</li><li><a href="https://tt-rss.org/">TinyTiny-RSS</a> - Self-hosted RSS feed reader and aggregator</li></ul></li></ul><h1 id="Brief-Description"><a href="#Brief-Description" class="headerlink" title="Brief Description"></a>Brief Description</h1><h2 id="SUI2"><a href="#SUI2" class="headerlink" title="SUI2"></a>SUI2</h2><p>I need a navigation page for the docker services I have. I was using <a href="https://github.com/linuxserver/Heimdall">Heimdall</a> at the beginning, which is also a good one. However I eventually switched to <a href="https://github.com/reorx/sui2">SUI2</a>, as its interface looks more clean. I also like the text way to edit and organize the links.</p><p><em>Screenshot from its <a href="https://github.com/reorx/sui2">github page</a></em></p><p><img src="https://github.com/reorx/sui2/blob/master/images/live-editor.png?raw=true" alt="sui2 screenshot"></p><h2 id="Linuxserver-docker-nginx-and-linuxserver-SWAG"><a href="#Linuxserver-docker-nginx-and-linuxserver-SWAG" class="headerlink" title="Linuxserver docker-nginx and linuxserver SWAG"></a>Linuxserver docker-nginx and linuxserver SWAG</h2><p>The difference of these 2 dockers is that SWAG docker has certbot which can automatically renew the certification. </p><p>In my VPS, I only expose the nginx ports (80, 443). And use nginx to reverse proxy the docker services via docker internal network.</p><p>I am not good at configuring nginx. It also provides <a href="https://github.com/linuxserver/reverse-proxy-confs">this repo</a> with lots of pre-defined reverse proxy config files, which covers most of docker services you can think of. This saved me a lot of time and effort.</p><h2 id="Jellyfin"><a href="#Jellyfin" class="headerlink" title="Jellyfin"></a>Jellyfin</h2><p>Just like <a href="https://emby.media/">Emby</a> and <a href="https://www.plex.tv/">Plex</a>, Jellyfin can also manage your Movies and TV shows. The main reason I choose Jellyfin is because it is open source and free.</p><p>I am using the docker image from linuxserver. (<a href="https://docs.linuxserver.io/images/docker-jellyfin">https://docs.linuxserver.io/images/docker-jellyfin</a>)</p><h2 id="Calibre-web"><a href="#Calibre-web" class="headerlink" title="Calibre-web"></a>Calibre-web</h2><p>I use it to manage the ebooks. It’s essentially a web UI using calibre database. You can easily upload &amp; download the ebooks from any of the devices. And it also supports reading ebooks directly in the browser for certain types. Very useful when you just want to quickly find something but don’t want to download the whole book.</p><p>I use the docker image from linuxserver, too. (<a href="https://hub.docker.com/r/linuxserver/calibre-web">https://hub.docker.com/r/linuxserver/calibre-web</a>)</p><p><em>Screenshot from its <a href="https://github.com/janeczku/calibre-web">github page</a></em></p><p><img src="https://raw.githubusercontent.com/wiki/janeczku/calibre-web/images/main_screen.png" alt="calibre-web screenshot"></p><h2 id="Photoprism"><a href="#Photoprism" class="headerlink" title="Photoprism"></a>Photoprism</h2><p>I used to keep a virtual machine to run synology DSM 5 just for its photo station to backup and manage my photos from phone and camera. However, this open sourced self-hosted service is now good enough to me to replace it. It doesn’t have a client app. I use <a href="https://www.photosync-app.com/home.html">PhotoSync</a> to upload &#x2F; backup the photos to my NAS and use Photoprism to browse.</p><p><em>Screenshot from its <a href="https://github.com/photoprism/photoprism">github page</a></em></p><p><img src="https://camo.githubusercontent.com/5e03a87e47aad26ad7248b8b43eac6471fe96f7b655ac2e532697692753c3ff8/68747470733a2f2f646c2e70686f746f707269736d2e6170702f696d672f75692f6465736b746f702d3130303070782e6a7067" alt="photoprism screenshot"></p><h2 id="navidrome"><a href="#navidrome" class="headerlink" title="navidrome"></a>navidrome</h2><p>TBD</p><h2 id="Vaultwarden"><a href="#Vaultwarden" class="headerlink" title="Vaultwarden"></a>Vaultwarden</h2><p>TBD</p><h2 id="TinyTiny-RSS"><a href="#TinyTiny-RSS" class="headerlink" title="TinyTiny-RSS"></a>TinyTiny-RSS</h2><p>TBD</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;List-of-the-dockers-I-am-currently-using&quot;&gt;&lt;a href=&quot;#List-of-the-dockers-I-am-currently-using&quot; class=&quot;headerlink&quot; title=&quot;List of the 
+      
+    
+    </summary>
+    
+    
+      <category term="docker" scheme="http://newbilityvery.github.io/tags/docker/"/>
+    
+  </entry>
   
   <entry>
     <title>2023 读书 - 《白夜行》</title>
