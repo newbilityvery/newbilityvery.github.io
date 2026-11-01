@@ -5,9 +5,9 @@
   <subtitle>苟利国家生死以 岂因祸福趋避之</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://newbilityvery.github.io/"/>
+  <link href="https://newbilityvery.github.io/"/>
   <updated>2026-11-01T08:05:51.000Z</updated>
-  <id>http://newbilityvery.github.io/</id>
+  <id>https://newbilityvery.github.io/</id>
   
   <author>
     <name>Vivid</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Docker containers I&#39;m currently using</title>
-    <link href="http://newbilityvery.github.io/2023/02/25/Docker-services-I-m-currenlty-Using/"/>
-    <id>http://newbilityvery.github.io/2023/02/25/Docker-services-I-m-currenlty-Using/</id>
+    <link href="https://newbilityvery.github.io/2023/02/25/Docker-services-I-m-currenlty-Using/"/>
+    <id>https://newbilityvery.github.io/2023/02/25/Docker-services-I-m-currenlty-Using/</id>
     <published>2023-02-26T06:54:26.000Z</published>
     <updated>2026-11-01T08:05:51.000Z</updated>
     
@@ -35,14 +35,14 @@
     </summary>
     
     
-      <category term="docker" scheme="http://newbilityvery.github.io/tags/docker/"/>
+      <category term="docker" scheme="https://newbilityvery.github.io/tags/docker/"/>
     
   </entry>
   
   <entry>
     <title>2023 读书 - 《白夜行》</title>
-    <link href="http://newbilityvery.github.io/2023/02/03/bai-ye-xing/"/>
-    <id>http://newbilityvery.github.io/2023/02/03/bai-ye-xing/</id>
+    <link href="https://newbilityvery.github.io/2023/02/03/bai-ye-xing/"/>
+    <id>https://newbilityvery.github.io/2023/02/03/bai-ye-xing/</id>
     <published>2023-02-04T06:09:07.000Z</published>
     <updated>2026-11-01T08:58:21.985Z</updated>
     
@@ -58,14 +58,14 @@
     </summary>
     
     
-      <category term="读书" scheme="http://newbilityvery.github.io/tags/%E8%AF%BB%E4%B9%A6/"/>
+      <category term="读书" scheme="https://newbilityvery.github.io/tags/%E8%AF%BB%E4%B9%A6/"/>
     
   </entry>
   
   <entry>
     <title>新主题</title>
-    <link href="http://newbilityvery.github.io/2021/11/24/new-theme/"/>
-    <id>http://newbilityvery.github.io/2021/11/24/new-theme/</id>
+    <link href="https://newbilityvery.github.io/2021/11/24/new-theme/"/>
+    <id>https://newbilityvery.github.io/2021/11/24/new-theme/</id>
     <published>2021-11-24T11:33:39.000Z</published>
     <updated>2026-11-01T08:58:21.986Z</updated>
     
@@ -83,14 +83,14 @@
     </summary>
     
     
-      <category term="Misc" scheme="http://newbilityvery.github.io/tags/Misc/"/>
+      <category term="Misc" scheme="https://newbilityvery.github.io/tags/Misc/"/>
     
   </entry>
   
   <entry>
     <title>Switch from vim-airline to lightline</title>
-    <link href="http://newbilityvery.github.io/2017/08/04/switch-to-lightline/"/>
-    <id>http://newbilityvery.github.io/2017/08/04/switch-to-lightline/</id>
+    <link href="https://newbilityvery.github.io/2017/08/04/switch-to-lightline/"/>
+    <id>https://newbilityvery.github.io/2017/08/04/switch-to-lightline/</id>
     <published>2017-08-04T10:23:11.000Z</published>
     <updated>2026-11-01T08:05:51.000Z</updated>
     
@@ -106,22 +106,22 @@
     </summary>
     
     
-      <category term="Outdated" scheme="http://newbilityvery.github.io/tags/Outdated/"/>
+      <category term="过时且无用的知识" scheme="https://newbilityvery.github.io/tags/%E8%BF%87%E6%97%B6%E4%B8%94%E6%97%A0%E7%94%A8%E7%9A%84%E7%9F%A5%E8%AF%86/"/>
     
-      <category term="过时且无用的知识" scheme="http://newbilityvery.github.io/tags/%E8%BF%87%E6%97%B6%E4%B8%94%E6%97%A0%E7%94%A8%E7%9A%84%E7%9F%A5%E8%AF%86/"/>
+      <category term="Outdated" scheme="https://newbilityvery.github.io/tags/Outdated/"/>
     
-      <category term="Probably Useless" scheme="http://newbilityvery.github.io/tags/Probably-Useless/"/>
+      <category term="Probably Useless" scheme="https://newbilityvery.github.io/tags/Probably-Useless/"/>
     
-      <category term="English" scheme="http://newbilityvery.github.io/tags/English/"/>
+      <category term="Vim" scheme="https://newbilityvery.github.io/tags/Vim/"/>
     
-      <category term="Vim" scheme="http://newbilityvery.github.io/tags/Vim/"/>
+      <category term="English" scheme="https://newbilityvery.github.io/tags/English/"/>
     
   </entry>
   
   <entry>
     <title>在Galaxy Tab S 8.4 上刷AOSP android N</title>
-    <link href="http://newbilityvery.github.io/2016/11/03/install-android-N-on-galaxy-tab-A/"/>
-    <id>http://newbilityvery.github.io/2016/11/03/install-android-N-on-galaxy-tab-A/</id>
+    <link href="https://newbilityvery.github.io/2016/11/03/install-android-N-on-galaxy-tab-A/"/>
+    <id>https://newbilityvery.github.io/2016/11/03/install-android-N-on-galaxy-tab-A/</id>
     <published>2016-11-03T11:54:55.000Z</published>
     <updated>2026-11-01T09:45:41.063Z</updated>
     
@@ -134,28 +134,28 @@
     </summary>
     
     
-      <category term="赛博考古" scheme="http://newbilityvery.github.io/tags/%E8%B5%9B%E5%8D%9A%E8%80%83%E5%8F%A4/"/>
+      <category term="刷机" scheme="https://newbilityvery.github.io/tags/%E5%88%B7%E6%9C%BA/"/>
     
-      <category term="时代眼泪" scheme="http://newbilityvery.github.io/tags/%E6%97%B6%E4%BB%A3%E7%9C%BC%E6%B3%AA/"/>
+      <category term="Misc" scheme="https://newbilityvery.github.io/tags/Misc/"/>
     
-      <category term="Outdated" scheme="http://newbilityvery.github.io/tags/Outdated/"/>
+      <category term="赛博考古" scheme="https://newbilityvery.github.io/tags/%E8%B5%9B%E5%8D%9A%E8%80%83%E5%8F%A4/"/>
     
-      <category term="Digital Relic" scheme="http://newbilityvery.github.io/tags/Digital-Relic/"/>
+      <category term="时代眼泪" scheme="https://newbilityvery.github.io/tags/%E6%97%B6%E4%BB%A3%E7%9C%BC%E6%B3%AA/"/>
     
-      <category term="刷机" scheme="http://newbilityvery.github.io/tags/%E5%88%B7%E6%9C%BA/"/>
+      <category term="过时且无用的知识" scheme="https://newbilityvery.github.io/tags/%E8%BF%87%E6%97%B6%E4%B8%94%E6%97%A0%E7%94%A8%E7%9A%84%E7%9F%A5%E8%AF%86/"/>
     
-      <category term="Misc" scheme="http://newbilityvery.github.io/tags/Misc/"/>
+      <category term="Outdated" scheme="https://newbilityvery.github.io/tags/Outdated/"/>
     
-      <category term="过时且无用的知识" scheme="http://newbilityvery.github.io/tags/%E8%BF%87%E6%97%B6%E4%B8%94%E6%97%A0%E7%94%A8%E7%9A%84%E7%9F%A5%E8%AF%86/"/>
+      <category term="Digital Relic" scheme="https://newbilityvery.github.io/tags/Digital-Relic/"/>
     
-      <category term="Probably Useless" scheme="http://newbilityvery.github.io/tags/Probably-Useless/"/>
+      <category term="Probably Useless" scheme="https://newbilityvery.github.io/tags/Probably-Useless/"/>
     
   </entry>
   
   <entry>
     <title>My Vim Settings for verilog/systemverilog coding</title>
-    <link href="http://newbilityvery.github.io/2016/07/08/vim-env-for-rtl-coding/"/>
-    <id>http://newbilityvery.github.io/2016/07/08/vim-env-for-rtl-coding/</id>
+    <link href="https://newbilityvery.github.io/2016/07/08/vim-env-for-rtl-coding/"/>
+    <id>https://newbilityvery.github.io/2016/07/08/vim-env-for-rtl-coding/</id>
     <published>2016-07-09T02:07:38.000Z</published>
     <updated>2026-11-01T08:05:51.000Z</updated>
     
@@ -173,26 +173,26 @@ catagory:
     </summary>
     
     
-      <category term="赛博考古" scheme="http://newbilityvery.github.io/tags/%E8%B5%9B%E5%8D%9A%E8%80%83%E5%8F%A4/"/>
+      <category term="赛博考古" scheme="https://newbilityvery.github.io/tags/%E8%B5%9B%E5%8D%9A%E8%80%83%E5%8F%A4/"/>
     
-      <category term="时代眼泪" scheme="http://newbilityvery.github.io/tags/%E6%97%B6%E4%BB%A3%E7%9C%BC%E6%B3%AA/"/>
+      <category term="时代眼泪" scheme="https://newbilityvery.github.io/tags/%E6%97%B6%E4%BB%A3%E7%9C%BC%E6%B3%AA/"/>
     
-      <category term="Outdated" scheme="http://newbilityvery.github.io/tags/Outdated/"/>
+      <category term="Outdated" scheme="https://newbilityvery.github.io/tags/Outdated/"/>
     
-      <category term="Digital Relic" scheme="http://newbilityvery.github.io/tags/Digital-Relic/"/>
+      <category term="Digital Relic" scheme="https://newbilityvery.github.io/tags/Digital-Relic/"/>
     
-      <category term="English" scheme="http://newbilityvery.github.io/tags/English/"/>
+      <category term="Vim" scheme="https://newbilityvery.github.io/tags/Vim/"/>
     
-      <category term="Vim" scheme="http://newbilityvery.github.io/tags/Vim/"/>
+      <category term="verilog" scheme="https://newbilityvery.github.io/tags/verilog/"/>
     
-      <category term="verilog" scheme="http://newbilityvery.github.io/tags/verilog/"/>
+      <category term="English" scheme="https://newbilityvery.github.io/tags/English/"/>
     
   </entry>
   
   <entry>
     <title>NAS系统及软件安装</title>
-    <link href="http://newbilityvery.github.io/2016/07/07/nas-sys-install/"/>
-    <id>http://newbilityvery.github.io/2016/07/07/nas-sys-install/</id>
+    <link href="https://newbilityvery.github.io/2016/07/07/nas-sys-install/"/>
+    <id>https://newbilityvery.github.io/2016/07/07/nas-sys-install/</id>
     <published>2016-07-08T04:57:02.000Z</published>
     <updated>2026-11-01T09:45:44.430Z</updated>
     
@@ -205,34 +205,34 @@ catagory:
     </summary>
     
     
-      <category term="NAS" scheme="http://newbilityvery.github.io/tags/NAS/"/>
+      <category term="时代眼泪" scheme="https://newbilityvery.github.io/tags/%E6%97%B6%E4%BB%A3%E7%9C%BC%E6%B3%AA/"/>
     
-      <category term="时代眼泪" scheme="http://newbilityvery.github.io/tags/%E6%97%B6%E4%BB%A3%E7%9C%BC%E6%B3%AA/"/>
+      <category term="过时且无用的知识" scheme="https://newbilityvery.github.io/tags/%E8%BF%87%E6%97%B6%E4%B8%94%E6%97%A0%E7%94%A8%E7%9A%84%E7%9F%A5%E8%AF%86/"/>
     
-      <category term="Outdated" scheme="http://newbilityvery.github.io/tags/Outdated/"/>
+      <category term="Outdated" scheme="https://newbilityvery.github.io/tags/Outdated/"/>
     
-      <category term="Digital Relic" scheme="http://newbilityvery.github.io/tags/Digital-Relic/"/>
+      <category term="Digital Relic" scheme="https://newbilityvery.github.io/tags/Digital-Relic/"/>
     
-      <category term="过时且无用的知识" scheme="http://newbilityvery.github.io/tags/%E8%BF%87%E6%97%B6%E4%B8%94%E6%97%A0%E7%94%A8%E7%9A%84%E7%9F%A5%E8%AF%86/"/>
+      <category term="Probably Useless" scheme="https://newbilityvery.github.io/tags/Probably-Useless/"/>
     
-      <category term="Probably Useless" scheme="http://newbilityvery.github.io/tags/Probably-Useless/"/>
+      <category term="NAS" scheme="https://newbilityvery.github.io/tags/NAS/"/>
     
-      <category term="OMV" scheme="http://newbilityvery.github.io/tags/OMV/"/>
+      <category term="OMV" scheme="https://newbilityvery.github.io/tags/OMV/"/>
     
-      <category term="OpenMediaVault" scheme="http://newbilityvery.github.io/tags/OpenMediaVault/"/>
+      <category term="OpenMediaVault" scheme="https://newbilityvery.github.io/tags/OpenMediaVault/"/>
     
-      <category term="群晖" scheme="http://newbilityvery.github.io/tags/%E7%BE%A4%E6%99%96/"/>
+      <category term="群晖" scheme="https://newbilityvery.github.io/tags/%E7%BE%A4%E6%99%96/"/>
     
-      <category term="DSM" scheme="http://newbilityvery.github.io/tags/DSM/"/>
+      <category term="DSM" scheme="https://newbilityvery.github.io/tags/DSM/"/>
     
-      <category term="synology" scheme="http://newbilityvery.github.io/tags/synology/"/>
+      <category term="synology" scheme="https://newbilityvery.github.io/tags/synology/"/>
     
   </entry>
   
   <entry>
     <title>NAS硬件配置</title>
-    <link href="http://newbilityvery.github.io/2016/07/06/nas-cfg/"/>
-    <id>http://newbilityvery.github.io/2016/07/06/nas-cfg/</id>
+    <link href="https://newbilityvery.github.io/2016/07/06/nas-cfg/"/>
+    <id>https://newbilityvery.github.io/2016/07/06/nas-cfg/</id>
     <published>2016-07-07T06:21:14.000Z</published>
     <updated>2026-11-01T09:45:43.463Z</updated>
     
@@ -246,26 +246,26 @@ catagory:
     </summary>
     
     
-      <category term="NAS" scheme="http://newbilityvery.github.io/tags/NAS/"/>
+      <category term="赛博考古" scheme="https://newbilityvery.github.io/tags/%E8%B5%9B%E5%8D%9A%E8%80%83%E5%8F%A4/"/>
     
-      <category term="赛博考古" scheme="http://newbilityvery.github.io/tags/%E8%B5%9B%E5%8D%9A%E8%80%83%E5%8F%A4/"/>
+      <category term="过时且无用的知识" scheme="https://newbilityvery.github.io/tags/%E8%BF%87%E6%97%B6%E4%B8%94%E6%97%A0%E7%94%A8%E7%9A%84%E7%9F%A5%E8%AF%86/"/>
     
-      <category term="Outdated" scheme="http://newbilityvery.github.io/tags/Outdated/"/>
+      <category term="Outdated" scheme="https://newbilityvery.github.io/tags/Outdated/"/>
     
-      <category term="Digital Relic" scheme="http://newbilityvery.github.io/tags/Digital-Relic/"/>
+      <category term="Digital Relic" scheme="https://newbilityvery.github.io/tags/Digital-Relic/"/>
     
-      <category term="过时且无用的知识" scheme="http://newbilityvery.github.io/tags/%E8%BF%87%E6%97%B6%E4%B8%94%E6%97%A0%E7%94%A8%E7%9A%84%E7%9F%A5%E8%AF%86/"/>
+      <category term="Probably Useless" scheme="https://newbilityvery.github.io/tags/Probably-Useless/"/>
     
-      <category term="Probably Useless" scheme="http://newbilityvery.github.io/tags/Probably-Useless/"/>
+      <category term="NAS" scheme="https://newbilityvery.github.io/tags/NAS/"/>
     
-      <category term="DIY" scheme="http://newbilityvery.github.io/tags/DIY/"/>
+      <category term="DIY" scheme="https://newbilityvery.github.io/tags/DIY/"/>
     
   </entry>
   
   <entry>
     <title>想组个NAS</title>
-    <link href="http://newbilityvery.github.io/2016/07/06/nas-build/"/>
-    <id>http://newbilityvery.github.io/2016/07/06/nas-build/</id>
+    <link href="https://newbilityvery.github.io/2016/07/06/nas-build/"/>
+    <id>https://newbilityvery.github.io/2016/07/06/nas-build/</id>
     <published>2016-07-06T19:00:10.000Z</published>
     <updated>2026-11-01T09:45:42.414Z</updated>
     
@@ -280,17 +280,17 @@ catagory:
     </summary>
     
     
-      <category term="NAS" scheme="http://newbilityvery.github.io/tags/NAS/"/>
+      <category term="赛博考古" scheme="https://newbilityvery.github.io/tags/%E8%B5%9B%E5%8D%9A%E8%80%83%E5%8F%A4/"/>
     
-      <category term="PC" scheme="http://newbilityvery.github.io/tags/PC/"/>
+      <category term="时代眼泪" scheme="https://newbilityvery.github.io/tags/%E6%97%B6%E4%BB%A3%E7%9C%BC%E6%B3%AA/"/>
     
-      <category term="赛博考古" scheme="http://newbilityvery.github.io/tags/%E8%B5%9B%E5%8D%9A%E8%80%83%E5%8F%A4/"/>
+      <category term="Outdated" scheme="https://newbilityvery.github.io/tags/Outdated/"/>
     
-      <category term="时代眼泪" scheme="http://newbilityvery.github.io/tags/%E6%97%B6%E4%BB%A3%E7%9C%BC%E6%B3%AA/"/>
+      <category term="Digital Relic" scheme="https://newbilityvery.github.io/tags/Digital-Relic/"/>
     
-      <category term="Outdated" scheme="http://newbilityvery.github.io/tags/Outdated/"/>
+      <category term="NAS" scheme="https://newbilityvery.github.io/tags/NAS/"/>
     
-      <category term="Digital Relic" scheme="http://newbilityvery.github.io/tags/Digital-Relic/"/>
+      <category term="PC" scheme="https://newbilityvery.github.io/tags/PC/"/>
     
   </entry>
   
