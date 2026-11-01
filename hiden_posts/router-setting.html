@@ -1,0 +1,255 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>将路由器设置成无线中继以增强覆盖 | Play &amp; Go</title><meta name="author" content="Vivid"><meta name="copyright" content="Vivid"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="起因搬家后，二楼主卧的wifi信号一直不稳定，非常不爽。打开wifi分析app发现有几个原因：  周围邻居都用2.4G，干扰过大导致连接不稳定。  2.4G只有10多个频道，不可能避免重合。尤其是晚上大家都在用，基本没法用 从主卧看的热点分布。    邻居们的路由信号都很强嘛。。。那个home br"><link rel="shortcut icon" href="/img/favicon-custom.png"><link rel="canonical" href="https://newbilityvery.github.io/hiden_posts/router-setting.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="tp85EhSf8_R_D9hn4BAI934ekgYECjbwrmShWB49YJ4"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '将路由器设置成无线中继以增强覆盖',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2015-06-25 00:00:00'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/little_goku.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">22</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Play &amp; Go"><span class="site-name">Play &amp; Go</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="page"><h1 class="page-title">将路由器设置成无线中继以增强覆盖</h1><div id="article-container"><h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>搬家后，二楼主卧的wifi信号一直不稳定，非常不爽。打开wifi分析app发现有几个原因：</p>
+<ul>
+<li><strong>周围邻居都用2.4G，干扰过大导致连接不稳定。</strong></li>
+</ul>
+<p>2.4G只有10多个频道，不可能避免重合。尤其是晚上大家都在用，基本没法用</p>
+<p>从主卧看的热点分布。</p>
+<span id="more"></span>
+
+<p><img src="/img/2015/06/wifi_ana2.4G.jpg" title="2.4G热点太多"></p>
+<p>邻居们的路由信号都很强嘛。。。那个home brew应该是隔壁的。主卧隔壁就是邻居家，很可能路由器就在墙那边。</p>
+<p>换5G看看，基本没人用。而且5G频道很多，即使大家都换5G的应该也能保证一人一个。</p>
+<p><img src="/img/2015/06/wifi_ana5G.jpg" title="5G空空如也"></p>
+<p>好！换5G！我的路由器是支持双频的。结果还是不爽，为什么呢？</p>
+<ul>
+<li><strong>主卧离路由器太远，5G信号穿墙能力不佳</strong></li>
+</ul>
+<p>家里的平面图如下，可以看出主卧和路由器是整个房子的对角，距离最长。由于有线电视线在这里，所以不太好改路由器的位置。而且为了美观我还把这堆网络设备都藏电视机后面，信号被电视机给档了。（之前试过放电视机前面，楼上信号虽然也只有一格，但不会断。）</p>
+<p><img src="/img/2015/06/home_map_wo_ext.png" title="主卧离路由器最远"></p>
+<p>忘了说了，我的路由器是Netgear WNDR3800。用了两年多了觉得还不错。有段时间出过个bug：开了一段时间后会找不到无线连接的设备。症状是无线设备都能正常上网，还能正常访问有线连接的设备比如NAS。但是没法访问无线连接的设备比如wifi连接的打印机。重启又好了。发去客服结果答复是过保了不理我。。。晕。不过最近好像又没这问题了。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>我设想的解决方案如下：</p>
+<ol>
+<li>想办法把路由移到一楼中间。</li>
+<li>买个range extender。</li>
+<li>换个信号更强的路由器。</li>
+</ol>
+<hr>
+<p>第一个太麻烦，布线什么的完全不会。第三个要花太多钱，这个路由其实信号已经很强了只不过位置不是很好而已。第二个方法虽然也要花钱，不过一个extender怎么也比路由便宜吧。</p>
+<p>结果发现一个extender四五十刀也不便宜啊，我的预算是20刀以内。</p>
+<p>在craigslist上逛发现有人卖旧的路由，于是搜了下看看有什么路由可以支持无线中继。然后就搜到刷tomato的固件可以做。刚好有个人卖Linksys E2500，这个路由支持5G，刚好符合我的目的。确定可以刷tomato后15刀拿下。</p>
+<p>网上找的图，貌似这个路由挺经典的。</p>
+<p><img src="http://gd2.alicdn.com/bao/uploaded/i2/T1bcAVFlBfXXXXXXXX_!!0-item_pic.jpg_400x400.jpg" title="E2500"></p>
+<h2 id="刷的步骤："><a href="#刷的步骤：" class="headerlink" title="刷的步骤："></a>刷的步骤：</h2><p>具体都忘了。好像很简单，因为没遇到什么问题。</p>
+<p>大概就是到<a target="_blank" rel="noopener" href="http://tomato.groov.pl/">tomato by shibby的网站</a> 上找相应的固件，用原来路由器的升级方法把固件上传就行了。</p>
+<p>有个小问题是好像5G网络刚开始是没法打开的，有个小tricky。但一时间又想不起来了。（老了。。。）</p>
+<h2 id="设置的步骤："><a href="#设置的步骤：" class="headerlink" title="设置的步骤："></a>设置的步骤：</h2><p>这些设置都是在网上搜的再加上自己的理解设置成功的。有时间找找来源。</p>
+<p>第一次先用一台电脑用网线连上E2500，登入默认地址。</p>
+<p>以下设置可以将此E2500作为中继，也就是说连上它的设备还想在主路由的网络里。</p>
+<h3 id="LAN设置"><a href="#LAN设置" class="headerlink" title="LAN设置"></a>LAN设置</h3><p>具体为什么要这么设我也不是非常明白。猜测大概是要让E2500找到本地局域网的网关地址吧。</p>
+<p><img src="/img/2015/06/basic_lan.png" title="LAN setting"></p>
+<h3 id="2-4G网设置"><a href="#2-4G网设置" class="headerlink" title="2.4G网设置"></a>2.4G网设置</h3><p>我不用2.4G网络，所以把它禁用。<br>顺便说一句，楼上能收到比较不错的2.4G信号，所以这个Netgear的路由还算是不错的。只是因为干扰太大晚上的连接速度实在不敢恭维。</p>
+<p><img src="/img/2015/06/basic_2_4G.png" title="Disable 2.4G wireless"></p>
+<h3 id="5G网设置"><a href="#5G网设置" class="headerlink" title="5G网设置"></a>5G网设置</h3><p>5G网mode选 Wireless Ethernet Bridge. SSID填主路由的5G SSID。加密这些都设成和主路由一样。<br><del>我的理解是在这里连上主路由。</del></p>
+<p><strong>其实做到这里就够了。虽然还是只有一个ssid，但信号确实增强了。</strong></p>
+<p><img src="/img/2015/06/basic_5G.png" title="5G network setting"></p>
+<h3 id="虚拟网络设置"><a href="#虚拟网络设置" class="headerlink" title="虚拟网络设置"></a>虚拟网络设置</h3><p><strong>这步不做也行，但我总觉得看不到到底连上了哪个路由很不爽。</strong></p>
+<p>由于我是要用5G，所以在eth2(wl1)下面添加一个新的虚拟网络界面wl1.1。</p>
+<p>然后依次选择启用；SSID自己起，也可以和主路由一样；Mode选Access Point；Bridge选LAN（br0）。</p>
+<p><img src="/img/2015/06/adv_vir_inf.png" title="virtual wireless interface"></p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>用手机连上去果然可以了。连上后直接访问主路由也没问题，而且连上去的设备分到的地址都是主路由给的。正是我需要的效果！</p>
+<p>我把这台E2500放在一楼中间，使它和主路由的连接尽可能好，同时又能让二楼主卧的信号好到可以接受。</p>
+<p><img src="/img/2015/06/home_map_w_ext.png"></p>
+<h2 id="引用来源"><a href="#引用来源" class="headerlink" title="引用来源"></a>引用来源</h2><ol>
+<li><p><a target="_blank" rel="noopener" href="http://www.cyberciti.biz/networking/howto-connect-two-wireless-router-wirelessly-bridge-with-open-source-software/">HowTo: Connect Two Wireless Router Wirelessly (Bridge) With Open Source Software</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://www.bxtra.net/articles/2012-12-24/how-to-setup-wireless-repeater-wireless-ethernet-bridge-on-wireless-router-with">Setup Wireless Repeater (Wireless Ethernet Bridge) on Wireless Router with TomatoUSB by Shibby Firmware</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://bbs.dualwan.cn/thread-190962-1-1.html">tomato路由器无线中继教程</a></p>
+</li>
+</ol>
+</div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/little_goku.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Vivid</div><div class="author-info__description">...</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">22</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2017/08/04/switch-to-lightline/" title="Switch from vim-airline to lightline">Switch from vim-airline to lightline</a><time datetime="2026-11-01T20:16:00.000Z" title="Updated 2026-11-01 12:16:00">2026-11-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/02/25/Docker-services-I-m-currenlty-Using/" title="Docker containers I'm currently using">Docker containers I'm currently using</a><time datetime="2026-11-01T20:03:00.000Z" title="Updated 2026-11-01 12:03:00">2026-11-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2016/07/06/nas-build/" title="想组个NAS">想组个NAS</a><time datetime="2026-11-01T19:22:00.112Z" title="Updated 2026-11-01 11:22:00">2026-11-01</time></div></div></div></div><div class="card-widget ads-wrap"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4569241372682582" data-ad-slot="4166618328" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/English/" style="font-size: 1.18em; color: #999ca1">English</a> <a href="/tags/%E6%97%B6%E4%BB%A3%E7%9C%BC%E6%B3%AA/" style="font-size: 1.34em; color: #99a3b0">时代眼泪</a> <a href="/tags/verilog/" style="font-size: 1.1em; color: #999">verilog</a> <a href="/tags/DSM/" style="font-size: 1.1em; color: #999">DSM</a> <a href="/tags/Digital-Relic/" style="font-size: 1.42em; color: #99a6b7">Digital Relic</a> <a href="/tags/DIY/" style="font-size: 1.1em; color: #999">DIY</a> <a href="/tags/docker/" style="font-size: 1.1em; color: #999">docker</a> <a href="/tags/%E8%B5%9B%E5%8D%9A%E8%80%83%E5%8F%A4/" style="font-size: 1.34em; color: #99a3b0">赛博考古</a> <a href="/tags/Probably-Useless/" style="font-size: 1.34em; color: #99a3b0">Probably Useless</a> <a href="/tags/%E5%88%B7%E6%9C%BA/" style="font-size: 1.1em; color: #999">刷机</a> <a href="/tags/NAS/" style="font-size: 1.26em; color: #999fa8">NAS</a> <a href="/tags/Outdated/" style="font-size: 1.5em; color: #99a9bf">Outdated</a> <a href="/tags/Vim/" style="font-size: 1.18em; color: #999ca1">Vim</a> <a href="/tags/Misc/" style="font-size: 1.18em; color: #999ca1">Misc</a> <a href="/tags/OpenMediaVault/" style="font-size: 1.1em; color: #999">OpenMediaVault</a> <a href="/tags/%E7%BE%A4%E6%99%96/" style="font-size: 1.1em; color: #999">群晖</a> <a href="/tags/Neovim/" style="font-size: 1.1em; color: #999">Neovim</a> <a href="/tags/OMV/" style="font-size: 1.1em; color: #999">OMV</a> <a href="/tags/%E8%AF%BB%E4%B9%A6/" style="font-size: 1.1em; color: #999">读书</a> <a href="/tags/synology/" style="font-size: 1.1em; color: #999">synology</a> <a href="/tags/%E8%BF%87%E6%97%B6%E4%B8%94%E6%97%A0%E7%94%A8%E7%9A%84%E7%9F%A5%E8%AF%86/" style="font-size: 1.34em; color: #99a3b0">过时且无用的知识</a> <a href="/tags/PC/" style="font-size: 1.1em; color: #999">PC</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">February 2023</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/11/"><span class="card-archive-list-date">November 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2017/08/"><span class="card-archive-list-date">August 2017</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2016/11/"><span class="card-archive-list-date">November 2016</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2016/07/"><span class="card-archive-list-date">July 2016</span><span class="card-archive-list-count">4</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">9</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-11-01T23:21:46.089Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2016 - 2026 By Vivid</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const disqus_config = function () {
+    this.page.url = 'https://newbilityvery.github.io/hiden_posts/router-setting.html'
+    this.page.identifier = '/hiden_posts/router-setting.html'
+    this.page.title = '将路由器设置成无线中继以增强覆盖'
+  }
+
+  const disqusReset = () => {
+    window.DISQUS && window.DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  btf.addGlobalFn('themeChange', disqusReset, 'disqus')
+
+  const loadDisqus = () =>{
+    if (window.DISQUS) disqusReset()
+    else {
+      const script = document.createElement('script')
+      script.src = 'https://vivid-clock.disqus.com/embed.js'
+      script.setAttribute('data-timestamp', +new Date())
+      document.head.appendChild(script)
+    }
+  }
+
+  const getCount = async() => {
+    try {
+      const eleGroup = document.querySelector('#post-meta .disqus-comment-count')
+      if (!eleGroup) return
+      const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
+
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=vivid-clock&api_key=&thread:link=${cleanedLinks}`,{
+        method: 'GET'
+      })
+      const result = await res.json()
+
+      const count = result.response.length ? result.response[0].posts : 0
+      eleGroup.textContent = count
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  if ('Disqus' === 'Disqus' || !true) {
+    if (true) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+    else {
+      loadDisqus()
+      GLOBAL_CONFIG_SITE.isPost && getCount()
+    }
+  } else {
+    window.loadOtherComment = loadDisqus
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
